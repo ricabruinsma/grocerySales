@@ -6,7 +6,7 @@ This repository will serve as a portfolio to demonstrate development skills lear
 
 Local grocery stores send weekly paper advertisements through the mail, highlighting their weekly sales.  There isn't a single web source where this information is aggregated and searchable.
 
-I would like to create a site to aggregate this data.  Users would be able to search the site for sales, as well as login and create their own sales shopping list. The site might interface with Google Maps and a local gas price site to help users determine how much they need to save through sales in order to make the trip worthwhile.
+I would like to create a site to demonstrate this for one local grocery store, with the potential to aggregate this data for multiple local grocery stores.  Users would be able to search the site for current sales, as well as login and create their own shopping list of sale items. The site might interface with Google Maps and a local gas price site to help users determine how much they need to save through sales in order to make the trip worthwhile.
 
 ### Project Technologies/Techniques 
 
