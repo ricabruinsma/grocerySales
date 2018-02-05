@@ -29,6 +29,7 @@
 - [ ] Journal
 - [ ] Create class uml diagram
 - [ ] Review and incorporate feedback from checkpoint 1
+- [ ] Prepare for week 5 individual project code review
 
 ### Week 5: Hibernate
 - [ ] Add role entity and annotate for hibernate
