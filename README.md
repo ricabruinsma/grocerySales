@@ -12,19 +12,20 @@ I would like to create a site to demonstrate this for one local grocery store, w
 
 * Security/Authentication
   * Tomcat's JDBC Realm Authentication
-  * Admin role: create/read/update/delete (crud) of all data
+  * Admin role: create/read/update/delete (crud) users and grocery store items
   * User role: create grocery list by store, enter home address to calculate mileage to store, edit data they have entered previously
   * All: anyone can view grocery store sales information (no login)
 * Database
   * MySQL
   * Store users and roles
-  * Store all data for the trails and reports
+  * Store all data for grocery items and grocery list
+  * Store all data for store
 * ORM Framework
   * Hibernate 5
 * Dependency Management
   * Maven
 * Web Services consumed using Java
-  * NOAA for weather conditions at a trail location, including snow depth
+  * Maybe Google Maps for mileage calculations???
 * CSS 
   * Bootstrap or Materialize
 * Data Validation
@@ -38,8 +39,7 @@ I would like to create a site to demonstrate this for one local grocery store, w
   * CI tools in AWS
   * Materialize
   * Google Maps API
-  * Hibernate Validation
-  * Hibernat Search
+  * JStory - screen scrape
 * Project Lombok to eliminate boilerplate code like getters/setters/equals
 * Unit Testing
   * JUnit tests to achieve 80%+ code coverage 
