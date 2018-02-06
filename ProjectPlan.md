@@ -10,8 +10,8 @@
 - [X] Complete Problem Statement.
 - [ ] Design project plan 
 - [X] Create initial screen design / wireframes
-- [ ] First draft of database design
-- [ ] Journal
+- [X] First draft of database design
+- [X] Journal
 - [X] Triple-check for Checkpoint 1: problem statement
 - [ ] Triple-check for Checkpoint 1: project plan
 - [X] Triple-check for Checkpoint 1: Screen Design
