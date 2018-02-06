@@ -8,12 +8,12 @@
 
 ### Week 3:
 - [X] Complete Problem Statement.
-- [ ] Design project plan 
+- [X] Design project plan 
 - [X] Create initial screen design / wireframes
 - [X] First draft of database design
 - [X] Journal
 - [X] Triple-check for Checkpoint 1: problem statement
-- [ ] Triple-check for Checkpoint 1: project plan
+- [X] Triple-check for Checkpoint 1: project plan
 - [X] Triple-check for Checkpoint 1: Screen Design
 - [X] Triple-check for Checkpoint 1: Time log
 
@@ -30,6 +30,7 @@
 - [ ] Create class uml diagram
 - [ ] Review and incorporate feedback from checkpoint 1
 - [ ] Prepare for week 5 individual project code review
+- [ ] Research APIs and/or screen scrape technology
 
 ### Week 5: Hibernate
 - [ ] Add role entity and annotate for hibernate
@@ -40,6 +41,7 @@
 - [ ] Add JSP to display user and role login
 - [ ] Add JSP to add a user
 - [ ] Prepare for week 6 Design Review
+- [ ] Continue screen scrape research & begin trials
 - [ ] Journal
 
 ### Week 6: AWS Deployment
@@ -49,7 +51,8 @@
 - [ ] Create store dao unit tests
 - [ ] Create store table
 - [ ] Create db on AWS
-- [ ] Create Connection table
+- [ ] Create Items table
+- [ ] Functional screen scrape to populate Items table
 - [ ] Create Search JSP
 - [ ] Design Review
 - [ ] Journal
@@ -62,23 +65,22 @@
 ### Week 7: Security Authentication
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
-- [ ] Create Action Items table
-- [ ] Create Connections to Leverage table
-- [ ] Create Add Annotation JSP
+- [ ] Create Search Results JSP
+- [ ] Create grocery list entity and annotate for hibernate
+- [ ] Create Grocery List table
+- [ ] Create Grocery List dao
+- [ ] Create Grocery List JSP
 - [ ] Review and Incorporate feedback from checkpoint 2
 - [ ] Journal
 
 ### Week 8: Web Services (SOAP) 
-- [ ] Create All Connections JSP
-- [ ] Integrate with LinkedIn API
 - [ ] Sign up for team project
 - [ ] Journal
 - [ ] Triple check checkpoint 3: Deployed to AWS
 - [ ] Triple check checkpoint 3: at least one JSP that displays data from database
 
 ### Week 9: REST
-- [ ] Create Refresh Network JSP
-- [ ] Create relationships between tables (Connection Info to Connection Update, etc.)
+- [ ] Create relationships between tables 
 - [ ] Test relationships
 - [ ] Team repository created
 - [ ] Review and incorporate feedback from checkpoint 3
@@ -86,7 +88,7 @@
 - [ ] Journal
 
 ### Week 10
-- [ ] Unit test all relationships and LI API
+- [ ] Unit test all relationships
 - [ ] Journal
 
 ### Week 11: Multithreading
@@ -99,12 +101,12 @@
 - [ ] Journal
 
 ### Week 13: Asynchronous Messaging
-- [ ] Beautify UI
+- [ ] Finish UI
 - [ ] Code quality check
 - [ ] Journal
 
 ### Week 14
-- [ ] Ensure full application is running to plan
+- [ ] Ensure full application is functional
 - [ ] Code Reviews
 - [ ] Create final presentation
 - [ ] Journal
