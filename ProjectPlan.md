@@ -9,13 +9,13 @@
 ### Week 3:
 - [X] Complete Problem Statement.
 - [ ] Design project plan 
-- [ ] Create initial screen design / wireframes
+- [X] Create initial screen design / wireframes
 - [ ] First draft of database design
 - [ ] Journal
 - [X] Triple-check for Checkpoint 1: problem statement
 - [ ] Triple-check for Checkpoint 1: project plan
-- [ ] Triple-check for Checkpoint 1: Screen Design
-- [ ] Triple-check for Checkpoint 1: Time log
+- [X] Triple-check for Checkpoint 1: Screen Design
+- [X] Triple-check for Checkpoint 1: Time log
 
 ### Week 4: Hibernate, DAOs
 - [ ] Hibernate
