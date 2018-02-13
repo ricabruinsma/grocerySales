@@ -6,3 +6,10 @@
 | 1/29/18| Customize Paula's Problem Statement| 0.5 | |
 | 2/04/18| Project Plan and API research| 2.5 | |
 | 2/05/18| Wireframes & ERD draft & project plan| 2 | |
+| 2/11/18| Research screen scraping and APIs | 1.5 | |
+| 2/12/18| User DAO creation | 1 | |
+| 2/xx/18| |  | |
+| 2/xx/18| |  | |
+| 2/xx/18| |  | |
+| 2/xx/18| |  | |
+| 2/xx/18| |  | |
