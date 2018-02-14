@@ -5,7 +5,6 @@ import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.Assert.assertNotEquals;
@@ -85,7 +84,7 @@ class UserDaoTest {
         User userToUpdate = dao.getById(1);
         userToUpdate.setUsername(newUsername);
         dao.saveOrUpdate(userToUpdate);
-        User retrievedUser = dao.getById(3);
+        User retrievedUser = dao.getById(1);
         assertEquals(newUsername, retrievedUser.getUsername());
     }
 

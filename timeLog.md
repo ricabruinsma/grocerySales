@@ -8,7 +8,7 @@
 | 2/05/18| Wireframes & ERD draft & project plan| 2 | |
 | 2/11/18| Research screen scraping and APIs | 1.5 | |
 | 2/12/18| User DAO creation | 1 | |
-| 2/13/18| User DAO completion | 1 | |
+| 2/13/18| User DAO completion | 2 | |
 | 2/xx/18| |  | |
 | 2/xx/18| |  | |
 | 2/xx/18| |  | |

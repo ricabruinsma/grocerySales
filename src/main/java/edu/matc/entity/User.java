@@ -14,6 +14,8 @@ import javax.persistence.*;
 public class User {
 
     private String email;
+
+    @Column(name = "pword")
     private String password;
     private String username;
 
@@ -74,15 +76,6 @@ public class User {
      */
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    /**
-     * Gets password sha.
-     *
-     * @return the password sha
-     */
-    public String getPassword() {
-        return password;
     }
 
     /**
