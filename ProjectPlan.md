@@ -25,7 +25,7 @@
 - [X] Create User dao
 - [ ] Create User dao unit tests (test database?)
 - [X] Create User table
-- [ ] Set up logging with log4j
+- [X] Set up logging with log4j
 - [ ] Journal
 - [ ] Create class uml diagram
 - [ ] Review and incorporate feedback from checkpoint 1

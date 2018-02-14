@@ -36,6 +36,29 @@ public class User {
     }
 
     /**
+     * Instantiates a new User.
+     *
+     * @param email    the email
+     * @param password the password
+     * @param username the username
+     * @param roleId   the role id
+     * @param address  the address
+     * @param city     the city
+     * @param state    the state
+     * @param zip      the zip
+     */
+    public User(String email, String password, String username, int roleId, String address, String city, String state, String zip) {
+        this.email = email;
+        this.password = password;
+        this.username = username;
+        this.roleId = roleId;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+    }
+
+    /**
      * Gets email.
      *
      * @return the email

@@ -37,8 +37,8 @@ class UserDaoTest {
      */
     @Test
     void getAllUsersSuccess() {
-        List<User> users = dao.getAllUsers();
-        assertEquals(6, users.size());
+        List<User> users = dao.getAll();
+        assertEquals(3, users.size());
     }
 
     /**
@@ -46,9 +46,9 @@ class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(3);
+        User retrievedUser = dao.getById(1);
         assertNotNull(retrievedUser);
-        assertEquals("Barney", retrievedUser.getFirstName());
+        assertEquals("rbruinsma", retrievedUser.getUsername());
     }
 
     /**
@@ -57,11 +57,11 @@ class UserDaoTest {
     @Test
     void insertSuccess() {
 
-        User newUser = new User("Fred", "Flintstone", "fflintstone", LocalDate.parse("1168-01-01"));
+        User newUser = new User("test4@gmail.com", "superSecret4", "testUser4", 2, "111 Main St.", "Madison", "WI", "53701");
         int id = dao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);
-        assertEquals("Fred", insertedUser.getFirstName());
+        assertEquals("testUser4", insertedUser.getUsername());
         // Could continue comparing all values, but
         // it may make sense to use .equals()
         // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
@@ -81,12 +81,12 @@ class UserDaoTest {
      */
     @Test
     void updateSuccess() {
-        String newLastName = "Davis";
-        User userToUpdate = dao.getById(3);
-        userToUpdate.setLastName(newLastName);
+        String newUsername = "newUser";
+        User userToUpdate = dao.getById(1);
+        userToUpdate.setUsername(newUsername);
         dao.saveOrUpdate(userToUpdate);
         User retrievedUser = dao.getById(3);
-        assertEquals(newLastName, retrievedUser.getLastName());
+        assertEquals(newUsername, retrievedUser.getUsername());
     }
 
     /**
@@ -94,9 +94,9 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName", "Curry");
+        List<User> users = dao.getByPropertyEqual("username", "rbruinsma");
         assertEquals(1, users.size());
-        assertEquals(3, users.get(0).getId());
+        assertEquals(1, users.get(0).getId());
     }
 
     /**
@@ -104,7 +104,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName", "c");
-        assertEquals(3, users.size());
+        List<User> users = dao.getByPropertyLike("username", "rbruinsma");
+        assertEquals(1, users.size());
     }
 }

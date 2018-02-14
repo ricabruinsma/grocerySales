@@ -22,11 +22,11 @@ public class UserDao {
      * Gets all users
      * @return all users
      */
-    public List<User> getAllUsers() {
+    public List<User> getAll() {
 
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder. createQuery(User.class);
+        CriteriaQuery<User> query = builder.createQuery(User.class);
         Root<User> root = query.from(User.class);
         List<User> users = session.createQuery(query).getResultList();
         session.close();
