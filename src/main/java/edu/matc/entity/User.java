@@ -14,7 +14,8 @@ import javax.persistence.*;
 public class User {
 
     private String email;
-    private String password_SHA;
+    private String password;
+    private String username;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -57,17 +58,35 @@ public class User {
      *
      * @return the password sha
      */
-    public String getPassword_SHA() {
-        return password_SHA;
+    public String getPassword() {
+        return password;
     }
 
     /**
      * Sets password sha.
      *
-     * @param password_SHA the password sha
+     * @param password the password sha
      */
-    public void setPassword_SHA(String password_SHA) {
-        this.password_SHA = password_SHA;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    /**
+     * Gets username.
+     *
+     * @return the username
+     */
+    public String getUsername() {
+        return username;
+    }
+
+    /**
+     * Sets username.
+     *
+     * @param username the username
+     */
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     /**

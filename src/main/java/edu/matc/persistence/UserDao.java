@@ -35,30 +35,6 @@ public class UserDao {
     }
 
     /**
-     * Gets user by email.
-     *
-     * @param email the last name query
-     * @return the user(s) matching the last name search query
-     */
-    public List<User> getUserByEmail(String email) {
-
-        logger.debug("Searching for: {}", email);
-
-        Session session = sessionFactory.openSession();
-        List<User> users;
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder. createQuery(User.class);
-        Root<User> root = query.from(User.class);
-        Expression<String> propertyPath = root.get("email");
-        query.where(builder.like(propertyPath, "%" + email + "%"));
-        users = session.createQuery(query).getResultList();
-        session.close();
-
-        return users;
-    }
-
-    /**
      * Gets a user by id
      * @return a user
      */
@@ -110,7 +86,7 @@ public class UserDao {
 
     /**
      * Get user by property (exact match)
-     * sample usage: getByPropertyEqual("lastname", "Curry")
+     * sample usage: getByPropertyEqual("email", "rbruinsma@madisoncollege.edu")
      */
     public List<User> getByPropertyEqual(String propertyName, String value) {
         Session session = sessionFactory.openSession();

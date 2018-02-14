@@ -42,15 +42,6 @@ class UserDaoTest {
     }
 
     /**
-     * Verifies get user by last name success.
-     */
-    @Test
-    void getUserByLastNameSuccess() {
-        List<User> users = dao.getUserByLastName("c");
-        assertEquals(3, users.size());
-    }
-
-    /**
      * Verifies a user is returned correctly based on id search
      */
     @Test

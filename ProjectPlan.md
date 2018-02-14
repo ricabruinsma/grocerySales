@@ -18,19 +18,19 @@
 - [X] Triple-check for Checkpoint 1: Time log
 
 ### Week 4: Hibernate, DAOs
-- [ ] Hibernate
-- [ ] DAOs
+- [X] Hibernate
+- [X] DAOs
 - [ ] Complete database design
-- [ ] Create User entity class and annotate for hibernate
-- [ ] Create User dao
+- [X] Create User entity class and annotate for hibernate
+- [X] Create User dao
 - [ ] Create User dao unit tests (test database?)
-- [ ] Create User table
+- [X] Create User table
 - [ ] Set up logging with log4j
 - [ ] Journal
 - [ ] Create class uml diagram
 - [ ] Review and incorporate feedback from checkpoint 1
 - [ ] Prepare for week 5 individual project code review
-- [ ] Research APIs and/or screen scrape technology
+- [X] Research APIs and/or screen scrape technology
 
 ### Week 5: Hibernate
 - [ ] Add role entity and annotate for hibernate
