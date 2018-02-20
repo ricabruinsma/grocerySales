@@ -20,16 +20,13 @@
 ### Week 4: Hibernate, DAOs
 - [X] Hibernate
 - [X] DAOs
-- [ ] Complete database design
 - [X] Create User entity class and annotate for hibernate
 - [X] Create User dao
-- [ ] Create User dao unit tests (test database?)
+- [X] Create User dao unit tests (test database?)
 - [X] Create User table
 - [X] Set up logging with log4j
-- [ ] Journal
-- [ ] Create class uml diagram
-- [ ] Review and incorporate feedback from checkpoint 1
-- [ ] Prepare for week 5 individual project code review
+- [X] Journal
+- [X] Review and incorporate feedback from checkpoint 1
 - [X] Research APIs and/or screen scrape technology
 
 ### Week 5: Hibernate
@@ -46,6 +43,8 @@
 
 ### Week 6: AWS Deployment
 - [ ] Deploy to AWS for first time
+- [ ] Complete database design
+- [ ] Create class uml diagram
 - [ ] Create store entity and annotate for hibernate
 - [ ] Create store dao
 - [ ] Create store dao unit tests
@@ -78,6 +77,7 @@
 - [ ] Journal
 - [ ] Triple check checkpoint 3: Deployed to AWS
 - [ ] Triple check checkpoint 3: at least one JSP that displays data from database
+- [ ] Triple check checkpoint 3: Authentication implemented
 
 ### Week 9: REST
 - [ ] Create relationships between tables 
