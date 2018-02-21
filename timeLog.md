@@ -9,7 +9,7 @@
 | 2/11/18| Research screen scraping and APIs | 1.5 | |
 | 2/12/18| User DAO creation | 1 | |
 | 2/13/18| User DAO completion | 2 | |
-| 2/xx/18| |  | |
+| 2/20/18| Project Review & .gitignore update | 0.5 | |
 | 2/xx/18| |  | |
 | 2/xx/18| |  | |
 | 2/xx/18| |  | |
