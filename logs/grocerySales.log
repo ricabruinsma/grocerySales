@@ -42,3 +42,5 @@
 [DEBUG] 2018-02-13 20:59:41.559 [main] UserDao - Searching for user with username = rbruinsma
 [DEBUG] 2018-02-13 21:04:50.987 [main] UserDao - Searching for user with username = rbruinsma
 [DEBUG] 2018-02-13 21:04:51.257 [main] UserDao - Searching for user with username = rbruinsma
+[DEBUG] 2018-02-25 23:01:53.972 [main] UserDao - Searching for user with username = rbruinsma
+[DEBUG] 2018-02-25 23:01:54.331 [main] UserDao - Searching for user with username = rbruinsma

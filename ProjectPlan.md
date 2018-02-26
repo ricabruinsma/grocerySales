@@ -37,13 +37,13 @@
 - [ ] Create JSP templates using bootstrap
 - [ ] Add JSP to display user and role login
 - [ ] Add JSP to add a user
-- [ ] Prepare for week 6 Design Review
+- [X] Prepare for week 6 Design Review
 - [ ] Continue screen scrape research & begin trials
-- [ ] Journal
+- [X] Journal
 
 ### Week 6: AWS Deployment
 - [ ] Deploy to AWS for first time
-- [ ] Complete database design
+- [X] Complete database design
 - [ ] Create class uml diagram
 - [ ] Create store entity and annotate for hibernate
 - [ ] Create store dao
@@ -53,12 +53,12 @@
 - [ ] Create Items table
 - [ ] Functional screen scrape to populate Items table
 - [ ] Create Search JSP
-- [ ] Design Review
+- [X] Design Review
 - [ ] Journal
 - [ ] Triple check checkpoint 2: database designed and created
-- [ ] Triple check checkpoint 2: at least one DAO implemented with Hibernate
-- [ ] Triple check checkpoint 2: DAO is unit tested 
-- [ ] Triple check checkpoint 2: Log4J is implemented
+- [X] Triple check checkpoint 2: at least one DAO implemented with Hibernate
+- [X] Triple check checkpoint 2: DAO is unit tested 
+- [X] Triple check checkpoint 2: Log4J is implemented
 - [ ] Triple check checkpoint 2: Class design and other diagrams created
 
 ### Week 7: Security Authentication
