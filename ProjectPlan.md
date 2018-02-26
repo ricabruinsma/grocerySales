@@ -30,31 +30,20 @@
 - [X] Research APIs and/or screen scrape technology
 
 ### Week 5: Hibernate
-- [ ] Add role entity and annotate for hibernate
-- [ ] Add role dao
-- [ ] Add role dao unit tests
-- [ ] Add role table
-- [ ] Create JSP templates using bootstrap
-- [ ] Add JSP to display user and role login
-- [ ] Add JSP to add a user
 - [X] Prepare for week 6 Design Review
-- [ ] Continue screen scrape research & begin trials
 - [X] Journal
 
 ### Week 6: AWS Deployment
-- [ ] Deploy to AWS for first time
 - [X] Complete database design
 - [ ] Create class uml diagram
-- [ ] Create store entity and annotate for hibernate
-- [ ] Create store dao
-- [ ] Create store dao unit tests
-- [ ] Create store table
-- [ ] Create db on AWS
-- [ ] Create Items table
-- [ ] Functional screen scrape to populate Items table
-- [ ] Create Search JSP
 - [X] Design Review
+- [X] Add role table to db
+- [X] Add store table to db
+- [X] Add item table to db
+- [X] Add shoppingList table to db
+- [X] Add listLine table to db
 - [ ] Journal
+
 - [ ] Triple check checkpoint 2: database designed and created
 - [X] Triple check checkpoint 2: at least one DAO implemented with Hibernate
 - [X] Triple check checkpoint 2: DAO is unit tested 
@@ -62,8 +51,20 @@
 - [ ] Triple check checkpoint 2: Class design and other diagrams created
 
 ### Week 7: Security Authentication
+- [ ] Deploy to AWS for first time
+- [ ] Create db on AWS
 - [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
+- [ ] Add role entity and annotate for hibernate
+- [ ] Add role dao unit tests
+- [ ] Create Generic DAO
+- [ ] Create store entity and annotate for hibernate
+- [ ] Create store dao unit tests
+- [ ] Create JSP templates using bootstrap
+- [ ] Add JSP to display user and role login
+- [ ] Add JSP to add a user
+- [ ] Continue screen scrape research & begin trials
+- [ ] Create Search JSP
 - [ ] Create Search Results JSP
 - [ ] Create grocery list entity and annotate for hibernate
 - [ ] Create Grocery List table
@@ -80,6 +81,7 @@
 - [ ] Triple check checkpoint 3: Authentication implemented
 
 ### Week 9: REST
+- [ ] Functional screen scrape to populate Items table
 - [ ] Create relationships between tables 
 - [ ] Test relationships
 - [ ] Team repository created
