@@ -67,7 +67,7 @@ CREATE TABLE Store (
 -- Table: User
 CREATE TABLE User (
     id int(11) NOT NULL AUTO_INCREMENT,
-    createDate timestamp NOT NULL,
+    createDate timestamp NULL,
     email varchar(255) NULL,
     firstName varchar(255) NULL,
     password varchar(255) NOT NULL,
@@ -78,7 +78,7 @@ CREATE TABLE User (
     postalCode varchar(16) NULL,
     lat decimal(9,6) NULL,
     lon decimal(9,6) NULL,
-    updateDate timestamp NOT NULL,
+    updateDate timestamp NULL,
     username varchar(255) NULL,
     UNIQUE INDEX username (username),
     CONSTRAINT User_pk PRIMARY KEY (id)

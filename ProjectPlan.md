@@ -44,7 +44,7 @@
 - [X] Add listLine table to db
 - [ ] Journal
 
-- [ ] Triple check checkpoint 2: database designed and created
+- [X] Triple check checkpoint 2: database designed and created
 - [X] Triple check checkpoint 2: at least one DAO implemented with Hibernate
 - [X] Triple check checkpoint 2: DAO is unit tested 
 - [X] Triple check checkpoint 2: Log4J is implemented
