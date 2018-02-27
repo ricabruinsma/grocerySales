@@ -12,4 +12,4 @@
 | 2/20/18| Project Review & .gitignore update | 0.5 | |
 | 2/25/18| Finalizing ERD diagram | 1.5 | |
 | 2/25/18| Building tables in db, updating User, UserDAO, UserDAOTest, implementing Lombok | 1.5 | |
-| 2/xx/18| |  | |
+| 2/27/18| UML Class diagram | 1 | |
