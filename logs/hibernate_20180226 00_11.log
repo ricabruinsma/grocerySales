@@ -1,0 +1,951 @@
+[DEBUG] 2018-02-26 00:11:08.129 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2018-02-26 00:11:08.153 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2018-02-26 00:11:08.165 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2018-02-26 00:11:08.294 [main] Version - HHH000412: Hibernate Core {5.2.12.Final}
+[INFO ] 2018-02-26 00:11:08.296 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2018-02-26 00:11:08.349 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2018-02-26 00:11:08.350 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2018-02-26 00:11:08.358 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2018-02-26 00:11:08.733 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2018-02-26 00:11:08.786 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2018-02-26 00:11:08.804 [main] Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[DEBUG] 2018-02-26 00:11:08.852 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@5340477f
+[DEBUG] 2018-02-26 00:11:08.853 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@5340477f
+[DEBUG] 2018-02-26 00:11:08.853 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@5340477f
+[DEBUG] 2018-02-26 00:11:08.855 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@28cda624
+[DEBUG] 2018-02-26 00:11:08.859 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@5c7bfdc1
+[DEBUG] 2018-02-26 00:11:08.860 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1807f5a7
+[DEBUG] 2018-02-26 00:11:08.863 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7bbc8656
+[DEBUG] 2018-02-26 00:11:08.864 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7bbc8656
+[DEBUG] 2018-02-26 00:11:08.864 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7bbc8656
+[DEBUG] 2018-02-26 00:11:08.866 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@169bb4dd
+[DEBUG] 2018-02-26 00:11:08.866 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@169bb4dd
+[DEBUG] 2018-02-26 00:11:08.868 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@169bb4dd
+[DEBUG] 2018-02-26 00:11:08.871 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@66ea810
+[DEBUG] 2018-02-26 00:11:08.871 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@66ea810
+[DEBUG] 2018-02-26 00:11:08.871 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@66ea810
+[DEBUG] 2018-02-26 00:11:08.873 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@2f953efd
+[DEBUG] 2018-02-26 00:11:08.876 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@2f953efd
+[DEBUG] 2018-02-26 00:11:08.877 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@2f953efd
+[DEBUG] 2018-02-26 00:11:08.879 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@41330d4f
+[DEBUG] 2018-02-26 00:11:08.880 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@41330d4f
+[DEBUG] 2018-02-26 00:11:08.880 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@41330d4f
+[DEBUG] 2018-02-26 00:11:08.883 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@798162bc
+[DEBUG] 2018-02-26 00:11:08.884 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@798162bc
+[DEBUG] 2018-02-26 00:11:08.884 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@798162bc
+[DEBUG] 2018-02-26 00:11:08.886 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1f9f6368
+[DEBUG] 2018-02-26 00:11:08.886 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1f9f6368
+[DEBUG] 2018-02-26 00:11:08.886 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1f9f6368
+[DEBUG] 2018-02-26 00:11:08.889 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1224144a
+[DEBUG] 2018-02-26 00:11:08.889 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1224144a
+[DEBUG] 2018-02-26 00:11:08.891 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1e16c0aa
+[DEBUG] 2018-02-26 00:11:08.891 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1e16c0aa
+[DEBUG] 2018-02-26 00:11:08.893 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@5e3f861
+[DEBUG] 2018-02-26 00:11:08.894 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@5e3f861
+[DEBUG] 2018-02-26 00:11:08.895 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@6d5620ce
+[DEBUG] 2018-02-26 00:11:08.898 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4f49f6af
+[DEBUG] 2018-02-26 00:11:08.900 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@15d49048
+[DEBUG] 2018-02-26 00:11:08.900 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@15d49048
+[DEBUG] 2018-02-26 00:11:08.902 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@17503f6b
+[DEBUG] 2018-02-26 00:11:08.902 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@17503f6b
+[DEBUG] 2018-02-26 00:11:08.924 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@7f2cfe3f
+[DEBUG] 2018-02-26 00:11:08.925 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7f2cfe3f
+[DEBUG] 2018-02-26 00:11:08.927 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6bb4dd34
+[DEBUG] 2018-02-26 00:11:08.928 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6bb4dd34
+[DEBUG] 2018-02-26 00:11:08.931 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@4a07d605
+[DEBUG] 2018-02-26 00:11:08.931 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@4a07d605
+[DEBUG] 2018-02-26 00:11:08.934 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@68878f6d
+[DEBUG] 2018-02-26 00:11:08.934 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@68878f6d
+[DEBUG] 2018-02-26 00:11:08.937 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7fd7a283
+[DEBUG] 2018-02-26 00:11:08.937 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7fd7a283
+[DEBUG] 2018-02-26 00:11:08.939 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2c78324b
+[DEBUG] 2018-02-26 00:11:08.940 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2c78324b
+[DEBUG] 2018-02-26 00:11:08.945 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6c7a164b
+[DEBUG] 2018-02-26 00:11:08.946 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6c7a164b
+[DEBUG] 2018-02-26 00:11:08.949 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@3f1d2e23
+[DEBUG] 2018-02-26 00:11:08.949 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@3f1d2e23
+[DEBUG] 2018-02-26 00:11:08.951 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@1f760b47
+[DEBUG] 2018-02-26 00:11:08.951 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1f760b47
+[DEBUG] 2018-02-26 00:11:08.953 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@4c5ae43b
+[DEBUG] 2018-02-26 00:11:08.953 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4c5ae43b
+[DEBUG] 2018-02-26 00:11:08.954 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4c5ae43b
+[DEBUG] 2018-02-26 00:11:08.956 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@35b74c5c
+[DEBUG] 2018-02-26 00:11:08.958 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@1169afe1
+[DEBUG] 2018-02-26 00:11:08.958 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1169afe1
+[DEBUG] 2018-02-26 00:11:08.958 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1169afe1
+[DEBUG] 2018-02-26 00:11:08.959 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@70e38ce1
+[DEBUG] 2018-02-26 00:11:08.961 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@1787f2a0
+[DEBUG] 2018-02-26 00:11:08.961 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1787f2a0
+[DEBUG] 2018-02-26 00:11:08.963 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@35a3d49f
+[DEBUG] 2018-02-26 00:11:08.963 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@35a3d49f
+[DEBUG] 2018-02-26 00:11:08.965 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@c667f46
+[DEBUG] 2018-02-26 00:11:08.965 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@c667f46
+[DEBUG] 2018-02-26 00:11:08.966 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@19b843ba
+[DEBUG] 2018-02-26 00:11:08.967 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@19b843ba
+[DEBUG] 2018-02-26 00:11:08.969 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3cfdd820
+[DEBUG] 2018-02-26 00:11:08.969 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3cfdd820
+[DEBUG] 2018-02-26 00:11:08.970 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@15f47664
+[DEBUG] 2018-02-26 00:11:08.972 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@a1f72f5
+[DEBUG] 2018-02-26 00:11:08.972 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@a1f72f5
+[DEBUG] 2018-02-26 00:11:08.972 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@a1f72f5
+[DEBUG] 2018-02-26 00:11:08.975 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2dc9b0f5
+[DEBUG] 2018-02-26 00:11:08.975 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2dc9b0f5
+[DEBUG] 2018-02-26 00:11:08.975 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2dc9b0f5
+[DEBUG] 2018-02-26 00:11:08.978 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@56dc1551
+[DEBUG] 2018-02-26 00:11:08.979 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@43015c69
+[DEBUG] 2018-02-26 00:11:08.981 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@2415fc55
+[DEBUG] 2018-02-26 00:11:08.981 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@2415fc55
+[DEBUG] 2018-02-26 00:11:08.982 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@2415fc55
+[DEBUG] 2018-02-26 00:11:08.984 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@cd1e646
+[DEBUG] 2018-02-26 00:11:08.985 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@cd1e646
+[DEBUG] 2018-02-26 00:11:08.985 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@cd1e646
+[DEBUG] 2018-02-26 00:11:08.986 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@2bec854f
+[DEBUG] 2018-02-26 00:11:08.988 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@205d38da
+[DEBUG] 2018-02-26 00:11:08.996 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@6f1c29b7
+[DEBUG] 2018-02-26 00:11:08.997 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6f1c29b7
+[DEBUG] 2018-02-26 00:11:08.998 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@407a7f2a
+[DEBUG] 2018-02-26 00:11:09.006 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@1b266842
+[DEBUG] 2018-02-26 00:11:09.007 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1b266842
+[DEBUG] 2018-02-26 00:11:09.076 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@329dbdbf
+[DEBUG] 2018-02-26 00:11:09.076 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@329dbdbf
+[DEBUG] 2018-02-26 00:11:09.077 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4ef782af
+[DEBUG] 2018-02-26 00:11:09.077 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@59e2d8e3
+[DEBUG] 2018-02-26 00:11:09.078 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@420a85c4
+[DEBUG] 2018-02-26 00:11:09.082 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@4e07b95f
+[DEBUG] 2018-02-26 00:11:09.082 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4e07b95f
+[DEBUG] 2018-02-26 00:11:09.083 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3b79fd76
+[DEBUG] 2018-02-26 00:11:09.083 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@48c76607
+[DEBUG] 2018-02-26 00:11:09.083 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@43599640
+[DEBUG] 2018-02-26 00:11:09.083 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1f81aa00
+[DEBUG] 2018-02-26 00:11:09.084 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6b6776cb
+[DEBUG] 2018-02-26 00:11:09.084 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1863d2fe
+[DEBUG] 2018-02-26 00:11:09.084 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1787bc24
+[DEBUG] 2018-02-26 00:11:09.084 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@544d57e
+[INFO ] 2018-02-26 00:11:09.099 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/grocerysales
+[INFO ] 2018-02-26 00:11:09.099 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {user=root, password=****}
+[INFO ] 2018-02-26 00:11:09.100 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2018-02-26 00:11:09.405 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2018-02-26 00:11:09.894 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.7.21-log
+      major : 5
+      minor : 7
+[DEBUG] 2018-02-26 00:11:09.895 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.39 ( Revision: 3289a357af6d09ecc1a10fd3c26e95183e5790ad )
+      major : 5
+      minor : 1
+[DEBUG] 2018-02-26 00:11:09.895 [main] JdbcEnvironmentInitiator - JDBC version : 4.0
+[INFO ] 2018-02-26 00:11:09.916 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[DEBUG] 2018-02-26 00:11:09.958 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2018-02-26 00:11:09.960 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2018-02-26 00:11:10.009 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2018-02-26 00:11:10.010 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2018-02-26 00:11:10.010 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2018-02-26 00:11:10.010 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2018-02-26 00:11:10.011 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2018-02-26 00:11:10.012 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2018-02-26 00:11:10.012 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2018-02-26 00:11:10.013 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2018-02-26 00:11:10.014 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2018-02-26 00:11:10.015 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2018-02-26 00:11:10.015 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2018-02-26 00:11:10.015 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2018-02-26 00:11:10.016 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2018-02-26 00:11:10.016 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[DEBUG] 2018-02-26 00:11:10.053 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2018-02-26 00:11:10.086 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.User
+[DEBUG] 2018-02-26 00:11:10.110 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2018-02-26 00:11:10.118 [main] EntityBinder - Import with entity name User
+[DEBUG] 2018-02-26 00:11:10.121 [main] EntityBinder - Bind entity edu.matc.entity.User on table user
+[DEBUG] 2018-02-26 00:11:10.145 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.148 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2018-02-26 00:11:10.150 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:id]
+[DEBUG] 2018-02-26 00:11:10.151 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2018-02-26 00:11:10.153 [main] PropertyBinder - Building property id
+[DEBUG] 2018-02-26 00:11:10.159 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=address1, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.159 [main] PropertyBinder - MetadataSourceProcessor property address1 with lazy=false
+[DEBUG] 2018-02-26 00:11:10.159 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:address1]
+[DEBUG] 2018-02-26 00:11:10.159 [main] SimpleValueBinder - building SimpleValue for address1
+[DEBUG] 2018-02-26 00:11:10.159 [main] PropertyBinder - Building property address1
+[DEBUG] 2018-02-26 00:11:10.160 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=city, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.160 [main] PropertyBinder - MetadataSourceProcessor property city with lazy=false
+[DEBUG] 2018-02-26 00:11:10.160 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:city]
+[DEBUG] 2018-02-26 00:11:10.160 [main] SimpleValueBinder - building SimpleValue for city
+[DEBUG] 2018-02-26 00:11:10.160 [main] PropertyBinder - Building property city
+[DEBUG] 2018-02-26 00:11:10.160 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.160 [main] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2018-02-26 00:11:10.161 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:email]
+[DEBUG] 2018-02-26 00:11:10.161 [main] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2018-02-26 00:11:10.161 [main] PropertyBinder - Building property email
+[DEBUG] 2018-02-26 00:11:10.161 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.162 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2018-02-26 00:11:10.162 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:password]
+[DEBUG] 2018-02-26 00:11:10.163 [main] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2018-02-26 00:11:10.163 [main] PropertyBinder - Building property password
+[DEBUG] 2018-02-26 00:11:10.163 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=postalCode, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.163 [main] PropertyBinder - MetadataSourceProcessor property postalCode with lazy=false
+[DEBUG] 2018-02-26 00:11:10.163 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:postalCode]
+[DEBUG] 2018-02-26 00:11:10.163 [main] SimpleValueBinder - building SimpleValue for postalCode
+[DEBUG] 2018-02-26 00:11:10.163 [main] PropertyBinder - Building property postalCode
+[DEBUG] 2018-02-26 00:11:10.163 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=state, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.164 [main] PropertyBinder - MetadataSourceProcessor property state with lazy=false
+[DEBUG] 2018-02-26 00:11:10.164 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:state]
+[DEBUG] 2018-02-26 00:11:10.164 [main] SimpleValueBinder - building SimpleValue for state
+[DEBUG] 2018-02-26 00:11:10.164 [main] PropertyBinder - Building property state
+[DEBUG] 2018-02-26 00:11:10.164 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.164 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2018-02-26 00:11:10.164 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.User:username]
+[DEBUG] 2018-02-26 00:11:10.164 [main] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2018-02-26 00:11:10.164 [main] PropertyBinder - Building property username
+[DEBUG] 2018-02-26 00:11:10.166 [main] AnnotationBinder - Binding entity from annotated class: edu.matc.entity.Role
+[DEBUG] 2018-02-26 00:11:10.166 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2018-02-26 00:11:10.166 [main] EntityBinder - Import with entity name Role
+[DEBUG] 2018-02-26 00:11:10.166 [main] EntityBinder - Bind entity edu.matc.entity.Role on table role
+[DEBUG] 2018-02-26 00:11:10.167 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.167 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2018-02-26 00:11:10.167 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Role:id]
+[DEBUG] 2018-02-26 00:11:10.167 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2018-02-26 00:11:10.167 [main] PropertyBinder - Building property id
+[DEBUG] 2018-02-26 00:11:10.168 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=permissions, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.168 [main] PropertyBinder - MetadataSourceProcessor property permissions with lazy=false
+[DEBUG] 2018-02-26 00:11:10.168 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Role:permissions]
+[DEBUG] 2018-02-26 00:11:10.168 [main] SimpleValueBinder - building SimpleValue for permissions
+[DEBUG] 2018-02-26 00:11:10.168 [main] PropertyBinder - Building property permissions
+[DEBUG] 2018-02-26 00:11:10.168 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=roleName, insertable=true, updatable=true, unique=false}
+[DEBUG] 2018-02-26 00:11:10.168 [main] PropertyBinder - MetadataSourceProcessor property roleName with lazy=false
+[DEBUG] 2018-02-26 00:11:10.168 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Role:roleName]
+[DEBUG] 2018-02-26 00:11:10.168 [main] SimpleValueBinder - building SimpleValue for roleName
+[DEBUG] 2018-02-26 00:11:10.168 [main] PropertyBinder - Building property roleName
+[DEBUG] 2018-02-26 00:11:10.169 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2018-02-26 00:11:10.169 [main] SimpleValueBinder - Starting fillSimpleValue for address1
+[DEBUG] 2018-02-26 00:11:10.169 [main] SimpleValueBinder - Starting fillSimpleValue for city
+[DEBUG] 2018-02-26 00:11:10.169 [main] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2018-02-26 00:11:10.169 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2018-02-26 00:11:10.170 [main] SimpleValueBinder - Starting fillSimpleValue for postalCode
+[DEBUG] 2018-02-26 00:11:10.170 [main] SimpleValueBinder - Starting fillSimpleValue for state
+[DEBUG] 2018-02-26 00:11:10.170 [main] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2018-02-26 00:11:10.170 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2018-02-26 00:11:10.170 [main] SimpleValueBinder - Starting fillSimpleValue for permissions
+[DEBUG] 2018-02-26 00:11:10.170 [main] SimpleValueBinder - Starting fillSimpleValue for roleName
+[DEBUG] 2018-02-26 00:11:10.171 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2018-02-26 00:11:10.172 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [role]
+[DEBUG] 2018-02-26 00:11:10.213 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2018-02-26 00:11:10.214 [main] Settings - SessionFactory name : null
+[DEBUG] 2018-02-26 00:11:10.214 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2018-02-26 00:11:10.214 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2018-02-26 00:11:10.214 [main] Settings - Statistics: disabled
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Default null ordering: NONE
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Query language substitutions: {}
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - JPA query language strict compliance: disabled
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Named query checking : enabled
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Second-level cache: enabled
+[DEBUG] 2018-02-26 00:11:10.215 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@3276732
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - JDBC batch size: 15
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2018-02-26 00:11:10.216 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2018-02-26 00:11:10.217 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2018-02-26 00:11:10.217 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2018-02-26 00:11:10.294 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2018-02-26 00:11:10.294 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, hibernate.c3p0.idle_test_period=3000, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, hibernate.c3p0.min_size=5, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.2\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.2\plugins\junit\lib\junit-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.2\plugins\junit\lib\junit5-rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Users\Rica\IdeaProjects\grocerySales\target\test-classes;C:\Users\Rica\IdeaProjects\grocerySales\target\classes;C:\Users\Rica\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.0.0\junit-jupiter-engine-5.0.0.jar;C:\Users\Rica\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Rica\.m2\repository\org\junit\platform\junit-platform-engine\1.0.0\junit-platform-engine-1.0.0.jar;C:\Users\Rica\.m2\repository\org\junit\platform\junit-platform-commons\1.0.0\junit-platform-commons-1.0.0.jar;C:\Users\Rica\.m2\repository\org\opentest4j\opentest4j\1.0.0\opentest4j-1.0.0.jar;C:\Users\Rica\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.0.0\junit-jupiter-api-5.0.0.jar;C:\Users\Rica\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Rica\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Rica\.m2\repository\org\junit\platform\junit-platform-runner\1.0.0\junit-platform-runner-1.0.0.jar;C:\Users\Rica\.m2\repository\org\junit\platform\junit-platform-launcher\1.0.0\junit-platform-launcher-1.0.0.jar;C:\Users\Rica\.m2\repository\org\junit\platform\junit-platform-suite-api\1.0.0\junit-platform-suite-api-1.0.0.jar;C:\Users\Rica\.m2\repository\org\junit\vintage\junit-vintage-engine\4.12.0\junit-vintage-engine-4.12.0.jar;C:\Users\Rica\.m2\repository\javax\javaee-web-api\7.0\javaee-web-api-7.0.jar;C:\Users\Rica\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\Rica\.m2\repository\org\apache\logging\log4j\log4j-core\2.10.0\log4j-core-2.10.0.jar;C:\Users\Rica\.m2\repository\org\hibernate\hibernate-core\5.2.12.Final\hibernate-core-5.2.12.Final.jar;C:\Users\Rica\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\Rica\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\Rica\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\Rica\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Rica\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.1.Final\jboss-transaction-api_1.2_spec-1.0.1.Final.jar;C:\Users\Rica\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar;C:\Users\Rica\.m2\repository\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;C:\Users\Rica\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Rica\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\Rica\.m2\repository\org\hibernate\hibernate-c3p0\5.2.12.Final\hibernate-c3p0-5.2.12.Final.jar;C:\Users\Rica\.m2\repository\com\mchange\c3p0\0.9.5.2\c3p0-0.9.5.2.jar;C:\Users\Rica\.m2\repository\com\mchange\mchange-commons-java\0.2.11\mchange-commons-java-0.2.11.jar;C:\Users\Rica\.m2\repository\mysql\mysql-connector-java\5.1.39\mysql-connector-java-5.1.39.jar;C:\Users\Rica\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;C:\Users\Rica\.m2\repository\org\projectlombok\lombok\1.16.20\lombok-1.16.20.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2017.3.2\lib\idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=America/Chicago, os.name=Windows 7, java.vm.specification.version=1.8, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_161\jre\bin, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit5 edu.matc.persistence.UserDaoTest, sun.cpu.endian=little, hibernate.c3p0.max_statements=50, user.home=C:\Users\Rica, user.language=en, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files\Java\jdk1.8.0_161\jre, file.separator=\, line.separator=
+, hibernate.c3p0.timeout=300, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes, user.script=, connection.password=dontforget, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=1.8.0_161-b12, user.name=Rica, path.separator=;, hibernate.connection.username=root, os.version=6.1, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/grocerysales, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\Rica\AppData\Local\Temp\, java.version=1.8.0_161, user.dir=C:\Users\Rica\IdeaProjects\grocerySales, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=Service Pack 1, connection.driver_class=com.mysql.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@6fefce9e, java.library.path=C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_161; C:\Program Files\Java\jre1.8.0_161;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.161-b12, hibernate.bytecode.use_reflection_optimizer=false, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/grocerysales, java.class.version=52.0}
+[DEBUG] 2018-02-26 00:11:10.322 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2018-02-26 00:11:10.322 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2018-02-26 00:11:10.324 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2018-02-26 00:11:10.394 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2018-02-26 00:11:10.394 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2018-02-26 00:11:10.424 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.User] is safe
+[DEBUG] 2018-02-26 00:11:10.424 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.User
+[DEBUG] 2018-02-26 00:11:10.507 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Role] is safe
+[DEBUG] 2018-02-26 00:11:10.507 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Role
+[DEBUG] 2018-02-26 00:11:10.508 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Role] is safe
+[DEBUG] 2018-02-26 00:11:10.508 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Role
+[DEBUG] 2018-02-26 00:11:10.521 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.User
+[DEBUG] 2018-02-26 00:11:10.521 [main] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2018-02-26 00:11:10.521 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.address1 as address2_1_, user_.city as city3_1_, user_.email as email4_1_, user_.password as password5_1_, user_.postalCode as postalCo6_1_, user_.state as state7_1_, user_.username as username8_1_ from user user_ where user_.id=?
+[DEBUG] 2018-02-26 00:11:10.521 [main] AbstractEntityPersister -  Insert 0: insert into user (address1, city, email, password, postalCode, state, username, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-02-26 00:11:10.521 [main] AbstractEntityPersister -  Update 0: update user set address1=?, city=?, email=?, password=?, postalCode=?, state=?, username=? where id=?
+[DEBUG] 2018-02-26 00:11:10.521 [main] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2018-02-26 00:11:10.521 [main] AbstractEntityPersister -  Identity insert: insert into user (address1, city, email, password, postalCode, state, username) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-02-26 00:11:10.550 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@74a9c4b0]
+[DEBUG] 2018-02-26 00:11:10.552 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.552 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.552 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.552 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.552 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.552 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.552 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.552 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.571 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.578 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.581 [main] EntityLoader - Static select for entity edu.matc.entity.User [NONE]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:10.581 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@273c947f]
+[DEBUG] 2018-02-26 00:11:10.581 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.581 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.581 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.581 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.581 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.581 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.582 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.582 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.582 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.582 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.582 [main] EntityLoader - Static select for entity edu.matc.entity.User [READ]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:10.582 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1af1347d]
+[DEBUG] 2018-02-26 00:11:10.583 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.583 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.583 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.583 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.583 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.583 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.583 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.583 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.583 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.584 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.584 [main] EntityLoader - Static select for entity edu.matc.entity.User [UPGRADE]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.584 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@20765ed5]
+[DEBUG] 2018-02-26 00:11:10.584 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.584 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.584 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.584 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.584 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.584 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.584 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.584 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.585 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.585 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.585 [main] EntityLoader - Static select for entity edu.matc.entity.User [UPGRADE_NOWAIT]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.585 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2899a8db]
+[DEBUG] 2018-02-26 00:11:10.585 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.585 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.585 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.586 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.586 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.586 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.586 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.586 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.586 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.586 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.586 [main] EntityLoader - Static select for entity edu.matc.entity.User [UPGRADE_SKIPLOCKED]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.587 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c1a4620]
+[DEBUG] 2018-02-26 00:11:10.587 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.587 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.587 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.587 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.587 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.587 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.587 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.587 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.587 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.588 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.588 [main] EntityLoader - Static select for entity edu.matc.entity.User [FORCE]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.588 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@130a0f66]
+[DEBUG] 2018-02-26 00:11:10.588 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.588 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.588 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.588 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.588 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.588 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.588 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.588 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.589 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.589 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.589 [main] EntityLoader - Static select for entity edu.matc.entity.User [PESSIMISTIC_READ]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=? lock in share mode
+[DEBUG] 2018-02-26 00:11:10.589 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@12365c88]
+[DEBUG] 2018-02-26 00:11:10.589 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.589 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.589 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.589 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.589 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.589 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.589 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.589 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.590 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.590 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.590 [main] EntityLoader - Static select for entity edu.matc.entity.User [PESSIMISTIC_WRITE]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.590 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2237bada]
+[DEBUG] 2018-02-26 00:11:10.590 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.590 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.590 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.590 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.590 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.590 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.590 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.590 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.591 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.591 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.591 [main] EntityLoader - Static select for entity edu.matc.entity.User [PESSIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.591 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5710768a]
+[DEBUG] 2018-02-26 00:11:10.591 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.591 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.591 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.591 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.591 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.592 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.592 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.592 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.592 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.592 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.592 [main] EntityLoader - Static select for entity edu.matc.entity.User [OPTIMISTIC]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:10.592 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6e0d4a8]
+[DEBUG] 2018-02-26 00:11:10.592 [main] MetamodelGraphWalker - Visiting attribute path : address1
+[DEBUG] 2018-02-26 00:11:10.592 [main] MetamodelGraphWalker - Visiting attribute path : city
+[DEBUG] 2018-02-26 00:11:10.592 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2018-02-26 00:11:10.592 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2018-02-26 00:11:10.592 [main] MetamodelGraphWalker - Visiting attribute path : postalCode
+[DEBUG] 2018-02-26 00:11:10.593 [main] MetamodelGraphWalker - Visiting attribute path : state
+[DEBUG] 2018-02-26 00:11:10.593 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2018-02-26 00:11:10.593 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.593 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.593 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.User, querySpaceUid=<gen:0>, path=edu.matc.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2018-02-26 00:11:10.593 [main] EntityLoader - Static select for entity edu.matc.entity.User [OPTIMISTIC_FORCE_INCREMENT]: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:10.614 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.User: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:10.614 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.User: select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:10.615 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Role
+[DEBUG] 2018-02-26 00:11:10.615 [main] AbstractEntityPersister -  Version select: select id from role where id =?
+[DEBUG] 2018-02-26 00:11:10.615 [main] AbstractEntityPersister -  Snapshot select: select role_.id, role_.permissions as permissi2_0_, role_.roleName as roleName3_0_ from role role_ where role_.id=?
+[DEBUG] 2018-02-26 00:11:10.615 [main] AbstractEntityPersister -  Insert 0: insert into role (permissions, roleName, id) values (?, ?, ?)
+[DEBUG] 2018-02-26 00:11:10.615 [main] AbstractEntityPersister -  Update 0: update role set permissions=?, roleName=? where id=?
+[DEBUG] 2018-02-26 00:11:10.615 [main] AbstractEntityPersister -  Delete 0: delete from role where id=?
+[DEBUG] 2018-02-26 00:11:10.615 [main] AbstractEntityPersister -  Identity insert: insert into role (permissions, roleName) values (?, ?)
+[DEBUG] 2018-02-26 00:11:10.615 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4d666b41]
+[DEBUG] 2018-02-26 00:11:10.615 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.615 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.616 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.616 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.616 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.616 [main] EntityLoader - Static select for entity edu.matc.entity.Role [NONE]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2018-02-26 00:11:10.616 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@30f4b1a6]
+[DEBUG] 2018-02-26 00:11:10.617 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.617 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.617 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.617 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.617 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.618 [main] EntityLoader - Static select for entity edu.matc.entity.Role [READ]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2018-02-26 00:11:10.618 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3e1162e7]
+[DEBUG] 2018-02-26 00:11:10.618 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.618 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.618 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.618 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.618 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.618 [main] EntityLoader - Static select for entity edu.matc.entity.Role [UPGRADE]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.619 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6c2f1700]
+[DEBUG] 2018-02-26 00:11:10.619 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.619 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.619 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.619 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.620 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.620 [main] EntityLoader - Static select for entity edu.matc.entity.Role [UPGRADE_NOWAIT]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.620 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@38600b]
+[DEBUG] 2018-02-26 00:11:10.620 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.620 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.620 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.620 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.621 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.621 [main] EntityLoader - Static select for entity edu.matc.entity.Role [UPGRADE_SKIPLOCKED]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.621 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@721eb7df]
+[DEBUG] 2018-02-26 00:11:10.621 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.621 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.621 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.622 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.622 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.622 [main] EntityLoader - Static select for entity edu.matc.entity.Role [FORCE]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.622 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5d52e3ef]
+[DEBUG] 2018-02-26 00:11:10.622 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.622 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.622 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.623 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.623 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.623 [main] EntityLoader - Static select for entity edu.matc.entity.Role [PESSIMISTIC_READ]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=? lock in share mode
+[DEBUG] 2018-02-26 00:11:10.624 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@553f3b6e]
+[DEBUG] 2018-02-26 00:11:10.624 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.624 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.624 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.624 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.625 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.625 [main] EntityLoader - Static select for entity edu.matc.entity.Role [PESSIMISTIC_WRITE]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.625 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4e406694]
+[DEBUG] 2018-02-26 00:11:10.625 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.625 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.625 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.625 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.626 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.626 [main] EntityLoader - Static select for entity edu.matc.entity.Role [PESSIMISTIC_FORCE_INCREMENT]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=? for update
+[DEBUG] 2018-02-26 00:11:10.626 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76f10035]
+[DEBUG] 2018-02-26 00:11:10.626 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.626 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.626 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.627 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.627 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.627 [main] EntityLoader - Static select for entity edu.matc.entity.Role [OPTIMISTIC]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2018-02-26 00:11:10.627 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2b50150]
+[DEBUG] 2018-02-26 00:11:10.628 [main] MetamodelGraphWalker - Visiting attribute path : permissions
+[DEBUG] 2018-02-26 00:11:10.628 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2018-02-26 00:11:10.628 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2018-02-26 00:11:10.628 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2018-02-26 00:11:10.628 [main] LoadPlanTreePrinter - LoadPlan(entity=edu.matc.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=edu.matc.entity.Role, querySpaceUid=<gen:0>, path=edu.matc.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=edu.matc.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2018-02-26 00:11:10.629 [main] EntityLoader - Static select for entity edu.matc.entity.Role [OPTIMISTIC_FORCE_INCREMENT]: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2018-02-26 00:11:10.629 [main] Loader - Static select for action ACTION_MERGE on entity edu.matc.entity.Role: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2018-02-26 00:11:10.629 [main] Loader - Static select for action ACTION_REFRESH on entity edu.matc.entity.Role: select role0_.id as id1_0_0_, role0_.permissions as permissi2_0_0_, role0_.roleName as roleName3_0_0_ from role role0_ where role0_.id=?
+[DEBUG] 2018-02-26 00:11:10.663 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2018-02-26 00:11:10.663 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2018-02-26 00:11:10.664 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2018-02-26 00:11:10.672 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2018-02-26 00:11:10.675 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2018-02-26 00:11:10.675 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2018-02-26 00:11:10.678 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@304a9d7b
+[DEBUG] 2018-02-26 00:11:10.681 [main] SessionFactoryRegistry - Registering SessionFactory: 001fb49c-d589-47f4-bd2e-98998d7e9c9c (<unnamed>)
+[DEBUG] 2018-02-26 00:11:10.681 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2018-02-26 00:11:10.843 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2018-02-26 00:11:10.871 [main] SQL - select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:10.916 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2018-02-26 00:11:10.918 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2018-02-26 00:11:10.934 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#3]
+[DEBUG] 2018-02-26 00:11:10.941 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#3]
+[DEBUG] 2018-02-26 00:11:10.941 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-02-26 00:11:10.942 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#3
+[DEBUG] 2018-02-26 00:11:10.942 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:10.948 [main] TransactionImpl - begin
+[DEBUG] 2018-02-26 00:11:10.966 [main] TransactionImpl - committing
+[DEBUG] 2018-02-26 00:11:10.967 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2018-02-26 00:11:10.967 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2018-02-26 00:11:10.971 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2018-02-26 00:11:10.972 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2018-02-26 00:11:10.974 [main] EntityPrinter - Listing entities:
+[DEBUG] 2018-02-26 00:11:10.974 [main] EntityPrinter - edu.matc.entity.User{password=supersecret3, city=Madison, address1=211 N. Carroll St., postalCode=53703, id=3, state=WI, email=testUser2@madisoncollege.edu, username=testUser2}
+[DEBUG] 2018-02-26 00:11:10.986 [main] SQL - delete from user where id=?
+[DEBUG] 2018-02-26 00:11:10.994 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:10.995 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:10.995 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2018-02-26 00:11:10.996 [main] SQL - select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:10.998 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-02-26 00:11:10.998 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#3
+[DEBUG] 2018-02-26 00:11:10.998 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.084 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.username=:param0
+[DEBUG] 2018-02-26 00:11:11.111 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@2abc224d
+[INFO ] 2018-02-26 00:11:11.111 [main] QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[DEBUG] 2018-02-26 00:11:11.179 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.username=:param0
+[DEBUG] 2018-02-26 00:11:11.189 [main] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2018-02-26 00:11:11.193 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'edu'
+    |  |     |  |  |  \-[IDENT] Node: 'matc'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'username'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2018-02-26 00:11:11.244 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2018-02-26 00:11:11.263 [main] FromElement - FromClause{level=1} : edu.matc.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2018-02-26 00:11:11.264 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2018-02-26 00:11:11.269 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2018-02-26 00:11:11.270 [main] DotNode - getDataType() : username -> org.hibernate.type.StringType@5e3f861
+[DEBUG] 2018-02-26 00:11:11.272 [main] FromReferenceNode - Resolved : generatedAlias0.username -> user0_.username
+[DEBUG] 2018-02-26 00:11:11.274 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2018-02-26 00:11:11.274 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) ( where ( = ( user0_.username user0_.id username ) ? ) ) )
+[DEBUG] 2018-02-26 00:11:11.286 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2018-02-26 00:11:11.286 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2018-02-26 00:11:11.287 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_1_' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.address1 as address2_1_, user0_.city as city3_1_, user0_.email as email4_1_, user0_.password as password5_1_, user0_.postalCode as postalCo6_1_, user0_.state as state7_1_, user0_.username as username8_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=edu.matc.entity.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'user0_.username' {propertyName=username,dereferenceType=PRIMITIVE,getPropertyPath=username,path=generatedAlias0.username,tableAlias=user0_,className=edu.matc.entity.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'username' {originalText=username}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@5e3f861}
+
+[DEBUG] 2018-02-26 00:11:11.287 [main] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2018-02-26 00:11:11.298 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.username=:param0
+[DEBUG] 2018-02-26 00:11:11.298 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_1_, user0_.address1 as address2_1_, user0_.city as city3_1_, user0_.email as email4_1_, user0_.password as password5_1_, user0_.postalCode as postalCo6_1_, user0_.state as state7_1_, user0_.username as username8_1_ from user user0_ where user0_.username=?
+[DEBUG] 2018-02-26 00:11:11.298 [main] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2018-02-26 00:11:11.324 [main] SQL - select user0_.id as id1_1_, user0_.address1 as address2_1_, user0_.city as city3_1_, user0_.email as email4_1_, user0_.password as password5_1_, user0_.postalCode as postalCo6_1_, user0_.state as state7_1_, user0_.username as username8_1_ from user user0_ where user0_.username=?
+[DEBUG] 2018-02-26 00:11:11.328 [main] Loader - Result set row: 0
+[DEBUG] 2018-02-26 00:11:11.329 [main] Loader - Result row: EntityKey[edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.330 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.330 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.333 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.364 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2018-02-26 00:11:11.365 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2018-02-26 00:11:11.366 [main] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2018-02-26 00:11:11.367 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'edu'
+    |  |     |  |  |  \-[IDENT] Node: 'matc'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[LIKE] Node: 'like'
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'username'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2018-02-26 00:11:11.367 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2018-02-26 00:11:11.367 [main] FromElement - FromClause{level=1} : edu.matc.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2018-02-26 00:11:11.368 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2018-02-26 00:11:11.368 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2018-02-26 00:11:11.368 [main] DotNode - getDataType() : username -> org.hibernate.type.StringType@5e3f861
+[DEBUG] 2018-02-26 00:11:11.370 [main] FromReferenceNode - Resolved : generatedAlias0.username -> user0_.username
+[DEBUG] 2018-02-26 00:11:11.374 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2018-02-26 00:11:11.375 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) ( where ( like ( user0_.username user0_.id username ) ? ) ) )
+[DEBUG] 2018-02-26 00:11:11.375 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2018-02-26 00:11:11.375 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2018-02-26 00:11:11.376 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_1_' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.address1 as address2_1_, user0_.city as city3_1_, user0_.email as email4_1_, user0_.password as password5_1_, user0_.postalCode as postalCo6_1_, user0_.state as state7_1_, user0_.username as username8_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=edu.matc.entity.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[LIKE] BinaryLogicOperatorNode: 'like'
+          +-[DOT] DotNode: 'user0_.username' {propertyName=username,dereferenceType=PRIMITIVE,getPropertyPath=username,path=generatedAlias0.username,tableAlias=user0_,className=edu.matc.entity.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'username' {originalText=username}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@5e3f861}
+
+[DEBUG] 2018-02-26 00:11:11.376 [main] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2018-02-26 00:11:11.376 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2018-02-26 00:11:11.376 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_1_, user0_.address1 as address2_1_, user0_.city as city3_1_, user0_.email as email4_1_, user0_.password as password5_1_, user0_.postalCode as postalCo6_1_, user0_.state as state7_1_, user0_.username as username8_1_ from user user0_ where user0_.username like ?
+[DEBUG] 2018-02-26 00:11:11.376 [main] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2018-02-26 00:11:11.377 [main] SQL - select user0_.id as id1_1_, user0_.address1 as address2_1_, user0_.city as city3_1_, user0_.email as email4_1_, user0_.password as password5_1_, user0_.postalCode as postalCo6_1_, user0_.state as state7_1_, user0_.username as username8_1_ from user user0_ where user0_.username like ?
+[DEBUG] 2018-02-26 00:11:11.379 [main] Loader - Result set row: 0
+[DEBUG] 2018-02-26 00:11:11.379 [main] Loader - Result row: EntityKey[edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.379 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.380 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.380 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.404 [main] SQL - select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:11.406 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2018-02-26 00:11:11.406 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2018-02-26 00:11:11.406 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.407 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.407 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-02-26 00:11:11.407 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#1
+[DEBUG] 2018-02-26 00:11:11.407 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.567 [main] SQL - select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:11.569 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2018-02-26 00:11:11.569 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2018-02-26 00:11:11.569 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.570 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.570 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-02-26 00:11:11.570 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#1
+[DEBUG] 2018-02-26 00:11:11.570 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.575 [main] TransactionImpl - begin
+[DEBUG] 2018-02-26 00:11:11.578 [main] TransactionImpl - committing
+[DEBUG] 2018-02-26 00:11:11.578 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2018-02-26 00:11:11.578 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2018-02-26 00:11:11.579 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+[DEBUG] 2018-02-26 00:11:11.580 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2018-02-26 00:11:11.580 [main] EntityPrinter - Listing entities:
+[DEBUG] 2018-02-26 00:11:11.580 [main] EntityPrinter - edu.matc.entity.User{password=supersecret1, city=Madison, address1=1701 Wright St., postalCode=53704, id=1, state=WI, email=rbruinsma@madisoncollege.edu, username=newUser}
+[DEBUG] 2018-02-26 00:11:11.580 [main] SQL - update user set address1=?, city=?, email=?, password=?, postalCode=?, state=?, username=? where id=?
+[DEBUG] 2018-02-26 00:11:11.585 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.585 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.585 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2018-02-26 00:11:11.586 [main] SQL - select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:11.586 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2018-02-26 00:11:11.586 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2018-02-26 00:11:11.587 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.587 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.587 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-02-26 00:11:11.587 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#1
+[DEBUG] 2018-02-26 00:11:11.587 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.604 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[DEBUG] 2018-02-26 00:11:11.604 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0
+[DEBUG] 2018-02-26 00:11:11.605 [main] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2018-02-26 00:11:11.605 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'edu'
+       |     |  |  |  \-[IDENT] Node: 'matc'
+       |     |  |  \-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'User'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2018-02-26 00:11:11.605 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2018-02-26 00:11:11.606 [main] FromElement - FromClause{level=1} : edu.matc.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2018-02-26 00:11:11.606 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2018-02-26 00:11:11.606 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2018-02-26 00:11:11.606 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} user user0_ ) )
+[DEBUG] 2018-02-26 00:11:11.606 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2018-02-26 00:11:11.607 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2018-02-26 00:11:11.607 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_1_' {alias=generatedAlias0, className=edu.matc.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.address1 as address2_1_, user0_.city as city3_1_, user0_.email as email4_1_, user0_.password as password5_1_, user0_.postalCode as postalCo6_1_, user0_.state as state7_1_, user0_.username as username8_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=edu.matc.entity.User}}
+
+[DEBUG] 2018-02-26 00:11:11.607 [main] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2018-02-26 00:11:11.607 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from edu.matc.entity.User as generatedAlias0
+[DEBUG] 2018-02-26 00:11:11.607 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_1_, user0_.address1 as address2_1_, user0_.city as city3_1_, user0_.email as email4_1_, user0_.password as password5_1_, user0_.postalCode as postalCo6_1_, user0_.state as state7_1_, user0_.username as username8_1_ from user user0_
+[DEBUG] 2018-02-26 00:11:11.607 [main] ErrorCounter - throwQueryException() : no errors
+[DEBUG] 2018-02-26 00:11:11.608 [main] SQL - select user0_.id as id1_1_, user0_.address1 as address2_1_, user0_.city as city3_1_, user0_.email as email4_1_, user0_.password as password5_1_, user0_.postalCode as postalCo6_1_, user0_.state as state7_1_, user0_.username as username8_1_ from user user0_
+[DEBUG] 2018-02-26 00:11:11.613 [main] Loader - Result set row: 0
+[DEBUG] 2018-02-26 00:11:11.614 [main] Loader - Result row: EntityKey[edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.614 [main] Loader - Result set row: 1
+[DEBUG] 2018-02-26 00:11:11.614 [main] Loader - Result row: EntityKey[edu.matc.entity.User#2]
+[DEBUG] 2018-02-26 00:11:11.614 [main] Loader - Result set row: 2
+[DEBUG] 2018-02-26 00:11:11.615 [main] Loader - Result row: EntityKey[edu.matc.entity.User#3]
+[DEBUG] 2018-02-26 00:11:11.615 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.615 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#1]
+[DEBUG] 2018-02-26 00:11:11.615 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#2]
+[DEBUG] 2018-02-26 00:11:11.615 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#2]
+[DEBUG] 2018-02-26 00:11:11.615 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#3]
+[DEBUG] 2018-02-26 00:11:11.615 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#3]
+[DEBUG] 2018-02-26 00:11:11.616 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.636 [main] TransactionImpl - begin
+[DEBUG] 2018-02-26 00:11:11.642 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2018-02-26 00:11:11.643 [main] SQL - insert into user (address1, city, email, password, postalCode, state, username) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2018-02-26 00:11:11.647 [main] IdentifierGeneratorHelper - Natively generated identity: 4
+[DEBUG] 2018-02-26 00:11:11.647 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-02-26 00:11:11.648 [main] TransactionImpl - committing
+[DEBUG] 2018-02-26 00:11:11.648 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2018-02-26 00:11:11.648 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2018-02-26 00:11:11.648 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2018-02-26 00:11:11.648 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2018-02-26 00:11:11.648 [main] EntityPrinter - Listing entities:
+[DEBUG] 2018-02-26 00:11:11.648 [main] EntityPrinter - edu.matc.entity.User{password=superSecret4, city=Madison, address1=111 Main St., postalCode=53701, id=4, state=WI, email=test4@gmail.com, username=testUser4}
+[DEBUG] 2018-02-26 00:11:11.651 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.651 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2018-02-26 00:11:11.652 [main] SQL - select user0_.id as id1_1_0_, user0_.address1 as address2_1_0_, user0_.city as city3_1_0_, user0_.email as email4_1_0_, user0_.password as password5_1_0_, user0_.postalCode as postalCo6_1_0_, user0_.state as state7_1_0_, user0_.username as username8_1_0_ from user user0_ where user0_.id=?
+[DEBUG] 2018-02-26 00:11:11.653 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2018-02-26 00:11:11.653 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2018-02-26 00:11:11.654 [main] TwoPhaseLoad - Resolving associations for [edu.matc.entity.User#4]
+[DEBUG] 2018-02-26 00:11:11.654 [main] TwoPhaseLoad - Done materializing entity [edu.matc.entity.User#4]
+[DEBUG] 2018-02-26 00:11:11.654 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2018-02-26 00:11:11.654 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : edu.matc.entity.User#4
+[DEBUG] 2018-02-26 00:11:11.654 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

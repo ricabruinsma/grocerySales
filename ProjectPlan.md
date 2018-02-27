@@ -42,7 +42,7 @@
 - [X] Add item table to db
 - [X] Add shoppingList table to db
 - [X] Add listLine table to db
-- [ ] Journal
+- [X] Journal
 
 - [X] Triple check checkpoint 2: database designed and created
 - [X] Triple check checkpoint 2: at least one DAO implemented with Hibernate
