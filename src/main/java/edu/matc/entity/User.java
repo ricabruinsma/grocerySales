@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Entity(name = "User")
 @Table(name = "user")
 public class User {
-
+    @Getter @Setter private String createDate;
     @Getter @Setter private String email;
 
     @Getter @Setter private String password;
