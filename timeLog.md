@@ -13,3 +13,4 @@
 | 2/25/18| Finalizing ERD diagram | 1.5 | |
 | 2/25/18| Building tables in db, updating User, UserDAO, UserDAOTest, implementing Lombok | 1.5 | |
 | 2/27/18| UML Class diagram | 1 | |
+| 2/28/18| Editing UML Class diagram | 0.5 | |
