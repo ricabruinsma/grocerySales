@@ -51,29 +51,31 @@
 - [X] Triple check checkpoint 2: Class design and other diagrams created
 
 ### Week 7: Security Authentication
+- [X] Set up authentication locally
+- [X] Add role entity and annotate for hibernate
+- [X] Create Generic DAO
+- [X] Continue screen scrape research
+- [X] Review and Incorporate feedback from checkpoint 2
+- [X] Journal
+
+### Week 8: Web Services (SOAP) 
 - [ ] Deploy to AWS for first time
 - [ ] Create db on AWS
-- [ ] Set up authentication locally
 - [ ] Set up authentication on AWS
-- [ ] Add role entity and annotate for hibernate
 - [ ] Add role dao unit tests
-- [ ] Create Generic DAO
 - [ ] Create store entity and annotate for hibernate
 - [ ] Create store dao unit tests
 - [ ] Create JSP templates using bootstrap
 - [ ] Add JSP to display user and role login
 - [ ] Add JSP to add a user
-- [X] Continue screen scrape research & begin trials
+- [ ] Continue screen scrape research & begin trials
 - [ ] Create Search JSP
 - [ ] Create Search Results JSP
 - [ ] Create grocery list entity and annotate for hibernate
 - [ ] Create Grocery List table
 - [ ] Create Grocery List dao test
 - [ ] Create Grocery List JSP
-- [X] Review and Incorporate feedback from checkpoint 2
-- [X] Journal
 
-### Week 8: Web Services (SOAP) 
 - [ ] Sign up for team project
 - [ ] Journal
 - [ ] Triple check checkpoint 3: Deployed to AWS
