@@ -5,6 +5,7 @@ import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * A class to represent a user
@@ -16,6 +17,7 @@ import javax.persistence.*;
 public class User {
     @Getter @Setter private String createDate;
     @Getter @Setter private String email;
+    @Getter @Setter private String firstName;
 
     @Getter @Setter private String password;
     @Getter @Setter private String username;
@@ -39,22 +41,12 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param email    the email
      * @param password the password
      * @param username the username
-     * @param address1  the address
-     * @param city     the city
-     * @param state    the state
-     * @param postalCode      the zip
      */
-    public User(String email, String password, String username, String address1, String city, String state, String postalCode) {
-        this.email = email;
+    public User(String password, String username) {
         this.password = password;
         this.username = username;
-        this.address1 = address1;
-        this.city = city;
-        this.state = state;
-        this.postalCode = postalCode;
     }
 
     @Override
@@ -63,5 +55,21 @@ public class User {
                 "userid='" + id + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id &&
+                Objects.equals(password, user.password) &&
+                Objects.equals(username, user.username);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(email, password, username, id);
     }
 }
