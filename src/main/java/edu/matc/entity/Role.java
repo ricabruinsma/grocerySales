@@ -1,8 +1,11 @@
 package edu.matc.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 /**
  * A class to represent a user role
@@ -11,13 +14,15 @@ import javax.persistence.*;
 @Table(name = "role")
 public class Role {
 
-    private String roleName;
-    private String permissions;
+    @Getter @Setter private String name;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
-    private int id;
+    @Getter @Setter private int id;
+
+    @Getter @Setter private LocalDateTime createDate;
+    @Getter @Setter private LocalDateTime updateDate;
 
     /**
      * Instantiates a new Role.
@@ -25,56 +30,8 @@ public class Role {
     public Role() {
     }
 
-    /**
-     * Gets role name.
-     *
-     * @return the role name
-     */
-    public String getRoleName() {
-        return roleName;
-    }
 
-    /**
-     * Sets role name.
-     *
-     * @param roleName the role name
-     */
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
-    }
-
-    /**
-     * Gets id.
-     *
-     * @return the id
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * Sets id.
-     *
-     * @param id the id
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getPermissions() {
-        return permissions;
-    }
-
-    public void setPermissions(String permissions) {
-        this.permissions = permissions;
-    }
-
-    @Override
-    public String toString() {
-        return "Role{" +
-                "roleid='" + id + '\'' +
-                ", roleName='" + roleName + '\'' +
-                ", permissions='" + permissions + '\'' +
-                '}';
-    }
+    @ManyToOne
+    @JoinColumn(name="username", referencedColumnName = "username", nullable = false)
+    @Getter @Setter User user;
 }
