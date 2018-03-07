@@ -63,15 +63,15 @@
 - [ ] Create JSP templates using bootstrap
 - [ ] Add JSP to display user and role login
 - [ ] Add JSP to add a user
-- [ ] Continue screen scrape research & begin trials
+- [X] Continue screen scrape research & begin trials
 - [ ] Create Search JSP
 - [ ] Create Search Results JSP
 - [ ] Create grocery list entity and annotate for hibernate
 - [ ] Create Grocery List table
-- [ ] Create Grocery List dao
+- [ ] Create Grocery List dao test
 - [ ] Create Grocery List JSP
-- [ ] Review and Incorporate feedback from checkpoint 2
-- [ ] Journal
+- [X] Review and Incorporate feedback from checkpoint 2
+- [X] Journal
 
 ### Week 8: Web Services (SOAP) 
 - [ ] Sign up for team project
