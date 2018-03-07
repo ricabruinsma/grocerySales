@@ -15,3 +15,4 @@
 | 2/27/18| UML Class diagram | 1 | |
 | 2/28/18| Editing UML Class diagram | 0.5 | |
 | 3/06/18| looking up JSoup and screen scrape research | 1 | |
+| 3/06/18| implementing generic dao, dot equals, auth | 2 | |
