@@ -117,3 +117,5 @@
 [DEBUG] 2018-03-20 20:16:05.666 [main] GenericDao - Searching for entity with username = bruin
 [DEBUG] 2018-03-20 20:29:17.486 [main] GenericDao - Searching for entity with username = rbruinsma
 [DEBUG] 2018-03-20 20:29:17.830 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-03-20 20:41:57.554 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-03-20 20:41:57.909 [main] GenericDao - Searching for entity with username = bruin

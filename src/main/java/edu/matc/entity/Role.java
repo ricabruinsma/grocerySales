@@ -32,6 +32,9 @@ public class Role {
 
 
     @ManyToOne
-    @JoinColumn(name="username", referencedColumnName = "username", nullable = false)
+    @JoinColumns(value = {
+            @JoinColumn(name="username", referencedColumnName = "username", nullable = false),
+            @JoinColumn(name="user_id", referencedColumnName = "id", nullable = false) })
     @Getter @Setter User user;
+
 }
