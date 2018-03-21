@@ -28,9 +28,14 @@ public class User {
     @Getter @Setter private int id;
 
     @Getter @Setter private String address1;
+    @Getter @Setter private String address2;
     @Getter @Setter private String city;
     @Getter @Setter private String state;
     @Getter @Setter private String postalCode;
+
+    @Getter @Setter private double lat;
+    @Getter @Setter private double lon;
+    @Getter @Setter private String updateDate;
 
     /**
      * Instantiates a new User.
