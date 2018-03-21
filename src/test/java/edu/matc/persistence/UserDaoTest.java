@@ -18,7 +18,6 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 class UserDaoTest {
 
     GenericDao userDao;
-   // UserDao dao;
 
     /**
      * Creating the dao.
