@@ -86,3 +86,30 @@
 [DEBUG] 2018-03-06 20:53:31.263 [main] GenericDao - Searching for entity with username = bruin
 [DEBUG] 2018-03-20 02:25:03.158 [main] GenericDao - Searching for entity with username = rbruinsma
 [DEBUG] 2018-03-20 02:25:03.584 [main] GenericDao - Searching for entity with username = bruin
+[ERROR] 2018-03-20 15:55:03.143 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 15:55:05.528 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 15:55:05.528 [main] GenericDao - Searching for entity with username = rbruinsma
+[ERROR] 2018-03-20 15:55:05.838 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 15:55:05.838 [main] GenericDao - Searching for entity with username = bruin
+[ERROR] 2018-03-20 15:55:05.848 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 15:55:05.878 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 15:55:05.900 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-03-20 15:55:05.910 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-03-20 16:00:00.436 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-03-20 16:00:00.848 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-03-20 17:12:00.807 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-03-20 17:12:01.139 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-03-20 17:13:02.840 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-03-20 17:13:03.229 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-03-20 17:14:59.920 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-03-20 17:15:00.252 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-03-20 17:16:11.213 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-03-20 17:16:11.623 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-03-20 17:17:17.770 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-03-20 17:17:18.178 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-03-20 17:19:22.175 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-03-20 17:19:22.514 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-03-20 18:52:12.222 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-03-20 18:52:12.536 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-03-20 19:14:31.385 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-03-20 19:14:31.694 [main] GenericDao - Searching for entity with username = bruin

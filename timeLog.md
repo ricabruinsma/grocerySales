@@ -18,7 +18,7 @@
 | 3/06/18| implementing generic dao, dot equals, auth | 2 | |
 | 3/07/18| grocery website research | 0.5 | |
 | 3/20/18| AWS - created database & tables mirroring local | 0.5 | |
-| 3/xx/18|  | | |
+| 3/20/18| AWS - getting authentication working | 3 | |
 | 3/xx/18|  | | |
 | 3/xx/18|  | | |
 | 3/xx/18|  | | |
