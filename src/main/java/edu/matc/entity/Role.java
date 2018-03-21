@@ -21,8 +21,8 @@ public class Role {
     @GenericGenerator(name = "native", strategy = "native")
     @Getter @Setter private int id;
 
-    @Getter @Setter private LocalDateTime createDate;
-    @Getter @Setter private LocalDateTime updateDate;
+    @Getter @Setter private String createDate;
+    @Getter @Setter private String updateDate;
 
     /**
      * Instantiates a new Role.
