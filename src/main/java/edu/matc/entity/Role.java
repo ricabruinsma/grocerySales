@@ -24,17 +24,20 @@ public class Role {
     @Getter @Setter private String createDate;
     @Getter @Setter private String updateDate;
 
-    /**
-     * Instantiates a new Role.
-     */
-    public Role() {
-    }
-
-
     @ManyToOne
     @JoinColumns(value = {
             @JoinColumn(name="username", referencedColumnName = "username", nullable = false),
             @JoinColumn(name="user_id", referencedColumnName = "id", nullable = false) })
     @Getter @Setter User user;
 
+    /**
+     * Instantiates a new Role.
+     */
+    public Role() {
+    }
+
+    public Role(String name, User user) {
+        this.name = name;
+        this.user = user;
+    }
 }
