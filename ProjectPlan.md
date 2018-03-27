@@ -61,6 +61,7 @@
 ### Week 8: Web Services (SOAP) 
 - [X] Deploy to AWS for first time
 - [X] Create db on AWS
+- [X] Create relationships between tables 
 - [X] Set up authentication on AWS
 
 - [X] Sign up for team project
@@ -70,29 +71,27 @@
 - [X] Triple check checkpoint 3: Authentication implemented
 
 ### Week 9: REST
+- [X] Continue screen scrape research & begin trials
+- [X] Team repository created
+- [X] Review and incorporate feedback from checkpoint 3
+- [X] Journal
+
+### Week 10 - work week
+- [ ] Team Project work items
 - [ ] Add role dao unit tests
 - [ ] Create store entity and annotate for hibernate
 - [ ] Create store dao unit tests
 - [ ] Create JSP templates using bootstrap
 - [ ] Add JSP to display user and role login
 - [ ] Add JSP to add a user
-- [ ] Continue screen scrape research & begin trials
 - [ ] Create Search JSP
 - [ ] Create Search Results JSP
 - [ ] Create grocery list entity and annotate for hibernate
 - [ ] Create Grocery List table
 - [ ] Create Grocery List dao test
 - [ ] Create Grocery List JSP
-
-- [ ] Create relationships between tables 
 - [ ] Test relationships
-- [ ] Team repository created
-- [ ] Review and incorporate feedback from checkpoint 3
 - [ ] Carefully review code for standards and best practices
-- [ ] Journal
-
-### Week 10
-- [ ] Functional screen scrape to populate Items table
 - [ ] Unit test all relationships
 - [ ] Journal
 
@@ -117,6 +116,7 @@
 - [ ] Journal
 
 ### Week 15
+- [ ] Present to class
 - [ ] Final documentation
 - [ ] Journal
 

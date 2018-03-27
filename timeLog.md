@@ -20,6 +20,6 @@
 | 3/20/18| AWS - created database & tables mirroring local | 0.5 | |
 | 3/20/18| AWS - getting authentication working | 3 | |
 | 3/20/18| Completing User & Role classes to match DB | 1 | |
-| 3/xx/18|  | | |
-| 3/xx/18|  | | |
+| 3/21/18| JSoup research | 1 | |
+| 3/26/18| Grocery Store website browsing | 0.5 | |
 | 3/xx/18|  | | |
