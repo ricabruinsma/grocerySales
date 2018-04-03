@@ -77,8 +77,14 @@
 - [X] Journal
 
 ### Week 10 - work week
-- [ ] Team Project work items
-- [ ] Add role dao unit tests
+- [X] Team Project work items
+- [X] Add role dao unit tests
+- [X] Journal
+
+
+### Week 11: Multithreading
+- [ ] Review rubric
+- [ ] Complete team project
 - [ ] Create store entity and annotate for hibernate
 - [ ] Create store dao unit tests
 - [ ] Create JSP templates using bootstrap
@@ -93,11 +99,6 @@
 - [ ] Test relationships
 - [ ] Carefully review code for standards and best practices
 - [ ] Unit test all relationships
-- [ ] Journal
-
-### Week 11: Multithreading
-- [ ] Review rubric
-- [ ] Complete team project
 - [ ] Journal
 
 ### Week 12

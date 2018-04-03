@@ -22,4 +22,10 @@
 | 3/20/18| Completing User & Role classes to match DB | 1 | |
 | 3/21/18| JSoup research | 1 | |
 | 3/26/18| Grocery Store website browsing | 0.5 | |
-| 3/xx/18|  | | |
+| 3/29/18| Grocery image browsing | 0.75 | |
+| 3/30/18| Grocery price structure research | 0.75 | |
+| 4/01/18| New elastic IP | 0.5 | |
+| 4/03/18| RoleDaoTest complete | 0.75 | |
+| 4/xx/18|  |  | |
+| 4/xx/18|  |  | |
+| 4/xx/18|  |  | |
