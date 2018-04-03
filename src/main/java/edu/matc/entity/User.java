@@ -5,6 +5,7 @@ import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Objects;
  */
 @Entity(name = "User")
 @Table(name = "user")
-public class User {
+public class User implements Serializable {
     @Getter @Setter private String createDate;
     @Getter @Setter private String email;
     @Getter @Setter private String firstName;

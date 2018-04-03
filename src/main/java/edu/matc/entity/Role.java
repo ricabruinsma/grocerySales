@@ -5,14 +5,16 @@ import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 /**
  * A class to represent a user role
  */
 @Entity(name = "Role")
 @Table(name = "role")
-public class Role {
+public class Role implements Serializable{
 
     @Getter @Setter private String name;
 
@@ -39,5 +41,14 @@ public class Role {
     public Role(String name, User user) {
         this.name = name;
         this.user = user;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Role role = (Role) o;
+        return id == role.id &&
+                Objects.equals(name, role.name);
     }
 }
