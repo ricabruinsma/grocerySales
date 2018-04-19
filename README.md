@@ -39,8 +39,8 @@ I would like to create a site to demonstrate this for one local grocery store, w
   * CI tools in AWS
   * Materialize
   * Google Maps API
-  * JStory - screen scrape
-* Project Lombok to eliminate boilerplate code like getters/setters/equals
+  * JSoup - screen scrape
+  * Project Lombok to eliminate boilerplate code like getters/setters/equals
 * Unit Testing
   * JUnit tests to achieve 80%+ code coverage 
 * IDE: IntelliJ IDEA

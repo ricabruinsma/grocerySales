@@ -83,25 +83,32 @@
 
 
 ### Week 11: Multithreading
-- [ ] Review rubric
-- [ ] Complete team project
-- [ ] Create store entity and annotate for hibernate
+- [X] Finalize Team Project
+- [X] Present Team Project
+- [X] Journal
+
+### Week 12
+- [X] Review rubric
+- [X] Create store entity and annotate for hibernate
+- [ ] Create item entity and annotate for hibernate
+- [ ] Create listline entity and annotate for hibernate
+- [ ] Create shoppinglist entity and annotate for hibernate
+
 - [ ] Create store dao unit tests
+- [ ] Create item dao unit tests
+- [ ] Create listline dao unit tests
+- [ ] Create shoppinglist dao unit tests
+
 - [ ] Create JSP templates using bootstrap
 - [ ] Add JSP to display user and role login
 - [ ] Add JSP to add a user
 - [ ] Create Search JSP
 - [ ] Create Search Results JSP
-- [ ] Create grocery list entity and annotate for hibernate
-- [ ] Create Grocery List table
-- [ ] Create Grocery List dao test
 - [ ] Create Grocery List JSP
+
 - [ ] Test relationships
 - [ ] Carefully review code for standards and best practices
 - [ ] Unit test all relationships
-- [ ] Journal
-
-### Week 12
 - [ ] Go through all feedback from previous checkpoints & peer reviews
 - [ ] Journal
 
