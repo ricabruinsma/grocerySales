@@ -1,8 +1,11 @@
 package edu.matc.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * The type Deal.
@@ -11,15 +14,19 @@ import javax.persistence.*;
 @Table(name = "item")
 public class Item {
 
-    private String brand;
-    private String product;
-    private String size;
-    private String storeName;
-    private String salePrice;
-    private String savingsAmount;
-    private String saleEndDate;
+    @Getter @Setter private String brand;
+    @Getter @Setter private String product;
+    @Getter @Setter private String size;
+    @Getter @Setter private String salePrice;
+    @Getter @Setter private String savingsAmount;
+    @Getter @Setter private String saleEndDate;
 
-    private boolean active;
+    @ManyToOne
+    @JoinColumns(value = {
+            @JoinColumn(name="store_id", referencedColumnName = "id", nullable = false) })
+    @Getter @Setter Store store;
+
+    @Getter @Setter private boolean active;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -38,7 +45,6 @@ public class Item {
      * @param brand         the brand
      * @param product       the product
      * @param size          the size
-     * @param storeName     the store name
      * @param salePrice     the sale price
      * @param savingsAmount the savings amount
      * @param saleEndDate   the sale end date
@@ -48,174 +54,36 @@ public class Item {
         this.brand = brand;
         this.product = product;
         this.size = size;
-        this.storeName = storeName;
         this.salePrice = salePrice;
         this.savingsAmount = savingsAmount;
         this.saleEndDate = saleEndDate;
         this.active = active;
     }
 
-    /**
-     * Gets id.
-     *
-     * @return the id
-     */
-    public int getId() {
-        return id;
+    @Override
+    public String toString() {
+        return "Item{" +
+                "itemid='" + id + '\'' +
+                ", brand='" + brand + '\'' +
+                ", product='" + product + '\'' +
+                ", size='" + size + '\'' +
+                ", salePrice='" + salePrice + '\'' +
+                '}';
     }
 
-    /**
-     * Sets id.
-     *
-     * @param id the id
-     */
-    public void setId(int id) {
-        this.id = id;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Item item = (Item) o;
+        return id == item.id &&
+                Objects.equals(brand, item.brand);
     }
 
-    /**
-     * Gets brand.
-     *
-     * @return the brand
-     */
-    public String getBrand() {
-        return brand;
-    }
+    @Override
+    public int hashCode() {
 
-    /**
-     * Sets brand.
-     *
-     * @param brand the brand
-     */
-    public void setBrand(String brand) {
-        this.brand = brand;
+        return Objects.hash(brand, product, size, salePrice);
     }
-
-    /**
-     * Gets product name.
-     *
-     * @return the product name
-     */
-    public String getProduct() {
-        return product;
-    }
-
-    /**
-     * Sets name.
-     *
-     * @param product the name of the product
-     */
-    public void setProduct(String product) {
-        this.product = product;
-    }
-
-    /**
-     * Gets size.
-     *
-     * @return the size
-     */
-    public String getSize() {
-        return size;
-    }
-
-    /**
-     * Sets size.
-     *
-     * @param size the size
-     */
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    /**
-     * Gets store name.
-     *
-     * @return the store name
-     */
-    public String getStoreName() {
-        return storeName;
-    }
-
-    /**
-     * Sets store name.
-     *
-     * @param storeName the store name
-     */
-    public void setStoreName(String storeName) {
-        this.storeName = storeName;
-    }
-
-    /**
-     * Gets sale price.
-     *
-     * @return the sale price
-     */
-    public String getSalePrice() {
-        return salePrice;
-    }
-
-    /**
-     * Sets sale price.
-     *
-     * @param salePrice the sale price
-     */
-    public void setSalePrice(String salePrice) {
-        this.salePrice = salePrice;
-    }
-
-    /**
-     * Gets savings amount.
-     *
-     * @return the savings amount
-     */
-    public String getSavingsAmount() {
-        return savingsAmount;
-    }
-
-    /**
-     * Sets savings amount.
-     *
-     * @param savingsAmount the savings amount
-     */
-    public void setSavingsAmount(String savingsAmount) {
-        this.savingsAmount = savingsAmount;
-    }
-
-    /**
-     * Gets sale end date.
-     *
-     * @return the sale end date
-     */
-    public String getSaleEndDate() {
-        return saleEndDate;
-    }
-
-    /**
-     * Sets sale end date.
-     *
-     * @param saleEndDate the sale end date
-     */
-    public void setSaleEndDate(String saleEndDate) {
-        this.saleEndDate = saleEndDate;
-    }
-
-    /**
-     * Gets sale end date.
-     *
-     * @return the sale end date
-     */
-    public boolean getActive() {
-        return active;
-    }
-
-    /**
-     * Sets sale end date.
-     *
-     * @param active the active
-     */
-    public void setActive(boolean active) {
-        this.active = active;
-    }
-
 }
 

@@ -26,6 +26,6 @@
 | 3/30/18| Grocery price structure research | 0.75 | |
 | 4/01/18| New elastic IP | 0.5 | |
 | 4/03/18| RoleDaoTest complete | 0.75 | |
-| 4/19/18| Create Store, Item entity | 0.75 | |
+| 4/19/18| Create Store, Item entity | 1 | |
 | 4/xx/18|  |  | |
 | 4/xx/18|  |  | |
