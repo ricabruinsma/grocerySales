@@ -964,7 +964,6 @@
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
-      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <column id="245" parent="237" name="brand">
       <Position>3</Position>
@@ -980,11 +979,13 @@
     <column id="247" parent="237" name="product">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="248" parent="237" name="size">
       <Position>6</Position>
       <DataType>varchar(120)|0</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="249" parent="237" name="salePrice">
@@ -1014,8 +1015,9 @@
       <Position>11</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos;2018-03-20 07:25:03&apos;</DefaultExpression>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <column id="254" parent="237" name="store_id">
       <Position>12</Position>
@@ -1056,7 +1058,6 @@
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
-      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <column id="261" parent="238" name="quantity">
       <Position>3</Position>
@@ -1068,8 +1069,9 @@
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos;2018-03-20 07:25:03&apos;</DefaultExpression>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <column id="263" parent="238" name="shoppinglist_id">
       <Position>5</Position>
@@ -1119,7 +1121,6 @@
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
-      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <column id="272" parent="239" name="name">
       <Position>3</Position>
@@ -1131,8 +1132,9 @@
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <column id="274" parent="239" name="username">
       <Position>5</Position>
@@ -1175,7 +1177,6 @@
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
-      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <column id="282" parent="240" name="totalAmount">
       <Position>3</Position>
@@ -1187,8 +1188,9 @@
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <column id="284" parent="240" name="user_id">
       <Position>5</Position>
@@ -1223,7 +1225,6 @@
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
-      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <column id="290" parent="241" name="name">
       <Position>3</Position>
@@ -1274,8 +1275,9 @@
       <Position>11</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>&apos;2018-03-20 07:25:03&apos;</DefaultExpression>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <key id="299" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
@@ -1349,8 +1351,9 @@
     <column id="312" parent="242" name="updateDate">
       <Position>13</Position>
       <DataType>timestamp|0</DataType>
-      <DefaultExpression>&apos;0000-00-00 00:00:00&apos;</DefaultExpression>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
     <column id="313" parent="242" name="username">
       <Position>14</Position>

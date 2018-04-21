@@ -71,8 +71,8 @@ class StoreDaoTest {
      */
     @Test
     void deleteSuccess() {
-        storeDao.delete(storeDao.getById(2));
-        assertNull(storeDao.getById(2));
+        storeDao.delete(storeDao.getById(1));
+        assertNull(storeDao.getById(1));
     }
 
     /**

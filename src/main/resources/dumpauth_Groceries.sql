@@ -24,15 +24,16 @@ DROP TABLE IF EXISTS `item`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `item` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `brand` varchar(120) NOT NULL,
   `category` varchar(120) DEFAULT NULL,
-  `description` varchar(255) DEFAULT NULL,
+  `product` varchar(255) DEFAULT NULL,
   `size` varchar(120) DEFAULT NULL,
-  `price` varchar(255) NOT NULL,
-  `saleStart` varchar(255) DEFAULT NULL,
-  `saleEnd` varchar(255) NOT NULL,
-  `updateDate` timestamp NOT NULL DEFAULT '2018-03-20 07:25:03',
+  `salePrice` varchar(255) NOT NULL,
+  `savingsAmount` varchar(255) NOT NULL,
+  `saleStartDate` varchar(255) DEFAULT NULL,
+  `saleEndDate` varchar(255) NOT NULL,
+  `updateDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `store_id` int(11) NOT NULL,
   `active` TINYINT(4) DEFAULT 1,
   PRIMARY KEY (`id`),
@@ -59,9 +60,9 @@ DROP TABLE IF EXISTS `listline`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `listline` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `quantity` int(3) NOT NULL,
-  `updateDate` timestamp NOT NULL DEFAULT '2018-03-20 07:25:03',
+  `updateDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `shoppinglist_id` int(11) NOT NULL,
   `item_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
@@ -90,9 +91,9 @@ DROP TABLE IF EXISTS `role`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `role` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `name` varchar(120) NOT NULL,
-  `updateDate` timestamp NOT NULL DEFAULT '2018-03-20 07:25:03',
+  `updateDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `username` varchar(255) NOT NULL,
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -108,7 +109,7 @@ CREATE TABLE `role` (
 
 LOCK TABLES `role` WRITE;
 /*!40000 ALTER TABLE `role` DISABLE KEYS */;
-INSERT INTO `role` VALUES (1,'2018-03-20 07:25:03','admin','2018-03-20 07:25:03','rbruinsma',1);
+INSERT INTO `role` (id, name, username, user_id) VALUES (1,'admin', 'rbruinsma',1);
 /*!40000 ALTER TABLE `role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -121,9 +122,9 @@ DROP TABLE IF EXISTS `shoppinglist`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `shoppinglist` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `totalAmount` decimal(4,2) NOT NULL,
-  `updateDate` timestamp NOT NULL DEFAULT '2018-03-20 07:25:03',
+  `updateDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `user_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `ShoppingList_User` (`user_id`),
@@ -149,7 +150,7 @@ DROP TABLE IF EXISTS `store`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `store` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `name` varchar(120) NOT NULL,
   `address1` varchar(120) NOT NULL,
   `address2` varchar(120) DEFAULT NULL,
@@ -158,7 +159,7 @@ CREATE TABLE `store` (
   `postalCode` varchar(16) NOT NULL,
   `lat` decimal(9,6) DEFAULT NULL,
   `lon` decimal(9,6) DEFAULT NULL,
-  `updateDate` timestamp NOT NULL DEFAULT '2018-03-20 07:25:03',
+  `updateDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -193,7 +194,7 @@ CREATE TABLE `user` (
   `postalCode` varchar(16) DEFAULT NULL,
   `lat` decimal(9,6) DEFAULT NULL,
   `lon` decimal(9,6) DEFAULT NULL,
-  `updateDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updateDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP  ON UPDATE CURRENT_TIMESTAMP,
   `username` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
@@ -206,7 +207,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'2018-03-20 07:25:03','rbruinsma@madisoncollege.edu',NULL,'supersecret1','1701 Wright St.',NULL,'Madison','WI','53704',NULL,NULL,'2018-03-20 07:25:03','rbruinsma'),(2,'2018-03-20 07:25:03','testUser@madisoncollege.edu',NULL,'supersecret2','1701 Wright St.',NULL,'Madison','WI','53704',NULL,NULL,'2018-03-20 07:25:03','testUser'),(3,'2018-03-20 07:25:03','testUser2@madisoncollege.edu',NULL,'supersecret3','211 N. Carroll St.',NULL,'Madison','WI','53703',NULL,NULL,'2018-03-20 07:25:03','testUser2'),(30,NULL,NULL,NULL,'superSecret4',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-03-20 07:25:03','testUser4');
+INSERT INTO `user` (id, email, password, address1, city, state, postalCode, lat, lon, username) VALUES (1, 'rbruinsma@madisoncollege.edu', 'supersecret1', '1701 Wright St.', 'Madison', 'WI', '53704', 43.121716, -89.328584,  'rbruinsma'), (2, 'testUser@madisoncollege.edu', 'supersecret2', '1701 Wright St.', 'Madison', 'WI', '53704', 43.121716, -89.328584,  'testUser'), (3, 'testUser2@madisoncollege.edu',  'supersecret3', '211 N. Carroll St.', 'Madison', 'WI', '53703', 43.121716, -89.328584,  'testUser2');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

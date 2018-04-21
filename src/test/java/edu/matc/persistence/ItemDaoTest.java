@@ -39,7 +39,7 @@ class ItemDaoTest {
     @Test
     void getAllItemsSuccess() {
         List<Item> items = itemDao.getAll();
-        assertEquals(2, items.size());
+        assertEquals(3, items.size());
     }
 
     /**
