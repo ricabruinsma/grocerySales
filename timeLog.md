@@ -27,5 +27,5 @@
 | 4/01/18| New elastic IP | 0.5 | |
 | 4/03/18| RoleDaoTest complete | 0.75 | |
 | 4/19/18| Create Store, Item entity | 1 | |
-| 4/20/18| Store DaoTest and set up tables (again) | 1 | |
+| 4/20/18| Store & Item DaoTest and set up tables (again) | 2 | |
 | 4/xx/18|  |  | |
