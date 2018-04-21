@@ -134,3 +134,41 @@
 [DEBUG] 2018-04-03 14:49:03.662 [main] GenericDao - Searching for entity with name = adm
 [DEBUG] 2018-04-03 14:58:23.524 [main] GenericDao - Searching for entity with name = admin
 [DEBUG] 2018-04-03 14:58:23.900 [main] GenericDao - Searching for entity with name = adm
+[ERROR] 2018-04-20 23:29:05.141 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:29:07.635 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:29:07.668 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[DEBUG] 2018-04-20 23:29:07.668 [main] GenericDao - Searching for entity with name = Hy-Vee
+[ERROR] 2018-04-20 23:29:07.698 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[DEBUG] 2018-04-20 23:29:07.708 [main] GenericDao - Searching for entity with name = Hy
+[ERROR] 2018-04-20 23:29:07.731 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:29:08.040 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:29:08.164 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:33:40.730 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:33:43.651 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:33:44.151 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[DEBUG] 2018-04-20 23:33:44.151 [main] GenericDao - Searching for entity with name = Hy-Vee
+[ERROR] 2018-04-20 23:33:44.191 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[DEBUG] 2018-04-20 23:33:44.191 [main] GenericDao - Searching for entity with name = Hy
+[ERROR] 2018-04-20 23:33:44.221 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:33:44.251 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:33:44.291 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:36:42.167 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:36:44.776 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:36:45.185 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[DEBUG] 2018-04-20 23:36:45.187 [main] GenericDao - Searching for entity with name = Hy-Vee
+[ERROR] 2018-04-20 23:36:45.265 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[DEBUG] 2018-04-20 23:36:45.269 [main] GenericDao - Searching for entity with name = Hy
+[ERROR] 2018-04-20 23:36:45.564 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:36:46.161 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:36:46.216 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:39:28.333 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:39:31.981 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:39:32.322 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[DEBUG] 2018-04-20 23:39:32.322 [main] GenericDao - Searching for entity with name = Hy-Vee
+[ERROR] 2018-04-20 23:39:32.381 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[DEBUG] 2018-04-20 23:39:32.382 [main] GenericDao - Searching for entity with name = Hy
+[ERROR] 2018-04-20 23:39:32.402 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:39:32.452 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[ERROR] 2018-04-20 23:39:32.488 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
+[DEBUG] 2018-04-21 00:11:54.948 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-04-21 00:11:55.120 [main] GenericDao - Searching for entity with name = Hy

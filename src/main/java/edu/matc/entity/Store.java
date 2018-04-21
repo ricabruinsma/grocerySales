@@ -36,11 +36,12 @@ public class Store {
     public Store() {
     }
 
-    public Store(String name, String address1, String city, String state) {
+    public Store(String name, String address1, String city, String state, String postalCode) {
         this.name = name;
         this.address1 = address1;
         this.city = city;
         this.state = state;
+        this.postalCode = postalCode;
     }
 
     @Override

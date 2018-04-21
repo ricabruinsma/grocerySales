@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `item`;
 CREATE TABLE `item` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `name` varchar(120) NOT NULL,
+  `brand` varchar(120) NOT NULL,
   `category` varchar(120) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   `size` varchar(120) DEFAULT NULL,
@@ -155,8 +155,8 @@ CREATE TABLE `store` (
   `city` varchar(120) NOT NULL,
   `state` varchar(2) NOT NULL,
   `postalCode` varchar(16) NOT NULL,
-  `lat` decimal(9,6) NOT NULL,
-  `lon` decimal(9,6) NOT NULL,
+  `lat` decimal(9,6) DEFAULT NULL,
+  `lon` decimal(9,6) DEFAULT NULL,
   `updateDate` timestamp NOT NULL DEFAULT '2018-03-20 07:25:03',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -168,7 +168,7 @@ CREATE TABLE `store` (
 
 LOCK TABLES `store` WRITE;
 /*!40000 ALTER TABLE `store` DISABLE KEYS */;
-INSERT INTO store VALUES (1, '2018-03-20 07:25:03', 'Hy-Vee', '3801 East Washington Avenue', NULL, 'Madison', 'WI', '53704', 43.117807, -89.317387, '2018-03-20 07:25:03');
+INSERT INTO store VALUES (1, '2018-03-20 07:25:03', 'Hy-Vee', '3801 East Washington Avenue', NULL, 'Madison', 'WI', '53704', 43.117807, -89.317387, '2018-03-20 07:25:03'), (2, '2018-03-20 07:25:03', 'Willy Street Co-op', '2817 North Sherman Ave', NULL, 'Madison', 'WI', '53704', 43.127639, -89.362807, '2018-03-20 07:25:03');
 /*!40000 ALTER TABLE `store` ENABLE KEYS */;
 UNLOCK TABLES;
 
