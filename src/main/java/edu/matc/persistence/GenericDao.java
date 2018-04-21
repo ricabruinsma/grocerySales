@@ -115,6 +115,25 @@ public class GenericDao<T> {
     }
 
     /**
+     * Get entity by property (exact match)
+     * sample usage: getByPropertyEqual("totalAmount", 7.99)
+     */
+    public List<T> getByPropertyEqual(String propertyName, double value) {
+        Session session = getSession();
+
+        logger.debug("Searching for entity with " + propertyName + " = " + value);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        query.select(root).where(builder.equal(root.get(propertyName), value));
+        List<T> list = session.createQuery( query ).getResultList();
+
+        session.close();
+        return list;
+    }
+
+    /**
      * Get entity by property (like)
      * sample usage: getByPropertyLike("lastname", "C")
      */

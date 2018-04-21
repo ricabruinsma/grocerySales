@@ -20,8 +20,8 @@
         <mapping class="edu.matc.entity.Role"/>
         <mapping class="edu.matc.entity.Store"/>
         <mapping class="edu.matc.entity.Item"/>
-        <!--<mapping class="edu.matc.entity.ShoppingList"/>
-        <mapping class="edu.matc.entity.ListLine"/> -->
+        <mapping class="edu.matc.entity.ShoppingList"/>
+        <!--<mapping class="edu.matc.entity.ListLine"/> -->
 
     </session-factory>
 
