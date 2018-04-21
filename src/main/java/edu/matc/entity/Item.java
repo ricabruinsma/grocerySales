@@ -77,7 +77,10 @@ public class Item {
         if (o == null || getClass() != o.getClass()) return false;
         Item item = (Item) o;
         return id == item.id &&
-                Objects.equals(brand, item.brand);
+                Objects.equals(brand, item.brand) &&
+                Objects.equals(product, item.product) &&
+                Objects.equals(size, item.size) &&
+                Objects.equals(salePrice, item.salePrice);
     }
 
     @Override
