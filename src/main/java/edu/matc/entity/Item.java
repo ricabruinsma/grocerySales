@@ -21,6 +21,9 @@ public class Item {
     @Getter @Setter private String savingsAmount;
     @Getter @Setter private String saleEndDate;
 
+    /**
+     * The Store.
+     */
     @ManyToOne
     @JoinColumns(value = {
             @JoinColumn(name="store_id", referencedColumnName = "id", nullable = false) })

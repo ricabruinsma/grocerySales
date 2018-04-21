@@ -36,6 +36,15 @@ public class Store {
     public Store() {
     }
 
+    /**
+     * Instantiates a new Store.
+     *
+     * @param name       the name
+     * @param address1   the address 1
+     * @param city       the city
+     * @param state      the state
+     * @param postalCode the postal code
+     */
     public Store(String name, String address1, String city, String state, String postalCode) {
         this.name = name;
         this.address1 = address1;
