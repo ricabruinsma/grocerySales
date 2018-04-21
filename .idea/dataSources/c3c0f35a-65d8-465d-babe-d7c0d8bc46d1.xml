@@ -1026,7 +1026,7 @@
     <column id="255" parent="237" name="active">
       <Position>13</Position>
       <DataType>tinyint(4)|0</DataType>
-      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="256" parent="237" name="Item_Store">
