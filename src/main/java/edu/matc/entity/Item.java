@@ -31,7 +31,7 @@ public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
-    private int id;
+    @Getter @Setter private int id;
 
     /**
      * Instantiates a new grocery item.
@@ -49,8 +49,9 @@ public class Item {
      * @param savingsAmount the savings amount
      * @param saleEndDate   the sale end date
      * @param active        the active
+     * @param store         the store
      */
-    public Item(String brand, String product, String size, String storeName, String salePrice, String savingsAmount, String saleEndDate, boolean active) {
+    public Item(String brand, String product, String size, String salePrice, String savingsAmount, String saleEndDate, boolean active, Store store) {
         this.brand = brand;
         this.product = product;
         this.size = size;
@@ -58,6 +59,7 @@ public class Item {
         this.savingsAmount = savingsAmount;
         this.saleEndDate = saleEndDate;
         this.active = active;
+        this.store = store;
     }
 
     @Override

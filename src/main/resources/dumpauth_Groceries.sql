@@ -169,7 +169,7 @@ CREATE TABLE `store` (
 
 LOCK TABLES `store` WRITE;
 /*!40000 ALTER TABLE `store` DISABLE KEYS */;
-INSERT INTO store VALUES (1, '2018-03-20 07:25:03', 'Hy-Vee', '3801 East Washington Avenue', NULL, 'Madison', 'WI', '53704', 43.117807, -89.317387, '2018-03-20 07:25:03'), (2, '2018-03-20 07:25:03', 'Willy Street Co-op', '2817 North Sherman Ave', NULL, 'Madison', 'WI', '53704', 43.127639, -89.362807, '2018-03-20 07:25:03');
+INSERT INTO store (id, name, address1, city, state, postalCode, lat, lon) VALUES (1, 'Hy-Vee', '3801 East Washington Avenue', 'Madison', 'WI', '53704', 43.117807, -89.317387), (2, 'Willy Street Co-op', '2817 North Sherman Ave', 'Madison', 'WI', '53704', 43.127639, -89.362807);
 /*!40000 ALTER TABLE `store` ENABLE KEYS */;
 UNLOCK TABLES;
 

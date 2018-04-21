@@ -26,6 +26,9 @@ public class Role implements Serializable{
     @Getter @Setter private String createDate;
     @Getter @Setter private String updateDate;
 
+    /**
+     * The User.
+     */
     @ManyToOne
     @JoinColumns(value = {
             @JoinColumn(name="username", referencedColumnName = "username", nullable = false),
@@ -38,6 +41,12 @@ public class Role implements Serializable{
     public Role() {
     }
 
+    /**
+     * Instantiates a new Role.
+     *
+     * @param name the name
+     * @param user the user
+     */
     public Role(String name, User user) {
         this.name = name;
         this.user = user;

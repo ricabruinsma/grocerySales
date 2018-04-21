@@ -49,7 +49,7 @@ class RoleDaoTest {
     void getByIdSuccess() {
         User newUser = new User("guestPassword", "guestUser");
         GenericDao userDao = new GenericDao(User.class);
-        int userId = userDao.insert(newUser);
+        userDao.insert(newUser);
         Role newRole = new Role("guest", newUser);
         int roleId = roleDao.insert(newRole);
         Role retrievedRole = (Role)roleDao.getById(roleId);
@@ -74,7 +74,7 @@ class RoleDaoTest {
     }
 
     /**
-     * Verify successful delete of user
+     * Verify successful delete of a role
      */
     @Test
     void deleteSuccess() {
@@ -83,7 +83,7 @@ class RoleDaoTest {
     }
 
     /**
-     * Verify successful update of user
+     * Verify successful update
      */
     @Test
     void updateSuccess() {

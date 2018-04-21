@@ -172,3 +172,5 @@
 [ERROR] 2018-04-20 23:39:32.488 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'grocerysales.listline' doesn't exist
 [DEBUG] 2018-04-21 00:11:54.948 [main] GenericDao - Searching for entity with name = Hy-Vee
 [DEBUG] 2018-04-21 00:11:55.120 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-04-21 01:02:55.286 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-04-21 01:02:55.346 [main] GenericDao - Searching for entity with brand = Kell
