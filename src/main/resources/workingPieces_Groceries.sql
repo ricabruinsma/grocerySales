@@ -90,7 +90,7 @@ CREATE TABLE `listline` (
   CONSTRAINT `ListLine_ShoppingList` FOREIGN KEY (`shoppinglist_id`) REFERENCES `shoppinglist` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 INSERT INTO user (id, email, password, address1, city, state, postalCode, username) VALUES (1, 'rbruinsma@madisoncollege.edu', 'supersecret1', '1701 Wright St.', 'Madison', 'WI', '53704', 'rbruinsma'), (2, 'testUser@madisoncollege.edu', 'supersecret2', '1701 Wright St.', 'Madison', 'WI', '53704', 'testUser'), (3, 'testUser2@madisoncollege.edu',  'supersecret3', '211 N. Carroll St.', 'Madison', 'WI', '53703', 'testUser2');
-insert into role (id, name, username, user_id) values (1, 'admin', 'rbruinsma', 1);
+insert into role (id, name, username, user_id) values (1, 'admin', 'rbruinsma', 1), (2, 'shopper', 'rbruinsma', 1), (3, 'shopper', 'testUser', 2), (4, 'shopper', 'testUser2', 3);
 insert into shoppinglist (id, totalAmount, user_id) VALUES (1, 4.99, 1), (2, 7.98, 1);
 INSERT INTO store (id, name, address1, city, state, postalCode, lat, lon, updateDate) VALUES (1, 'Hy-Vee', '3801 East Washington Avenue', 'Madison', 'WI', '53704', 43.117807, -89.317387, '2018-03-20 07:25:03'), (2, 'Willy Street Co-op', '2817 North Sherman Ave', 'Madison', 'WI', '53704', 43.127639, -89.362807, '2018-03-20 07:25:03');
 INSERT INTO item (id, brand, product, size, salePrice, savingsAmount, saleEndDate, store_id) VALUES (1, 'Kellogs', 'Cream of Wheat', '10 oz', '$1.99', '$1.00', '2018-04-30', 2), (2, 'Organic Valley', 'butter', '1 lb', '$3.99', '$1.50', '2018-04-30', 2), (3, 'Organic Valley', 'milk', '1 gal', '$4.99', '$1.00', '2018-04-30', 2);

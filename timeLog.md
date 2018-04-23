@@ -28,4 +28,4 @@
 | 4/03/18| RoleDaoTest complete | 0.75 | |
 | 4/19/18| Create Store, Item entity | 1 | |
 | 4/20/18| Store, Item, ShoppingList DaoTest, set up tables (again), scripts, all tests pass | 3.75 | |
-| 4/xx/18|  |  | |
+| 4/23/18| Review materials for REST, Auth, Hibernate | 2 | |
