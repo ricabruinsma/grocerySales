@@ -89,15 +89,24 @@
 
 ### Week 12
 - [X] Review rubric
+- [X] Journal
+
+### Week 13: Asynchronous Messaging
 - [X] Create store entity and annotate for hibernate
 - [X] Create item entity and annotate for hibernate
-- [ ] Create listline entity and annotate for hibernate
 - [X] Create shoppinglist entity and annotate for hibernate
 
 - [X] Create store dao unit tests
 - [X] Create item dao unit tests
-- [ ] Create listline dao unit tests
 - [X] Create shoppinglist dao unit tests
+
+- [X] Pick website template
+
+- [X] Journal
+
+### Week 14
+- [ ] Create listline entity and annotate for hibernate
+- [ ] Create listline dao unit tests
 
 - [ ] Create JSP templates using bootstrap
 - [ ] Add JSP to display user and role login
@@ -110,14 +119,9 @@
 - [ ] Carefully review code for standards and best practices
 - [ ] Unit test all relationships
 - [ ] Go through all feedback from previous checkpoints & peer reviews
-- [X] Journal
-
-### Week 13: Asynchronous Messaging
 - [ ] Finish UI
 - [ ] Code quality check
-- [ ] Journal
 
-### Week 14
 - [ ] Ensure full application is functional
 - [ ] Code Reviews
 - [ ] Create final presentation

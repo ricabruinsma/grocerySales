@@ -29,3 +29,6 @@
 | 4/19/18| Create Store, Item entity | 1 | |
 | 4/20/18| Store, Item, ShoppingList DaoTest, set up tables (again), scripts, all tests pass | 3.75 | |
 | 4/23/18| Review materials for REST, Auth, Hibernate | 2 | |
+| 4/23/18| Review materials for REST | 0.5 | |
+| 4/23/18| Pick website template | 3 | |
+| 4/23/18| Fix User and Role entities - relationship & constructor | 1 | |
