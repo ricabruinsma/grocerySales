@@ -1,7 +1,9 @@
 package edu.matc.entity;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -12,6 +14,8 @@ import java.util.Set;
 /**
  * A class to represent a shopping list
  */
+@EqualsAndHashCode(exclude = {"listLines", "createDate", "updateDate"})
+@ToString(exclude = {"listLines"})
 @Entity(name = "ShoppingList")
 @Table(name = "shoppinglist")
 public class ShoppingList {
@@ -35,7 +39,7 @@ public class ShoppingList {
     @Getter @Setter User user;
 
     @OneToMany(mappedBy = "shoppingList", cascade = CascadeType.PERSIST, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<ListLine> listlines = new HashSet<>();
+    @Getter @Setter private Set<ListLine> listlines = new HashSet<>();
 
     /**
      * Instantiates a new ShoppingList.
@@ -54,27 +58,5 @@ public class ShoppingList {
         this.user = user;
     }
 
-    @Override
-    public String toString() {
-        return "ShoppingList{" +
-                "listid='" + id + '\'' +
-                ", total='$" + totalAmount + '\'' +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ShoppingList list = (ShoppingList) o;
-        return id == list.id &&
-                Objects.equals(totalAmount, list.totalAmount);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(totalAmount, id);
-    }
 }
 

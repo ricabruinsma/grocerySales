@@ -15,6 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * The type Store dao test.
  */
+@SuppressWarnings("unchecked")
 class StoreDaoTest {
 
     GenericDao storeDao;

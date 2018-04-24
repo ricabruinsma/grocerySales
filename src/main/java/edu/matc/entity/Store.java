@@ -1,7 +1,9 @@
 package edu.matc.entity;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -13,6 +15,8 @@ import java.util.Set;
 /**
  * A class to represent a store
  */
+@EqualsAndHashCode(exclude = {"items", "createDate", "updateDate"})
+@ToString(exclude = {"items", "lat", "lon"})
 @Entity(name = "Store")
 @Table(name = "store")
 public class Store {
@@ -33,7 +37,7 @@ public class Store {
     @Getter @Setter private int id;
 
     @OneToMany(mappedBy = "store", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Item> items = new HashSet<>();
+    @Getter @Setter private Set<Item> items = new HashSet<>();
 
     /**
      * Instantiates a new Store.
@@ -58,29 +62,4 @@ public class Store {
         this.postalCode = postalCode;
     }
 
-    @Override
-    public String toString() {
-        return "Store{" +
-                "name='" + name + '\'' +
-                ", name='" + name + '\'' +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Store store = (Store) o;
-        return id == store.id &&
-                Objects.equals(name, store.name) &&
-                Objects.equals(address1, store.address1) &&
-                Objects.equals(city, store.city) &&
-                Objects.equals(state, store.state);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(name, id);
-    }
 }

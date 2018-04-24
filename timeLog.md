@@ -32,3 +32,4 @@
 | 4/23/18| Review materials for REST | 0.5 | |
 | 4/23/18| Pick website template | 3 | |
 | 4/23/18| Fix User and Role entities - relationship & constructor | 1 | |
+| 4/24/18| ListLine entity created, all tests pass, pushed to AWS, AWS DB updated | 2 | |

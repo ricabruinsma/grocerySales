@@ -16,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * The type User dao test.
  */
+@SuppressWarnings("unchecked")
 class UserDaoTest {
 
     GenericDao userDao;
@@ -46,7 +47,7 @@ class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User newUser = new User("supersecret20", "guestUser");
+        User newUser = new User("testUser4@madisoncollege.edu", "superSecret4", "testUser4", "1701 Wright St.", "Madison", "WI", "53704");
         int id = userDao.insert(newUser);
 
         User retrievedUser = (User)userDao.getById(id);
@@ -60,7 +61,7 @@ class UserDaoTest {
     @Test
     void insertSuccess() {
 
-        User newUser = new User("superSecret4", "testUser4");
+        User newUser = new User("testUser4@madisoncollege.edu", "superSecret4", "testUser4", "1701 Wright St.", "Madison", "WI", "53704");
         int id = userDao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = (User)userDao.getById(id);

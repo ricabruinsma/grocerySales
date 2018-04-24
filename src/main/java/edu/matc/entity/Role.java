@@ -1,7 +1,9 @@
 package edu.matc.entity;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -12,6 +14,8 @@ import java.util.Objects;
 /**
  * A class to represent a user role
  */
+@EqualsAndHashCode(exclude = {"createDate", "updateDate"})
+@ToString
 @Entity(name = "Role")
 @Table(name = "role")
 public class Role implements Serializable{
@@ -35,7 +39,7 @@ public class Role implements Serializable{
     )
     @Getter @Setter User user;
 
-    private String username;
+    @Getter @Setter private String username;
 
     /**
      * Instantiates a new Role.
@@ -56,28 +60,4 @@ public class Role implements Serializable{
         this.username = username;
     }
 
-    @Override
-    public String toString() {
-        return "Role{" +
-                "roleid='" + id +
-                ", name='" + name + '\'' +
-                ", username='" + username + '\'' +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Role role = (Role) o;
-        return id == role.id &&
-                Objects.equals(name, role.name) &&
-                Objects.equals(username, role.username);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(name, id);
-    }
 }

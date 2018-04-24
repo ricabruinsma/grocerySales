@@ -17,6 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * The type Item dao test.
  */
+@SuppressWarnings("unchecked")
 class ItemDaoTest {
 
     GenericDao itemDao;

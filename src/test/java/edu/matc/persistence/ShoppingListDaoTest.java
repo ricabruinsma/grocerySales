@@ -16,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * The type ShoppingList dao test.
  */
+@SuppressWarnings("unchecked")
 class ShoppingListDaoTest {
 
     GenericDao shoppingListDao;
@@ -46,7 +47,7 @@ class ShoppingListDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User newUser = new User("guestPassword", "guestUser");
+        User newUser = new User("testUser4@madisoncollege.edu", "superSecret4", "testUser4", "1701 Wright St.", "Madison", "WI", "53704");
         GenericDao userDao = new GenericDao(User.class);
         userDao.insert(newUser);
         ShoppingList newShoppingList = new ShoppingList(5.99, newUser);
@@ -62,7 +63,7 @@ class ShoppingListDaoTest {
     @Test
     void insertSuccess() {
 
-        User newUser = new User("superSecret4", "testUser4");
+        User newUser = new User("testUser4@madisoncollege.edu", "superSecret4", "testUser4", "1701 Wright St.", "Madison", "WI", "53704");
         GenericDao userDao = new GenericDao(User.class);
         int id = userDao.insert(newUser);
         ShoppingList newShoppingList = new ShoppingList(5.99, newUser);

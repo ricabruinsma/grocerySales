@@ -17,6 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 /**
  * The type Role dao test.
  */
+@SuppressWarnings("unchecked")
 class RoleDaoTest {
 
     GenericDao roleDao;
@@ -39,7 +40,7 @@ class RoleDaoTest {
     @Test
     void getAllRolesSuccess() {
         List<Role> roles = roleDao.getAll();
-        assertEquals(1, roles.size());
+        assertEquals(3, roles.size());
     }
 
     /**
@@ -47,7 +48,7 @@ class RoleDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User newUser = new User("guestPassword", "guestUser");
+        User newUser = new User("testUser4@madisoncollege.edu", "superSecret4", "testUser4", "1701 Wright St.", "Madison", "WI", "53704");
         GenericDao userDao = new GenericDao(User.class);
         userDao.insert(newUser);
         Role newRole = new Role(newUser, "guest", "guestUser");
@@ -63,7 +64,7 @@ class RoleDaoTest {
     @Test
     void insertSuccess() {
 
-        User newUser = new User("superSecret4", "testUser4");
+        User newUser = new User("testUser4@madisoncollege.edu", "superSecret4", "testUser4", "1701 Wright St.", "Madison", "WI", "53704");
         GenericDao userDao = new GenericDao(User.class);
         int id = userDao.insert(newUser);
         Role newRole = new Role(newUser, "guest", "testUser4");

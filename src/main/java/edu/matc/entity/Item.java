@@ -1,7 +1,9 @@
 package edu.matc.entity;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -12,10 +14,13 @@ import java.util.Set;
 /**
  * The type Deal.
  */
+@EqualsAndHashCode(exclude = {"listLines", "createDate", "savingsAmount", "saleEndDate", "updateDate"})
+@ToString(exclude = {"listLines"})
 @Entity(name = "Item")
 @Table(name = "item")
 public class Item {
 
+    @Getter @Setter private String createDate;
     @Getter @Setter private String brand;
     @Getter @Setter private String product;
     @Getter @Setter private String size;
@@ -30,10 +35,11 @@ public class Item {
     @Getter @Setter Store store;
 
     @OneToMany(mappedBy = "item", cascade = CascadeType.PERSIST, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<ListLine> listLines = new HashSet<>();
+    @Getter @Setter private Set<ListLine> listLines = new HashSet<>();
 
 
     @Getter @Setter private boolean active;
+    @Getter @Setter private String updateDate;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -69,33 +75,5 @@ public class Item {
         this.store = store;
     }
 
-    @Override
-    public String toString() {
-        return "Item{" +
-                "itemid='" + id + '\'' +
-                ", brand='" + brand + '\'' +
-                ", product='" + product + '\'' +
-                ", size='" + size + '\'' +
-                ", salePrice='" + salePrice + '\'' +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Item item = (Item) o;
-        return id == item.id &&
-                Objects.equals(brand, item.brand) &&
-                Objects.equals(product, item.product) &&
-                Objects.equals(size, item.size) &&
-                Objects.equals(salePrice, item.salePrice);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(brand, product, size, salePrice);
-    }
 }
 

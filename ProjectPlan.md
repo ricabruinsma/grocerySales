@@ -105,7 +105,7 @@
 - [X] Journal
 
 ### Week 14
-- [ ] Create listline entity and annotate for hibernate
+- [X] Create listline entity and annotate for hibernate
 - [ ] Create listline dao unit tests
 
 - [ ] Create JSP templates using bootstrap
