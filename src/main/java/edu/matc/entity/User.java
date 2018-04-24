@@ -6,7 +6,9 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * A class to represent a user
@@ -37,6 +39,9 @@ public class User implements Serializable {
     @Getter @Setter private double lat;
     @Getter @Setter private double lon;
     @Getter @Setter private String updateDate;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @Getter @Setter private Set<Role> roles = new HashSet<>();
 
     /**
      * Instantiates a new User.

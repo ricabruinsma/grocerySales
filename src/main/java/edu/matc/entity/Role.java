@@ -30,10 +30,12 @@ public class Role implements Serializable{
      * The User.
      */
     @ManyToOne
-    @JoinColumns(value = {
-            @JoinColumn(name="username", referencedColumnName = "username", nullable = false),
-            @JoinColumn(name="user_id", referencedColumnName = "id", nullable = false) })
+    @JoinColumn(name = "user_id",
+            foreignKey = @ForeignKey(name = "role_user_id_fk")
+    )
     @Getter @Setter User user;
+
+    private String username;
 
     /**
      * Instantiates a new Role.
@@ -46,17 +48,20 @@ public class Role implements Serializable{
      *
      * @param name the name
      * @param user the user
+     * @param username the username of user
      */
-    public Role(String name, User user) {
-        this.name = name;
+    public Role(User user, String name, String username) {
         this.user = user;
+        this.name = name;
+        this.username = username;
     }
 
     @Override
     public String toString() {
         return "Role{" +
-                "roleid='" + id + '\'' +
+                "roleid='" + id +
                 ", name='" + name + '\'' +
+                ", username='" + username + '\'' +
                 '}';
     }
 
@@ -66,7 +71,8 @@ public class Role implements Serializable{
         if (o == null || getClass() != o.getClass()) return false;
         Role role = (Role) o;
         return id == role.id &&
-                Objects.equals(name, role.name);
+                Objects.equals(name, role.name) &&
+                Objects.equals(username, role.username);
     }
 
     @Override

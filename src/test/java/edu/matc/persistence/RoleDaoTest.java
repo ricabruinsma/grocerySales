@@ -50,7 +50,7 @@ class RoleDaoTest {
         User newUser = new User("guestPassword", "guestUser");
         GenericDao userDao = new GenericDao(User.class);
         userDao.insert(newUser);
-        Role newRole = new Role("guest", newUser);
+        Role newRole = new Role(newUser, "guest", "guestUser");
         int roleId = roleDao.insert(newRole);
         Role retrievedRole = (Role)roleDao.getById(roleId);
         assertNotNull(retrievedRole);
@@ -66,7 +66,7 @@ class RoleDaoTest {
         User newUser = new User("superSecret4", "testUser4");
         GenericDao userDao = new GenericDao(User.class);
         int id = userDao.insert(newUser);
-        Role newRole = new Role("guest", newUser);
+        Role newRole = new Role(newUser, "guest", "testUser4");
         int roleId = roleDao.insert(newRole);
         assertNotEquals(0,id);
         Role insertedRole = (Role)roleDao.getById(roleId);
