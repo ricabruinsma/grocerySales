@@ -385,3 +385,27 @@
 [DEBUG] 2018-04-24 01:30:36.506 [main] GenericDao - Searching for entity with name = Hy
 [DEBUG] 2018-04-24 01:30:36.793 [main] GenericDao - Searching for entity with username = rbruinsma
 [DEBUG] 2018-04-24 01:30:36.833 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-04-24 11:43:19.935 [main] GenericDao - Searching for entity with brand = Kell
+[ERROR] 2018-04-24 11:54:23.670 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+[ERROR] 2018-04-24 11:55:54.528 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+[ERROR] 2018-04-24 12:04:48.665 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+[ERROR] 2018-04-24 13:22:29.496 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+[ERROR] 2018-04-24 13:34:26.596 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+[DEBUG] 2018-04-24 13:38:43.432 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-04-24 13:38:43.544 [main] GenericDao - Searching for entity with brand = Kell
+[DEBUG] 2018-04-24 13:38:44.008 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-04-24 13:38:44.086 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-04-24 13:38:44.600 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-04-24 13:38:44.980 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-04-24 13:38:45.020 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-04-24 13:38:45.240 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-04-24 13:38:45.304 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-04-24 13:49:33.080 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-04-24 13:49:33.383 [main] GenericDao - Searching for entity with brand = Kell
+[DEBUG] 2018-04-24 13:49:33.797 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-04-24 13:49:33.867 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-04-24 13:49:34.348 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-04-24 13:49:34.735 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-04-24 13:49:34.779 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-04-24 13:49:35.005 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-04-24 13:49:35.065 [main] GenericDao - Searching for entity with username = bruin

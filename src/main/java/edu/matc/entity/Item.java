@@ -5,7 +5,9 @@ import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * The type Deal.
@@ -21,13 +23,15 @@ public class Item {
     @Getter @Setter private String savingsAmount;
     @Getter @Setter private String saleEndDate;
 
-    /**
-     * The Store.
-     */
     @ManyToOne
-    @JoinColumns(value = {
-            @JoinColumn(name="store_id", referencedColumnName = "id", nullable = false) })
+    @JoinColumn(name = "store_id",
+            foreignKey = @ForeignKey(name = "Item_Store")
+    )
     @Getter @Setter Store store;
+
+    @OneToMany(mappedBy = "item", cascade = CascadeType.PERSIST, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<ListLine> listLines = new HashSet<>();
+
 
     @Getter @Setter private boolean active;
 

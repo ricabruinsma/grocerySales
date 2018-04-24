@@ -5,7 +5,9 @@ import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * A class to represent a shopping list
@@ -27,9 +29,13 @@ public class ShoppingList {
      * The User.
      */
     @ManyToOne
-    @JoinColumns(value = {
-            @JoinColumn(name="user_id", referencedColumnName = "id", nullable = false) })
+    @JoinColumn(name = "user_id",
+            foreignKey = @ForeignKey(name = "ShoppingList_User")
+    )
     @Getter @Setter User user;
+
+    @OneToMany(mappedBy = "shoppingList", cascade = CascadeType.PERSIST, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<ListLine> listlines = new HashSet<>();
 
     /**
      * Instantiates a new ShoppingList.

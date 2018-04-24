@@ -40,7 +40,10 @@ public class User implements Serializable {
     @Getter @Setter private double lon;
     @Getter @Setter private String updateDate;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @Getter @Setter private Set<ShoppingList> shoppingLists = new HashSet<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @Getter @Setter private Set<Role> roles = new HashSet<>();
 
     /**
