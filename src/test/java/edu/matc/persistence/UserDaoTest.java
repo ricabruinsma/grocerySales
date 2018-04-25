@@ -69,12 +69,50 @@ class UserDaoTest {
     }
 
     /**
+     * Verify successful insert of a user and their role
+     */
+    @Test
+    void insertSuccessWithRole() {
+
+        String username = "testUser4";
+        User newUser = new User("testUser4@madisoncollege.edu", "superSecret4", username, "1701 Wright St.", "Madison", "WI", "53704");
+
+        String roleName = "shopper";
+        Role role = new Role(newUser, roleName, username);
+
+        newUser.addRole(role);
+
+        int id = userDao.insert(newUser);
+
+        assertNotEquals(0,id);
+        User insertedUser = (User)userDao.getById(id);
+        assertEquals(newUser, insertedUser);
+        assertEquals(1, insertedUser.getRoles().size());
+    }
+
+    /**
      * Verify successful delete of user
      */
     @Test
     void deleteSuccess() {
         userDao.delete(userDao.getById(3));
         assertNull(userDao.getById(3));
+    }
+
+    /**
+     * Verify successful delete of user and their role
+     */
+    @Test
+    void deleteSuccessWithRole() {
+
+        User userToDelete = (User)userDao.getById(3);
+
+        GenericDao roleDao = new GenericDao(Role.class);
+        Role roleToDelete = (Role)roleDao.getById(3);
+        userToDelete.removeRole(roleToDelete);
+        userDao.delete(userToDelete);
+        assertNull(userDao.getById(3));
+        assertNull(roleDao.getById(3));
     }
 
     /**

@@ -76,4 +76,14 @@ public class User implements Serializable {
         this.state = state;
         this.postalCode = postalCode;
     }
+
+    public void addRole(Role role) {
+        roles.add(role);
+        role.setUser(this);
+    }
+
+    public void removeRole(Role role){
+        roles.remove(role);
+        role.setUser(null);
+    }
 }
