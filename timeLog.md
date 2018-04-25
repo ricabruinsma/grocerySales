@@ -33,3 +33,5 @@
 | 4/23/18| Pick website template | 3 | |
 | 4/23/18| Fix User and Role entities - relationship & constructor | 1 | |
 | 4/24/18| ListLine entity created, all tests pass, pushed to AWS, AWS DB updated | 2 | |
+| 4/24/18| Lombok annotations for Equals&HashSet, and toString, passing tests | 1 | |
+| 4/24/18| Update UserDaoTest to include when add/delete user with role add/delete | 0.5 | |

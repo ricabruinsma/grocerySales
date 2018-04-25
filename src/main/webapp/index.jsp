@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="title" value="Home Page" />
 <%@include file="head.jsp"%>
 <html>
 <body>

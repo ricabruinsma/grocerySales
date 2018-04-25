@@ -106,7 +106,7 @@
 
 ### Week 14
 - [X] Create listline entity and annotate for hibernate
-- [ ] Create listline dao unit tests
+- [X] Create listline dao unit tests
 
 - [ ] Create JSP templates using bootstrap
 - [ ] Add JSP to display user and role login
@@ -123,7 +123,7 @@
 - [ ] Code quality check
 
 - [ ] Ensure full application is functional
-- [ ] Code Reviews
+- [X] Code Reviews
 - [ ] Create final presentation
 - [ ] Journal
 
