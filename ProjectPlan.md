@@ -108,12 +108,11 @@
 - [X] Create listline entity and annotate for hibernate
 - [X] Create listline dao unit tests
 
-- [ ] Create JSP templates using bootstrap
-- [ ] Add JSP to display user and role login
-- [ ] Add JSP to add a user
-- [ ] Create Search JSP
-- [ ] Create Search Results JSP
-- [ ] Create Grocery List JSP
+- [X] Create JSP templates using bootstrap
+- [ ] Create Welcome/Landing JSP (includes deal search, login, sign-up a new user)
+- [ ] Create Admin JSP to CRUD users (including roles), CR stores
+- [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
+- [ ] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
 
 - [ ] Test relationships
 - [ ] Carefully review code for standards and best practices

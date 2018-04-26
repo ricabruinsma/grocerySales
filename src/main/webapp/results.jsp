@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="title" value="Search Results" />
-<%@include file="head.jsp"%>
+<%@include file="templates/head.jsp"%>
 
 <script type="text/javascript" class="init">
     $(document).ready( function () {

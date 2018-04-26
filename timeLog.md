@@ -35,3 +35,5 @@
 | 4/24/18| ListLine entity created, all tests pass, pushed to AWS, AWS DB updated | 2 | |
 | 4/24/18| Lombok annotations for Equals&HashSet, and toString, passing tests | 1 | |
 | 4/24/18| Update UserDaoTest to include when add/delete user with role add/delete | 0.5 | |
+| 4/24/18| Customizing web template for UI | 1.5 | |
+| 4/25/18| UI - basic set up: landing page, shopper page, admin page; create login and sign-up forms | 3 | |
