@@ -40,3 +40,8 @@
 | 4/25/18| Validation form fields | 0.75 | |
 | 4/26/18| UI - search forms | 2.5 | |
 | 4/27/18| UI - more search forms, images for UI | 2 | |
+| 4/27/18| Template JSPs |  | |
+| 4/27/18| Template JSPs |  | |
+| 4/27/18| Template JSPs |  | |
+| 4/27/18| Template JSPs |  | |
+| 4/27/18| Template JSPs |  | |

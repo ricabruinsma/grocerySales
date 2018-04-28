@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="pageTitle" value="Admin" />
-<%@include file="templates/loggedIn_head.jsp"%>
+<c:set var="isLoggedIn" value="true" />
+<%@include file="templates/head.jsp"%>
 
     <body id="top" class="page-2">
 

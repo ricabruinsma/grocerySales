@@ -113,6 +113,7 @@
 - [ ] Create Admin JSP to CRUD users (including roles), CR stores
 - [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
 - [ ] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
+- [X] Validate User-entered data (not empty)
 
 - [ ] Test relationships
 - [ ] Carefully review code for standards and best practices
@@ -137,3 +138,14 @@
 - [ ] Journal
 
 - [ ] container-fixed vs container-fluid on results tables
+- [ ] check for new user sign-up --> username not already in use.
+
+- [ ] Update time log/journal
+- [ ] When unit testing your entities, test the relationships too.
+- [ ] Add custom error pages and a login page that reflects the look and feel of your site. The error page should hide any stack trace information which can reveal information about your site and db that should not be shared.
+- [ ] Javadoc - remember there's a plugin for this
+- [ ] Be sure to remove any duplicate code - this means using the generic dao, for example.
+- [ ] Address and close any open issues
+- [ ] Use properties rather than hard-coded values, like web service urls.
+- [ ] Update your web.xml with regard to restricted resources. Remember that both jsps and servlets should be restricted (not just the jsps as a savvy user/hacker will try to access the servlets too).
+- [ ] Validating user-entered data?

@@ -12,7 +12,13 @@
     Lumino Theme
     http://www.templatemo.com/tm-483-lumino
     -->
-    <%@include file="loggedIn_css.jsp"%>
+    <c:if test="${isLoggedIn == true}">
+        <%@include file="loggedIn_css.jsp"%>
+    </c:if>
+
+    <c:if test="${isLoggedIn == false}">
+        <%@include file="notLoggedIn_css.jsp"%>
+    </c:if>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
