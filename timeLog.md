@@ -37,3 +37,6 @@
 | 4/24/18| Update UserDaoTest to include when add/delete user with role add/delete | 0.5 | |
 | 4/24/18| Customizing web template for UI | 1.5 | |
 | 4/25/18| UI - basic set up: landing page, shopper page, admin page; create login and sign-up forms | 3 | |
+| 4/25/18| Validation form fields | 0.75 | |
+| 4/26/18| UI - search forms | 2.5 | |
+| 4/27/18| UI - more search forms, images for UI | 2 | |

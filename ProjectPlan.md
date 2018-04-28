@@ -127,10 +127,13 @@
 - [ ] Journal
 
 ### Week 15
-- [ ] Present to class
+
 - [ ] Final documentation
 - [ ] Journal
 
 ### Week 16
+- [ ] Present to class
 - [ ] Final touches before code complete
 - [ ] Journal
+
+- [ ] container-fixed vs container-fluid on results tables
