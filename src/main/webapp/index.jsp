@@ -7,7 +7,7 @@
        
         <div class="container-fluid">
 
-            <%@include file="templates/notLoggedIn_navbar.jsp"%>
+            <%@include file="content/notAdmin_navbar.jsp"%>
 
            <div class="row">
                 <div class="tm-intro">

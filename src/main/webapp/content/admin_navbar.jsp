@@ -22,7 +22,7 @@
                     <a href="#tm-section-4" class="nav-link">Items</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.jsp" class="nav-link external">Logout</a>
+                    <a href="../index.jsp" class="nav-link external">Logout</a>
                 </li>
             </ul>
         </div>
