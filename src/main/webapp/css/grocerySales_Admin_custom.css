@@ -1,0 +1,13 @@
+.form-control {
+	border-color: rgb(0, 102, 153);
+	margin: auto;
+	width: 95%;
+}
+
+#usersImage {
+	max-width: 85%;
+}
+
+#itemsImage {
+	max-width: 85%;
+}

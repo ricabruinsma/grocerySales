@@ -1,0 +1,45 @@
+@media (max-width: 767px) {
+	.navbar {
+		background-color: rgba(65,59,65,0.9);
+	}
+}
+
+/* logo on landing page */
+.tm-logo {
+	margin-right: 2em;
+}
+
+.tm-intro {
+	background-image: url("../img/produce1.jpg");
+}
+
+.tm-intro-link {
+	margin-bottom: 12%;
+}
+
+#tm-section-1 {
+	background-color: #413b41;
+    background-color: rgba(65,59,65,0.7);
+}
+
+.tm-site-name {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.form-control {
+	border-color: rgb(0, 102, 153);
+	margin: auto;
+	width: 95%;
+}
+
+.customLink {
+	color: #4ea7ff;
+	border-bottom: 1px solid #4ea7ff;
+    float: right;
+}
+
+#signUpImage {
+	max-width: 95%;
+	float: left-side;
+}
