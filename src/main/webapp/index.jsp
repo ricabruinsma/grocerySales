@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>${pageTitle} Home</title>
-<!--
-Lumino Theme
-http://www.templatemo.com/tm-483-lumino
--->
-    <!-- load stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400">   <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">                <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
-    <link rel="stylesheet" href="css/magnific-popup.css">                                     <!-- Magnific pop up style -->
-    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
-	<link rel="stylesheet" href="css/grocerySales_custom.css">								  <!-- Customized CSS for grocerySales -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-          <![endif]-->
-</head>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="pageTitle" value="Home" />
+<%@include file="templates/notLoggedIn_head.jsp"%>
 
     <body id="top" class="home">
        
@@ -198,7 +173,8 @@ http://www.templatemo.com/tm-483-lumino
 						<div class="col-md-1 margin-bottom-sm-3"></div>	
                     </div>
 					
-                    </div>
+
+
                 </section>
 
             </div> <!-- row -->
@@ -211,7 +187,7 @@ http://www.templatemo.com/tm-483-lumino
                         <h2 class="blue-text tm-title text-xs-center">Find Local Grocery Sales</h2>
                       
                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                            <form action="index.html" method="post" class="tm-contact-form">                                
+                            <form action="index.jsp" method="post" class="tm-contact-form">
                                 <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-left">
                                     <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
                                 </div>
