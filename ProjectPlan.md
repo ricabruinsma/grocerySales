@@ -137,6 +137,7 @@
 - [ ] Final touches before code complete
 - [ ] Journal
 
+- [ ] generic search form for admin
 - [ ] make c-tags dynamic for isLoggedIn
 - [ ] container-fixed vs container-fluid on results tables
 - [ ] check for new user sign-up --> username not already in use.

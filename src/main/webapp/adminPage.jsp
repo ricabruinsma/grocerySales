@@ -18,7 +18,7 @@
       
             <%@include file="content/admin_searchItemsForm.jsp"%>
 
-            <%@include file="templates/copyright.jsp"%>
+            <%@include file="templates/footer.jsp"%>
 
         </div> <!-- .container -->
 
