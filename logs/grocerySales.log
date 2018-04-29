@@ -594,3 +594,13 @@
 [DEBUG] 2018-04-28 15:54:23.573 [main] GenericDao - Searching for entity with name = Hy
 [DEBUG] 2018-04-28 15:54:23.973 [main] GenericDao - Searching for entity with username = rbruinsma
 [DEBUG] 2018-04-28 15:54:24.020 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-04-28 20:09:58.426 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-04-28 20:09:58.535 [main] GenericDao - Searching for entity with brand = Kell
+[DEBUG] 2018-04-28 20:09:59.028 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-04-28 20:09:59.621 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-04-28 20:09:59.683 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-04-28 20:10:00.151 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-04-28 20:10:00.529 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-04-28 20:10:00.575 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-04-28 20:10:00.856 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-04-28 20:10:00.921 [main] GenericDao - Searching for entity with username = bruin
