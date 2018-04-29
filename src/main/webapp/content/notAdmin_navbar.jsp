@@ -1,4 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 
 <div class="row">
 
@@ -13,11 +15,11 @@
 
             <div class="collapse navbar-toggleable-sm" id="tmNavbar">
 
-                <c:if test="${isLoggedIn == true}">
+                <c:if test="${isLoggedIn}">
                     <%@include file="shopper_navbar_items.jsp"%>
                 </c:if>
 
-                <c:if test="${isLoggedIn == false}">
+                <c:if test="${!isLoggedIn}">
                     <%@include file="index_navbar_items.jsp"%>
                 </c:if>
 

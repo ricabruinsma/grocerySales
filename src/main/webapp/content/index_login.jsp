@@ -14,13 +14,13 @@
                     <h1 class="text-xs-center blue-text tm-page-2-title">Login</h1>
 
                     <div>
-                        <form action="loginServlet.java" method="get" class="tm-contact-form">
+                        <form action="j_security_check" method="POST" class="tm-contact-form">
                             <div class="form-group">
-                                <input type="text" id="userName" name="userName" class="form-control" placeholder="username"  required/>
+                                <input type="TEXT" id="userName" name="j_username" class="form-control" placeholder="username"  required/>
                             </div>
 
                             <div class="form-group">
-                                <input type="password" id="password" name="password" class="form-control" placeholder="password"  required/>
+                                <input type="PASSWORD" id="password" name="j_password" class="form-control" placeholder="password"  required/>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                                 <button type="submit" class="btn tm-light-blue-bordered-btn pull-xs-right">Login</button>

@@ -1,19 +1,22 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: paulawaite
-  Date: 9/20/15
-  Time: 9:04 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Oh No!!</title>
-</head>
-<>
-  Invalid userid/password combination. <br />
-  <a href="login.jsp">Try again</a>
+<c:set var="pageTitle" value="Failed Login" />
+<c:set var="isLoggedIn" value="false" />
+
+<%@include file="templates/head.jsp"%>
+
+<body id="top" class="home">
+    <div class="container-fluid">
+
+        <c:import url="content/failedLogin_banner.jsp" />
+
+    </div> <!-- container-fluid -->
+
+    <c:import url="content/index_scripts.jsp" />
 </body>
+
+<c:import url="templates/footer.jsp" />
+
 </html>
 
 

@@ -114,12 +114,12 @@
 - [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
 - [ ] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
 - [X] Validate User-entered data (not empty)
+- [X] Logout function
 
 - [ ] Test relationships
 - [ ] Carefully review code for standards and best practices
 - [ ] Unit test all relationships
 - [ ] Go through all feedback from previous checkpoints & peer reviews
-- [ ] Finish UI
 - [ ] Code quality check
 
 - [ ] Ensure full application is functional
@@ -134,15 +134,21 @@
 
 ### Week 16
 - [ ] Present to class
+- [ ] Create video recording - walking through application
 - [ ] Final touches before code complete
 - [ ] Journal
 
+- [ ] Error 403 not getting picked up
+- [ ] three different roles - different sets of pages : admin works, shopper does not
+- [ ] <%@include  when including a file within the include
+- [ ] Add category table, change category in item table
 - [ ] generic search form for admin
 - [ ] make c-tags dynamic for isLoggedIn
 - [ ] container-fixed vs container-fluid on results tables
 - [ ] check for new user sign-up --> username not already in use.
 
 - [ ] Update time log/journal
+
 - [ ] When unit testing your entities, test the relationships too.
 - [ ] Add custom error pages and a login page that reflects the look and feel of your site. The error page should hide any stack trace information which can reveal information about your site and db that should not be shared.
 - [ ] Javadoc - remember there's a plugin for this

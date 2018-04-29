@@ -23,7 +23,7 @@
                                     <option value="">search by</option>
                                     <option value="searchUserId">user ID</option>
                                     <option value="searchUserName">username</option>
-                                    <option value="searchUserEmail">email address</option>
+                                    <option value="searchUserRole">user role</option>
                                 </select>
 
                                 <br />

@@ -8,12 +8,12 @@
         <a class="nav-link" href="#tm-section-2">Find Deals</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#tm-section-3">Your Shopping Lists</a>
+        <a class="nav-link" href="#tm-section-3">Shopping Lists</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#tm-section-4">Your Account</a>
+        <a class="nav-link" href="#tm-section-4">My Account</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link external" href="../index.jsp">Logout</a>
+        <a class="nav-link external" href="logout">Logout</a>
     </li>
 </ul>

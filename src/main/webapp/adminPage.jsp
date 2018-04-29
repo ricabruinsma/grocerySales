@@ -2,27 +2,30 @@
 <c:set var="pageTitle" value="Admin" />
 <c:set var="isLoggedIn" value="true" />
 
+<!DOCTYPE html>
+<html lang="en">
+
 <%@include file="templates/head.jsp"%>
 
-    <body id="top" class="page-2">
+<body id="top" class="page-2">
 
-        <%@include file="content/admin_navbar.jsp"%>
-    
-        <div class="container-fluid">
+    <%@include file="content/admin_navbar.jsp"%>
 
-            <%@include file="content/admin_banner.jsp"%>
-			
-            <%@include file="content/admin_searchUsersForm.jsp"%>
-			
-			<%@include file="content/admin_searchStoresForm.jsp"%>
-      
-            <%@include file="content/admin_searchItemsForm.jsp"%>
+    <div class="container-fluid">
 
-            <%@include file="templates/footer.jsp"%>
+        <%@include file="content/admin_banner.jsp"%>
 
-        </div> <!-- .container -->
+        <%@include file="content/admin_searchUsersForm.jsp"%>
 
-        <%@include file="content/admin_scripts.jsp"%>
+        <%@include file="content/admin_searchStoresForm.jsp"%>
 
-    </body>
+        <%@include file="content/admin_searchItemsForm.jsp"%>
+
+        <%@include file="templates/footer.jsp"%>
+
+    </div> <!-- .container -->
+
+    <%@include file="content/admin_scripts.jsp"%>
+
+</body>
 </html>

@@ -37,6 +37,4 @@
         </div>
     </section>
 
-    <%@include file="../templates/footer.jsp"%>
-
 </div> <!-- row -->
