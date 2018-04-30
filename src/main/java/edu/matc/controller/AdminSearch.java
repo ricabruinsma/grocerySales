@@ -1,6 +1,7 @@
 package edu.matc.controller;
 
 import edu.matc.entity.Item;
+import edu.matc.entity.Role;
 import edu.matc.entity.Store;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
@@ -83,12 +84,23 @@ public class AdminSearch extends HttpServlet {
                             request.setAttribute("searchPage", "item");
                             break;
             case "user":    GenericDao userDao = new GenericDao(User.class);
-                            request.setAttribute("users", userDao.getByPropertyLike(searchByQuery, searchKeywordQuery));
-                            request.setAttribute("searchType", "user");
+                            if (searchByQuery.equals("role")) {
+                                GenericDao roleDao = new GenericDao(Role.class);
+                                List<Role> roleList = roleDao.getByPropertyLike("name", searchKeywordQuery);
+                                // from role objects, make a list of users
+                                List<User> userList = new ArrayList<>();
+                                for (Role role : roleList) {
+                                    userList.add(role.getUser());
+                                }
+                                request.setAttribute("users", userList);
+                            } else {
+                                request.setAttribute("users", userDao.getByPropertyLike(searchByQuery, searchKeywordQuery));
+                            }
+                            request.setAttribute("searchPage", "user");
                             break;
             case "store":   GenericDao storeDao = new GenericDao(Store.class);
                             request.setAttribute("stores", storeDao.getByPropertyLike(searchByQuery, searchKeywordQuery));
-                            request.setAttribute("searchType", "store");
+                            request.setAttribute("searchPage", "store");
                             break;
         }
 

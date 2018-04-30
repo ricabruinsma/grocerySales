@@ -41,7 +41,10 @@
 | 4/26/18| UI - search forms | 2.5 | |
 | 4/27/18| UI - more search forms, images for UI | 2 | |
 | 4/27/18| Template JSPs | 2 | |
-| 4/27/18| More template JSPs & logout function | 3 | |
-| 4/28/18| xyz |  | |
-| 4/28/18| xyz |  | |
-| 4/28/18| xyz |  | |
+| 4/28/18| More template JSPs & logout function | 3 | |
+| 4/28/18| Fighting with Auth and templating | 3 | |
+| 4/29/18| Servlet to display search info from DB | 4 | |
+| 4/30/18| xyz |  | |
+| 4/30/18| xyz |  | |
+| 4/30/18| xyz |  | |
+| 4/30/18| xyz |  | |

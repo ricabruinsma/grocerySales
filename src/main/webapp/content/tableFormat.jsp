@@ -4,7 +4,7 @@
 <div class="row">
     <div class="tm-section" id="tm-section-5">
         <div class="col-xs-12">
-
+            <c:if test="${searchPage.equals('item')}">
             <h3 class="blue-text">Search Results:</h3>
             <c:if test="${items.isEmpty()}">
                 <h3 style="color: red;">No Results were found for your search.</h3>
@@ -43,7 +43,7 @@
                     </tbody>
                 </table>
             </c:if>
-
+            </c:if>
         </div>
     </div> <!-- tm-section -->
 </div>
