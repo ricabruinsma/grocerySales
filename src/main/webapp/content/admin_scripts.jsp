@@ -12,7 +12,7 @@
     $(document).ready(function(){
 
         /* data table plugin */
-        $('#exampleTable').DataTable();
+        $('#itemSearchResults').DataTable();
 
 
         var mobileTopOffset = 54;

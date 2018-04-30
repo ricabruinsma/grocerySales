@@ -110,8 +110,9 @@
 
 - [X] Create JSP templates using bootstrap
 - [ ] Create Welcome/Landing JSP (includes deal search, login, sign-up a new user)
-- [ ] Create Admin JSP to CRUD users (including roles), CR stores
+- [ ] Create Admin JSP to CRUD users (including roles), stores, items
 - [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
+- [ ] Implement API to populate deal search results
 - [ ] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
 - [X] Validate User-entered data (not empty)
 - [X] Logout function
@@ -138,6 +139,8 @@
 - [ ] Final touches before code complete
 - [ ] Journal
 
+- [ ] update AWS DB for items - category
+- [ ] update ERD diagram
 - [ ] Error 403 not getting picked up
 - [ ] three different roles - different sets of pages : admin works, shopper does not
 - [ ] <%@include  when including a file within the include

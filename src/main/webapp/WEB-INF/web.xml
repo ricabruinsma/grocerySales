@@ -4,6 +4,37 @@
          version="3.1">
   <display-name>Grocery Sales Web Application</display-name>
 
+  <!-- Error Pages -->
+  <error-page>
+    <error-code>400</error-code>
+    <location>/Error403.jsp</location>
+  </error-page>
+
+  <error-page>
+    <error-code>401</error-code>
+    <location>/Error403.jsp</location>
+  </error-page>
+
+  <error-page>
+    <error-code>403</error-code>
+    <location>/Error403.jsp</location>
+  </error-page>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/Error403.jsp</location>
+  </error-page>
+
+  <error-page>
+    <error-code>500</error-code>
+    <location>/Error403.jsp</location>
+  </error-page>
+
+  <error-page>
+    <error-code>503</error-code>
+    <location>/Error403.jsp</location>
+  </error-page>
+
   <!-- Tell the server to use form-based authentication. -->
   <login-config>
     <auth-method>FORM</auth-method>
@@ -13,33 +44,34 @@
     </form-login-config>
   </login-config>
 
-  <!-- Trying out special error page for 403 error. -->
-  <error-page>
-    <error-code>403</error-code>
-    <location>/Error403.jsp</location>
-  </error-page>
 
   <!-- Protect everything within the admin page. -->
   <security-constraint>
+
     <web-resource-collection>
       <web-resource-name>admin</web-resource-name>
       <url-pattern>/adminPage.jsp</url-pattern>
     </web-resource-collection>
+
     <auth-constraint>
       <role-name>admin</role-name>
     </auth-constraint>
+
   </security-constraint>
 
   <!-- Protect everything within the shopper page. -->
   <security-constraint>
+
     <web-resource-collection>
       <web-resource-name>shopper</web-resource-name>
       <url-pattern>/shopperPage.jsp</url-pattern>
     </web-resource-collection>
+
     <auth-constraint>
       <role-name>shopper</role-name>
       <role-name>admin</role-name>
     </auth-constraint>
+
   </security-constraint>
 
 

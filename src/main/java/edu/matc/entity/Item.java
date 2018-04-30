@@ -22,6 +22,7 @@ public class Item {
 
     @Getter @Setter private String createDate;
     @Getter @Setter private String brand;
+    @Getter @Setter private String category;
     @Getter @Setter private String product;
     @Getter @Setter private String size;
     @Getter @Setter private String salePrice;

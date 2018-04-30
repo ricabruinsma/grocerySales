@@ -15,20 +15,23 @@
                     <h1 class="text-xs-center blue-text tm-page-2-title">Search for Items</h1>
 
                     <div>
-                        <form action="searchItemsServlet.java" method="post" class="tm-contact-form"  id="searchItemsForm">
+                        <form action="/grocerySales/adminSearch" method="GET" class="tm-contact-form"  id="searchItemsForm">
                             <div class="row">
                                 <h4>Options:</h4>
 
-                                <select class="form-control" required>
+                                <select class="form-control" name="searchBy" required>
                                     <option value="">search by</option>
-                                    <option value="searchItemBrand">item brand</option>
-                                    <option value="searchItemName">item name</option>
-                                    <option value="searchItemStoreName">store name</option>
+                                    <option value="brand">item brand</option>
+                                    <option value="product">item name</option>
+                                    <option value="category">category</option>
+                                    <option value="store">store name</option>
                                 </select>
 
                                 <br />
                                 <h4>Enter Search Term:</h4>
-                                <input type="text" id="searchItemsTerm" name="userSearchTerm" class="form-control" required/> <br />
+                                <input type="text" id="searchItemsTerm" name="searchTerm" class="form-control" required/>
+                                <input type="hidden" name="searchType" value="item" />
+                                <br />
 
                                 <button type="submit" class="btn tm-light-blue-bordered-btn">Submit</button>
                             </div>
@@ -37,15 +40,8 @@
                 </div>
             </div>
 
-            <div class="row"></div>
-            <div class="col-md-3 margin-bottom-sm-3"></div>
+            <%@include file="tableFormat.jsp"%>
 
-            <div class="col-md-6">
-                <!-- put output table here -->
-
-            </div> <!-- col -->
-
-            <div class="col-md-3 margin-bottom-sm-3"></div>
 
         </div>
     </section>
