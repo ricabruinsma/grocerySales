@@ -5,7 +5,9 @@ import edu.matc.entity.User;
 import edu.matc.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import sun.net.www.content.text.Generic;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertNotEquals;
@@ -120,8 +122,35 @@ class UserDaoTest {
      */
     @Test
     void updateSuccess() {
-        String newUsername = "newUser";
+        String newName = "newFirstName";
         User userToUpdate = (User)userDao.getById(1);
+        userToUpdate.setFirstName(newName);
+        userDao.saveOrUpdate(userToUpdate);
+        User retrievedUser = (User)userDao.getById(1);
+        assertEquals(userToUpdate, retrievedUser);
+    }
+
+    /**
+     * Verify successful update of username in User and Role
+     */
+    @Test
+    void updateUserAndRoleUsernameSuccess() {
+        String newUsername = "newUserName";
+        User userToUpdate = (User)userDao.getById(1);
+
+        //update role record of associated user and username
+        GenericDao roleDao = new GenericDao(Role.class);
+        List<Role> rolesToUpdate = roleDao.getByPropertyEqual("user", userToUpdate);
+        List<Role> rolesRetrieved = new ArrayList<>();
+        for (Role role : rolesToUpdate) {
+            role.setUsername(newUsername);
+            roleDao.saveOrUpdate(role);
+            int roleId = role.getId();
+            Role retrievedRole = (Role) roleDao.getById(roleId);
+            rolesRetrieved.add(retrievedRole);
+        }
+        assertEquals(rolesToUpdate, rolesRetrieved);
+
         userToUpdate.setUsername(newUsername);
         userDao.saveOrUpdate(userToUpdate);
         User retrievedUser = (User)userDao.getById(1);

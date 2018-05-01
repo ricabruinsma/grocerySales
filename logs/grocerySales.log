@@ -24,3 +24,8 @@
 [DEBUG] 2018-05-01 01:12:05.672 [main] GenericDao - Searching for entity with name = Hy
 [DEBUG] 2018-05-01 01:12:05.933 [main] GenericDao - Searching for entity with username = rbruinsma
 [DEBUG] 2018-05-01 01:12:05.993 [main] GenericDao - Searching for entity with username = bruin
+[INFO ] 2018-05-01 01:12:49.965 [http-nio-8080-exec-5] AdminSearchUsers - id
+[INFO ] 2018-05-01 01:12:49.975 [http-nio-8080-exec-5] AdminSearchUsers - 1
+[DEBUG] 2018-05-01 01:27:42.420 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[DEBUG] 2018-05-01 01:28:41.561 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[DEBUG] 2018-05-01 01:35:36.218 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
