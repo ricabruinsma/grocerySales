@@ -4,6 +4,8 @@ import edu.matc.entity.Item;
 import edu.matc.entity.Store;
 import edu.matc.entity.User;
 import edu.matc.test.util.Database;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -19,6 +21,8 @@ import static org.junit.jupiter.api.Assertions.assertNull;
  */
 @SuppressWarnings("unchecked")
 class ItemDaoTest {
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     GenericDao itemDao;
 
@@ -107,11 +111,24 @@ class ItemDaoTest {
     }
 
     /**
+     * Verify successful get by property (equal match) - store
+     */
+    @Test
+    void getByPropertyEqualSuccessUsingStore() {
+        GenericDao storeDao = new GenericDao(Store.class);
+        Store retrievedStore = (Store)storeDao.getById(2);
+        List<Item> items = itemDao.getByPropertyEqual("store", retrievedStore);
+        assertEquals(3, items.size());
+        assertEquals(1, items.get(0).getId());
+    }
+
+    /**
      * Verify successful get by property (like match)
      */
     @Test
     void getByPropertyLikeSuccess() {
         List<Item> items = itemDao.getByPropertyLike("brand", "Kell");
         assertEquals(1, items.size());
+        logger.info("Store object: " + items.get(0).getStore());
     }
 }

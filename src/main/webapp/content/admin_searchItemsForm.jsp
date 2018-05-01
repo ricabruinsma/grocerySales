@@ -15,7 +15,7 @@
                     <h1 class="text-xs-center blue-text tm-page-2-title">Search for Items</h1>
 
                     <div>
-                        <form action="/grocerySales/adminSearch" method="GET" class="tm-contact-form"  id="searchItemsForm">
+                        <form action="/grocerySales/searchItems" method="GET" class="tm-contact-form"  id="searchItemsForm">
                             <div class="row">
                                 <h4>Options:</h4>
 

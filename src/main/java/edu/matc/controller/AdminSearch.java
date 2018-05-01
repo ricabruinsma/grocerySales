@@ -59,20 +59,15 @@ public class AdminSearch extends HttpServlet {
                                 //search store entity by name entered
                                 GenericDao storeDao = new GenericDao(Store.class);
                                 List<Store> storeList = storeDao.getByPropertyLike("name", searchKeywordQuery);
-                                // from store objects, make a list of store ids
-                                List<Integer> storeIdList = new ArrayList<>();
-                                for (Store store : storeList) {
-                                    storeIdList.add(store.getId());
-                                }
-                                //for each store id, grab items associated with the store
+                                // from store object, grab items associated with the store
                                 TreeSet<Item> items = new TreeSet<Item>();
-                                for (int storeId : storeIdList) {
-                                    List<Item> itemsToAdd = itemDao.getByPropertyEqual("store.get(store_id", storeId);
+                                for (Store store : storeList) {
+                                    List<Item> itemsToAdd = itemDao.getByPropertyEqual("store", store);
                                     for (Item item : itemsToAdd) {
                                         items.add(item);
                                     }
                                 }
-
+                                // tuck found items into request object
                                 request.setAttribute("items", items);
 
                             } else {

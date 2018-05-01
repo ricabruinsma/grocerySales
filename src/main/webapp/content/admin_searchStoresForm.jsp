@@ -9,7 +9,7 @@
                     <h1 class="text-xs-center blue-text tm-page-2-title">Search for Stores</h1>
 
                     <div>
-                        <form action="searchStoresServlet.java" method="post" class="tm-contact-form"  id="searchStoresForm">
+                        <form action="/grocerySales/searchStores" method="post" class="tm-contact-form"  id="searchStoresForm">
                             <div class="row">
                                 <h4>Options:</h4>
 

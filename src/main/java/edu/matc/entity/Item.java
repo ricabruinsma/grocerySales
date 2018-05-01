@@ -18,7 +18,7 @@ import java.util.Set;
 @ToString(exclude = {"listLines"})
 @Entity(name = "Item")
 @Table(name = "item")
-public class Item {
+public class Item implements Comparable {
 
     @Getter @Setter private String createDate;
     @Getter @Setter private String brand;
@@ -76,5 +76,9 @@ public class Item {
         this.store = store;
     }
 
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }
 

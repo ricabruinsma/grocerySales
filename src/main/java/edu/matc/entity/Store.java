@@ -16,7 +16,7 @@ import java.util.Set;
  * A class to represent a store
  */
 @EqualsAndHashCode(exclude = {"items", "createDate", "updateDate"})
-@ToString(exclude = {"items", "lat", "lon"})
+@ToString(exclude = {"items", "lat", "lon", "createDate", "updateDate"})
 @Entity(name = "Store")
 @Table(name = "store")
 public class Store {

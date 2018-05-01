@@ -15,7 +15,7 @@
                     <h1 class="text-xs-center blue-text tm-page-2-title">Search for Users</h1>
 
                     <div>
-                        <form action="searchUsersServlet.java" method="post" class="tm-contact-form"  id="searchUsersForm">
+                        <form action="/grocerySales/searchUsers" method="post" class="tm-contact-form"  id="searchUsersForm">
                             <div class="row">
                                 <h4>Options:</h4>
 
