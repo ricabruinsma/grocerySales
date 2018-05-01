@@ -30,7 +30,6 @@
                                 <br />
                                 <h4>Enter Search Term:</h4>
                                 <input type="text" id="searchItemsTerm" name="searchTerm" class="form-control" required/>
-                                <input type="hidden" name="searchType" value="item" />
                                 <br />
 
                                 <button type="submit" class="btn tm-light-blue-bordered-btn">Submit</button>
@@ -39,10 +38,6 @@
                     </div> <!-- col -->
                 </div>
             </div>
-
-            <%@include file="tableFormat.jsp"%>
-
-
         </div>
     </section>
 </div>

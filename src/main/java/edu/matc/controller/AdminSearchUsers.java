@@ -14,7 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * A servlet to search the User database.
@@ -22,6 +24,7 @@ import java.util.List;
  */
 
 @WebServlet(
+		name = "searchUsers",
         urlPatterns = {"/searchUsers"}
 )
 
@@ -44,28 +47,38 @@ public class AdminSearchUsers extends HttpServlet {
         //field to search by
         String searchByQuery = request.getParameter("searchBy");
         //term to look for in field above
-        String searchKeywordQuery = request.getParameter("searchTerm");
+		String searchKeywordQueryString = request.getParameter("searchTerm");
 
         logger.info(searchByQuery);
-        logger.info(searchKeywordQuery);
+        logger.info(searchKeywordQueryString);
 
 		GenericDao userDao = new GenericDao(User.class);
-		
-		// role query needs to go through role DB first
-		if (searchByQuery.equals("role")) {
-			GenericDao roleDao = new GenericDao(Role.class);
-			List<Role> roleList = roleDao.getByPropertyLike("name", searchKeywordQuery);
-			// from role objects, make a list of users
-			List<User> userList = new ArrayList<>();
-			for (Role role : roleList) {
-				userList.add(role.getUser());
-			}
-			request.setAttribute("users", userList);
-			
-		// all other queries go through user DB
-		} else {
-			request.setAttribute("users", userDao.getByPropertyLike(searchByQuery, searchKeywordQuery));
+
+		switch (searchByQuery) {
+								// role query needs to go through role DB first
+			case "role": 		GenericDao roleDao = new GenericDao(Role.class);
+								List<Role> roleList = roleDao.getByPropertyLike("name", searchKeywordQueryString);
+
+								// from role objects, make a list of users
+								Set<User> userList = new HashSet<>();
+								for (Role role : roleList) {
+									userList.add(role.getUser());
+								}
+								request.setAttribute("users", userList);
+								break;
+
+								// id query goes through User DB, but needs to be cast to int
+			case "id":			User retrievedUser = (User)userDao.getById(Integer.parseInt(searchKeywordQueryString));
+								Set<User> userListOfOne = new HashSet<>();
+								userListOfOne.add(retrievedUser);
+								request.setAttribute("users", userListOfOne);
+								break;
+
+			case "username":	List<User> userListByUsername = userDao.getByPropertyLike("username", searchKeywordQueryString);
+								request.setAttribute("users", userListByUsername);
+
 		}
+
 		request.setAttribute("searchPage", "user");
 
 

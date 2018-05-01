@@ -9,18 +9,16 @@
                     <h1 class="text-xs-center blue-text tm-page-2-title">Search for Stores</h1>
 
                     <div>
-                        <form action="/grocerySales/searchStores" method="post" class="tm-contact-form"  id="searchStoresForm">
+                        <form action="/grocerySales/searchStores" method="GET" class="tm-contact-form"  id="searchStoresForm">
                             <div class="row">
                                 <h4>Options:</h4>
 
-                                <select class="form-control" required>
+                                <select class="form-control" name="searchBy" required>
                                     <option value="">search by</option>
-                                    <option value="searchStoreName">store name</option>
-                                    <option value="searchStoreAddress">store address</option>
-                                    <option value="searchStoreCity">store city</option>
+                                    <option value="name">store name</option>
+                                    <option value="address1">store address</option>
+                                    <option value="city">store city</option>
                                 </select>
-
-
 
                                 <br />
                                 <h4>Enter Search Term:</h4>

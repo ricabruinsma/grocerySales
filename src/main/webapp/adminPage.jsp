@@ -17,9 +17,15 @@
 
         <%@include file="content/admin_searchUsersForm.jsp"%>
 
+        <%@include file="content/admin_searchUsersResults.jsp"%>
+
         <%@include file="content/admin_searchStoresForm.jsp"%>
 
+        <%@include file="content/admin_searchStoresResults.jsp"%>
+
         <%@include file="content/admin_searchItemsForm.jsp"%>
+
+        <%@include file="content/admin_searchItemsResults.jsp"%>
 
         <%@include file="templates/footer.jsp"%>
 

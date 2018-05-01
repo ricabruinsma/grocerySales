@@ -18,7 +18,7 @@ import java.util.Set;
  * @author Rica
  */
 @EqualsAndHashCode(exclude = {"shoppingLists", "roles", "createDate", "firstName", "address2", "lat", "lon"})
-@ToString(exclude = {"shoppingLists", "roles", "lat", "lon"})
+@ToString(exclude = {"shoppingLists", "roles", "lat", "lon", "createDate", "updateDate"})
 @Entity(name = "User")
 @Table(name = "user")
 public class User implements Serializable {

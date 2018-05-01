@@ -20,6 +20,7 @@ import java.io.IOException;
  */
 
 @WebServlet(
+        name = "searchStores",
         urlPatterns = {"/searchStores"}
 )
 

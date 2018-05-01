@@ -15,20 +15,20 @@
                     <h1 class="text-xs-center blue-text tm-page-2-title">Search for Users</h1>
 
                     <div>
-                        <form action="/grocerySales/searchUsers" method="post" class="tm-contact-form"  id="searchUsersForm">
+                        <form action="/grocerySales/searchUsers" method="GET" class="tm-contact-form"  id="searchUsersForm">
                             <div class="row">
                                 <h4>Options:</h4>
 
-                                <select class="form-control" required>
+                                <select class="form-control" name="searchBy" required>
                                     <option value="">search by</option>
-                                    <option value="searchUserId">user ID</option>
-                                    <option value="searchUserName">username</option>
-                                    <option value="searchUserRole">user role</option>
+                                    <option value="id">user ID</option>
+                                    <option value="username">username</option>
+                                    <option value="role">user role</option>
                                 </select>
 
                                 <br />
                                 <h4>Enter Search Term:</h4>
-                                <input type="text" id="userSearchTerm" name="userSearchTerm" class="form-control" required/> <br />
+                                <input type="text" id="userSearchTerm" name="searchTerm" class="form-control" required/> <br />
 
                                 <button type="submit" class="btn tm-light-blue-bordered-btn">Submit</button>
                             </div>
