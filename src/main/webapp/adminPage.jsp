@@ -15,7 +15,7 @@
 
         <%@include file="content/admin_banner.jsp"%>
 
-        <%@include file="content/admin_searchUsersForm.jsp"%>
+        <%@include file="content/admin_UsersSection.jsp"%>
 
         <%@include file="content/admin_searchUsersResults.jsp"%>
 

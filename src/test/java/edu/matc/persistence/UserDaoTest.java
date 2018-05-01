@@ -3,6 +3,8 @@ package edu.matc.persistence;
 import edu.matc.entity.Role;
 import edu.matc.entity.User;
 import edu.matc.test.util.Database;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import sun.net.www.content.text.Generic;
@@ -20,6 +22,8 @@ import static org.junit.jupiter.api.Assertions.assertNull;
  */
 @SuppressWarnings("unchecked")
 class UserDaoTest {
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     GenericDao userDao;
 
@@ -83,6 +87,7 @@ class UserDaoTest {
         Role role = new Role(newUser, roleName, username);
 
         newUser.addRole(role);
+
 
         int id = userDao.insert(newUser);
 

@@ -16,8 +16,6 @@
         $('#userSearchResults').DataTable();
         $('#storeSearchResults').DataTable();
 
-
-
         var mobileTopOffset = 54;
         var tabletTopOffset = 74;
         var desktopTopOffset = 79;

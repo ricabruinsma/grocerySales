@@ -76,11 +76,14 @@ public class AdminSearchUsers extends HttpServlet {
 
 			case "username":	List<User> userListByUsername = userDao.getByPropertyLike("username", searchKeywordQueryString);
 								request.setAttribute("users", userListByUsername);
+								break;
+			case "all":			List<User> allUsers = userDao.getAll();
+								request.setAttribute("users", allUsers);
 
 		}
 
 		request.setAttribute("searchPage", "user");
-
+		request.setAttribute("anchorName", "#searchUsersResults");
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
         dispatcher.forward(request, response);

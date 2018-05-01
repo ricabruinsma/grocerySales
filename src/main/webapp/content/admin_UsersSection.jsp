@@ -1,6 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <div class="row">
+    <h1 id="usersSection" class="text-xs-center blue-text tm-page-2-title">Users</h1>
+</div>
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-8">
+        <a href="/grocerySales/searchUsers?searchBy=all" class="btn btn-default tm-normal-btn tm-blue-btn">View All</a>
+        <a href="index.jsp#signUpSection" class="btn btn-default tm-normal-btn tm-blue-btn">Add New</a>
+        <a href="#searchUsersForm" class="btn btn-default tm-normal-btn tm-blue-btn">Edit/Delete</a>
+    </div>
+</div>
+<div class="row">
     <section id="tm-section-2" class="tm-section">
         <div class="tm-container text-xs-center">
             <div class="tm-news-item">

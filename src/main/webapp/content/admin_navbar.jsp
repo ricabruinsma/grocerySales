@@ -10,10 +10,10 @@
         <div class="collapse navbar-toggleable-sm" id="tmNavbar">
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                    <a href="#top" class="nav-link">Home</a>
+                    <a href="index.jsp" class="nav-link external">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#tm-section-2" class="nav-link">Users</a>
+                    <a href="#usersSection" class="nav-link">Users</a>
                 </li>
                 <li class="nav-item">
                     <a href="#tm-section-3" class="nav-link">Stores</a>

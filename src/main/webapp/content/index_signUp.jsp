@@ -13,7 +13,7 @@
             <div class="col-md-1 margin-bottom-sm-2"></div>
 
             <div class="col-md-10">
-                <form action="newUserSignUpServlet.java" method="post" class="tm-contact-form"  id="signUpForm">
+                <form action="/grocerySales/userSignUp" method="POST" class="tm-contact-form"  id="signUpForm">
 
                     <div class="tm-3-col-box col-lg-6">
                         <div class="row">
@@ -24,7 +24,7 @@
 
                         <div class="row">
                             <div class="form-group">
-                                <input type="text" id="newUserName" name="newUserName" class="form-control" placeholder="username"  required/>
+                                <input type="text" id="userName" name="newUserName" class="form-control" placeholder="username"  required/>
                             </div>
                         </div>
 
@@ -78,8 +78,10 @@
 
             <div class="col-md-1 margin-bottom-sm-3"></div>
         </div>
-
-
+        <a name="signup"></a>
+        <c:if test="${success}">
+            <h3 style="color: green;">Successful sign-up of new user.</h3>
+        </c:if>
 
     </section>
 

@@ -1,17 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<div class="row">
+<div class="row"> <a name="searchUsersResults"></a>
     <div class="tm-section" id="tm-section-5">
         <div class="col-xs-12">
             <c:if test="${searchPage.equals('user')}">
             <h3 class="blue-text">Search Results:</h3>
             <c:if test="${users.isEmpty()}">
-                <h3 style="color: red;">No Results were found for your search.</h3>
+                <h3 class="userResultAlert" style="color: red;">No Results were found for your search.</h3>
             </c:if>
 
             <c:if test="${users.size() > 0}">
-                <table class="table table-striped tm-full-width-large-table" id="userSearchResults">
+                <table class="table table-striped tm-full-width-large-table userResultAlert" id="userSearchResults">
                     <thead>
                     <tr>
                         <th>id</th>

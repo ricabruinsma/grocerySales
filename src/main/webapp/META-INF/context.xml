@@ -5,4 +5,5 @@
            userTable="user" userNameCol="username" userCredCol="password"
            userRoleTable="role" roleNameCol="name" >
     </Realm>
+    <Valve className="org.apache.catalina.authenticator.FormAuthenticator" landingPage="/index.jsp" />
 </Context>
