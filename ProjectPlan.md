@@ -111,7 +111,9 @@
 - [X] Create JSP templates using bootstrap
 - [ ] Create Welcome/Landing JSP (includes deal search, login, sign-up a new user)
 - [ ] Create Admin JSP to CRUD users (including roles), stores, items
+- [X] specific search form and controllers for admin (items, users, stores)
 - [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
+- [X] <%@include  when including a file within the include  --> OK to use
 - [ ] Implement API to populate deal search results
 - [ ] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
 - [X] Validate User-entered data (not empty)
@@ -141,11 +143,11 @@
 
 - [ ] update AWS DB for items - category
 - [ ] update ERD diagram
-- [ ] Error 403 not getting picked up
-- [ ] three different roles - different sets of pages : admin works, shopper does not
-- [ ] <%@include  when including a file within the include
-- [ ] Add category table, change category in item table
-- [ ] generic search form for admin
+- [ ] Error 403/500/etc not getting picked up
+- [ ] login doesn't route user to their page - only after bounced back from "no admittance"
+
+- [ ] Add category table, change to category_id in item table
+- [ ] CRUD category with admin
 - [ ] make c-tags dynamic for isLoggedIn
 - [ ] container-fixed vs container-fluid on results tables
 - [ ] check for new user sign-up --> username not already in use.

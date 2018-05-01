@@ -44,7 +44,7 @@
 | 4/28/18| More template JSPs & logout function | 3 | |
 | 4/28/18| Fighting with Auth and templating | 3 | |
 | 4/29/18| Servlet to display search info from DB | 4 | |
-| 4/30/18| xyz |  | |
+| 4/30/18| Specific Search Servlets, all search by.. works, tables display results for items, users, stores | 3.5 | |
 | 4/30/18| xyz |  | |
 | 4/30/18| xyz |  | |
 | 4/30/18| xyz |  | |

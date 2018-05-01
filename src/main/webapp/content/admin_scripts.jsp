@@ -13,6 +13,9 @@
 
         /* data table plugin */
         $('#itemSearchResults').DataTable();
+        $('#userSearchResults').DataTable();
+        $('#storeSearchResults').DataTable();
+
 
 
         var mobileTopOffset = 54;
