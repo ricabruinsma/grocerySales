@@ -83,14 +83,14 @@
     </section><br />
     <a name="signup"></a>
     <c:if test="${signUp.equals('success')}">
-        <h3 style="{color: green; text-align: center;}">Successful sign-up of new user.</h3>
+        <h3 style="color: green; text-align: center;">Successful sign-up of new user.</h3>
     </c:if>
     <a name="signup"></a>
     <c:if test="${signUp.equals('failed')}">
-        <h3 style="{color: red; text-align: center;}">Signup failed. Please try again.</h3>
+        <h3 style="color: red; text-align: center;">Signup failed. Please try again.</h3>
     </c:if>
     <c:if test="${signUp.equals('duplicate')}">
-        <h3 style="{color: red; text-align: center;}">Please pick a different username.</h3>
+        <h3 style="color: red; text-align: center;">Please pick a different username.</h3>
     </c:if>
 
 </div> <!-- row -->
