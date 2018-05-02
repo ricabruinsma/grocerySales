@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * A servlet to sign up a new User
@@ -36,6 +37,8 @@ public class UserSignUp extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        String message = null;
+
         //from POST request
         String email = request.getParameter("email");
         String password = request.getParameter("newPassword");
@@ -45,19 +48,31 @@ public class UserSignUp extends HttpServlet {
         String state = request.getParameter("userState");
         String postalCode = request.getParameter("userZip");
         User newUser = new User(email, password, username, address1, city, state, postalCode);
+        logger.info(newUser);
 
-        String genericUserRole = "shopper";
-        Role newRole = new Role(newUser, genericUserRole, username);
-        newUser.addRole(newRole);
-
-
+        // check if username is already in use
         GenericDao userDao = new GenericDao(User.class);
-        int id = userDao.insert(newUser);
+        List<User> users = userDao.getByPropertyEqual("username", username);
+        logger.info("how many users are there???" + users.size());
+        if (users.size() == 0) {
+            String genericUserRole = "shopper";
+            Role newRole = new Role(newUser, genericUserRole, username);
+            newUser.addRole(newRole);
 
+            int id = userDao.insert(newUser);
+
+            if (id > 0) {
+                message = "success";
+            } else {
+                message = "failure";
+            }
+        } else {
+            message = "duplicate";
+        }
 
         request.setAttribute("searchPage", "signup");
-        request.setAttribute("anchorName", "#signup");
-        request.setAttribute("success", true);
+        request.setAttribute("anchorName", "signup");
+        request.setAttribute("signUp", message);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);

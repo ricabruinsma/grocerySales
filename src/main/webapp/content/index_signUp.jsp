@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <div class="row gray-bg">
 
@@ -24,7 +25,7 @@
 
                         <div class="row">
                             <div class="form-group">
-                                <input type="text" id="userName" name="newUserName" class="form-control" placeholder="username"  required/>
+                                <input type="text" id="userName" name="userName" class="form-control" placeholder="username"  required/>
                             </div>
                         </div>
 
@@ -78,11 +79,18 @@
 
             <div class="col-md-1 margin-bottom-sm-3"></div>
         </div>
-        <a name="signup"></a>
-        <c:if test="${success}">
-            <h3 style="color: green;">Successful sign-up of new user.</h3>
-        </c:if>
 
-    </section>
+    </section><br />
+    <a name="signup"></a>
+    <c:if test="${signUp.equals('success')}">
+        <h3 style="{color: green; text-align: center;}">Successful sign-up of new user.</h3>
+    </c:if>
+    <a name="signup"></a>
+    <c:if test="${signUp.equals('failed')}">
+        <h3 style="{color: red; text-align: center;}">Signup failed. Please try again.</h3>
+    </c:if>
+    <c:if test="${signUp.equals('duplicate')}">
+        <h3 style="{color: red; text-align: center;}">Please pick a different username.</h3>
+    </c:if>
 
 </div> <!-- row -->
