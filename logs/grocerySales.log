@@ -250,3 +250,82 @@
 [DEBUG] 2018-05-01 21:17:07.859 [main] GenericDao - Searching for entity with username = rbruinsma
 [DEBUG] 2018-05-01 21:17:07.919 [main] GenericDao - Searching for entity with username = bruin
 [DEBUG] 2018-05-01 21:17:07.982 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[DEBUG] 2018-05-01 21:20:28.414 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-01 21:20:29.106 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-01 21:20:29.187 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-01 21:20:29.227 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-01 21:20:29.667 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-01 21:20:30.197 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-01 21:20:30.277 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-01 21:20:30.902 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-01 21:20:31.670 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-01 21:20:31.770 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-01 21:20:32.083 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-01 21:20:32.144 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-01 21:20:32.237 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[DEBUG] 2018-05-02 20:04:29.622 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-02 20:04:30.222 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-02 20:04:30.314 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-02 20:04:30.344 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-02 20:04:30.794 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-02 20:04:31.414 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-02 20:04:31.589 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-02 20:04:32.301 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-02 20:04:32.683 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-02 20:04:32.733 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-02 20:04:33.028 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-02 20:04:33.150 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-02 20:04:33.242 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[DEBUG] 2018-05-02 20:07:19.546 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-02 20:07:20.065 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-02 20:07:20.132 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-02 20:07:20.192 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-02 20:07:20.562 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-02 20:07:21.047 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-02 20:07:21.097 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-02 20:07:21.592 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-02 20:07:21.948 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-02 20:07:22.001 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-02 20:07:22.282 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-02 20:07:22.362 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-02 20:07:22.430 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[INFO ] 2018-05-02 20:09:14.532 [http-nio-8080-exec-8] AdminSearchUsers - all
+[INFO ] 2018-05-02 20:09:14.532 [http-nio-8080-exec-8] AdminSearchUsers - null
+[INFO ] 2018-05-02 20:09:35.037 [http-nio-8080-exec-10] AdminDeleteUser - userId: 1323
+[DEBUG] 2018-05-02 20:09:35.047 [http-nio-8080-exec-10] GenericDao - Searching for entity with username = testUser4
+[INFO ] 2018-05-02 20:09:47.498 [http-nio-8080-exec-4] AdminSearchUsers - all
+[INFO ] 2018-05-02 20:09:47.498 [http-nio-8080-exec-4] AdminSearchUsers - null
+[INFO ] 2018-05-02 20:09:57.943 [http-nio-8080-exec-6] AdminDeleteUser - userId: 3
+[DEBUG] 2018-05-02 20:09:57.949 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = testUser2
+[INFO ] 2018-05-02 20:10:34.350 [http-nio-8080-exec-9] AdminSearchUsers - all
+[INFO ] 2018-05-02 20:10:34.350 [http-nio-8080-exec-9] AdminSearchUsers - null
+[INFO ] 2018-05-02 20:10:43.571 [http-nio-8080-exec-5] AdminDeleteUser - userId: 3
+[DEBUG] 2018-05-02 20:10:43.571 [http-nio-8080-exec-5] GenericDao - Searching for entity with username = testUser2
+[INFO ] 2018-05-02 20:10:49.474 [http-nio-8080-exec-6] AdminSearchUsers - all
+[INFO ] 2018-05-02 20:10:49.474 [http-nio-8080-exec-6] AdminSearchUsers - null
+[DEBUG] 2018-05-02 20:58:56.647 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-02 20:58:57.069 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-02 20:58:57.139 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-02 20:58:57.169 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-02 20:58:57.552 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-02 20:58:58.116 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-02 20:58:58.176 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-02 20:58:58.652 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-02 20:58:59.065 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-02 20:58:59.109 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-02 20:58:59.397 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-02 20:58:59.451 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-02 20:58:59.511 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[DEBUG] 2018-05-02 21:11:27.984 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-02 21:11:28.422 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-02 21:11:28.562 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-02 21:11:28.644 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-02 21:11:29.000 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-02 21:11:29.467 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-02 21:11:29.567 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-02 21:11:30.008 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-02 21:11:30.352 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-02 21:11:30.392 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-02 21:11:30.742 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-02 21:11:30.822 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-02 21:11:30.902 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)

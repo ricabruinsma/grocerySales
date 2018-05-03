@@ -9,8 +9,14 @@
             <c:if test="${users.isEmpty()}">
                 <h3 class="userResultAlert" style="color: red;">No Results were found for your search.</h3>
             </c:if>
+            <c:if test="${deleteMessage.isEmpty()}">
+                <h3 class="userResultAlert" style="color: red;">Error!  User was not deleted.</h3>
+            </c:if>
+            <c:if test="${!deleteMessage.isEmpty()}">
+                <h3 class="userResultAlert" style="color: green;">User was successfully deleted.</h3>
+            </c:if>
 
-            <c:if test="${users.size() > 0}">
+                <c:if test="${users.size() > 0}">
                 <table class="table table-striped tm-full-width-large-table userResultAlert" id="userSearchResults">
                     <thead>
                     <tr>

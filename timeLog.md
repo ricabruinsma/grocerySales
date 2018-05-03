@@ -46,5 +46,5 @@
 | 4/29/18| Servlet to display search info from DB | 4 | |
 | 4/30/18| Specific Search Servlets, all search by.. works, tables display results for items, users, stores | 3.5 | |
 | 5/01/18| Create - sign-up new user  | 2.5 | |
-| 4/30/18| xyz |  | |
+| 5/02/18| Delete user | 1 | |
 | 4/30/18| xyz |  | |
