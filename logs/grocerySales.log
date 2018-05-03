@@ -398,3 +398,8 @@
 [DEBUG] 2018-05-03 16:39:30.118 [main] GenericDao - Searching for entity with username = rbruinsma
 [DEBUG] 2018-05-03 16:39:30.178 [main] GenericDao - Searching for entity with username = bruin
 [DEBUG] 2018-05-03 16:39:30.278 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[INFO ] 2018-05-03 16:40:24.347 [http-nio-8080-exec-2] GetDealsFromAPI - This is the uri: http://18.222.154.101:8080/groceryDeals/api/deals/willystreet
+[INFO ] 2018-05-03 16:40:50.385 [http-nio-8080-exec-4] GetDealsFromAPI - This is the uri: http://18.222.154.101:8080/groceryDeals/api/deals/willystreet
+[INFO ] 2018-05-03 16:40:57.779 [http-nio-8080-exec-8] GetDealsFromAPI - This is the uri: http://18.222.154.101:8080/groceryDeals/api/deals/willystreet
+[INFO ] 2018-05-03 16:41:03.703 [http-nio-8080-exec-2] GetDealsFromAPI - This is the uri: http://18.222.154.101:8080/groceryDeals/api/deals/willystreet
+[INFO ] 2018-05-03 16:41:12.021 [http-nio-8080-exec-6] GetDealsFromAPI - This is the uri: http://18.222.154.101:8080/groceryDeals/api/deals/willystreet
