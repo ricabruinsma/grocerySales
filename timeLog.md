@@ -47,4 +47,11 @@
 | 4/30/18| Specific Search Servlets, all search by.. works, tables display results for items, users, stores | 3.5 | |
 | 5/01/18| Create - sign-up new user  | 2.5 | |
 | 5/02/18| Delete user | 1 | |
-| 4/30/18| xyz |  | |
+| 5/02/18| Fighting with AWS instance - both API (team project) and individual project | 3 | |
+| 5/02/18| Template for API call and catch | 1 | |
+| 5/02/18|  |  | |
+| 5/02/18|  |  | |
+| 5/02/18|  |  | |
+| 5/02/18|  |  | |
+| 5/02/18|  |  | |
+| 5/02/18|  |  | |
