@@ -4,6 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.entity.Role;
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
+import grocery.api.deals.Deal;
+import grocery.api.deals.DealList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,6 +20,7 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -43,33 +46,34 @@ public class GetDealsFromAPI extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         // to hold uri
-        String uri = "";
+        String uri = null;
 
         //from GET request
         String searchType = request.getParameter("searchType");
 
         if (searchType.equals("keywordSearch")) {
             String keywordSearch = request.getParameter("keyword");
-            uri = "18.222.154.101:8080/grocery/api/deals/search/" + keywordSearch;
+            uri = "http://18.222.154.101:8080/groceryDeals/api/deals/search/" + keywordSearch;
         } else if (searchType.equals("getAll")) {
-            uri = "18.222.154.101:8080/grocery/api/deals/willystreet";
+            uri = "http://18.222.154.101:8080/groceryDeals/api/deals/willystreet";
         }
-
+        logger.info("This is the uri: " + uri);
 
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target(uri);
         String responseJSON = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        //String configResponseJSON = "{\"responseList\": " + responseJSON + "}";
+        //logger.info(responseJSON);
+        String configResponseJSON = "{\"dealList\": " + responseJSON + "}";
         ObjectMapper mapper = new ObjectMapper();
-        //ResponseList results = mapper.readValue(configResponseJSON, ResponseList.class);
-        //List<Deal> deals = new ArrayList<Deal>();
-        //for (Response deal : results.getResponseList()) {
-        //  deals.add(deal);
-        // }
-        //request.setAttribute("deals", deals);
+        DealList results = mapper.readValue(configResponseJSON, DealList.class);
+        List<Deal> deals = new ArrayList<Deal>();
+        for (Deal deal : results.getDealList()) {
+          deals.add(deal);
+        }
+        request.setAttribute("deals", deals);
 
 
-        // request.setAttribute("searchPage", "shopper");
+        //request.setAttribute("searchPage", "shopper");
         request.setAttribute("searchPage", "index");
         request.setAttribute("anchorName", "dealSearch");
 

@@ -22,6 +22,8 @@
 
         <c:import url="content/index_findGrocerySales.jsp" />
 
+        <%@include file="content/index_searchItemsResults.jsp"%>
+
         <c:import url="templates/footer.jsp" />
 
     </div> <!-- container-fluid -->
