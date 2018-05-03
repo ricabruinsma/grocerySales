@@ -19,6 +19,10 @@
             isPasswordMatch();
         });
 
+        /* data table plugin */
+        $('#dealSearchResults').DataTable();
+
+
         var mobileTopOffset = 54;
         var desktopTopOffset = 80;
         var topOffset = desktopTopOffset;
