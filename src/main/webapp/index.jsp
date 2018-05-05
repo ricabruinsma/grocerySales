@@ -21,7 +21,7 @@
 
         <%@include file="content/index_findGrocerySales.jsp"%>
 
-        <%@include file="content/index_searchItemsResults.jsp"%>
+        <%@include file="content/index_searchDealsResults.jsp"%>
 
         <%@include file="templates/footer.jsp"%>
 

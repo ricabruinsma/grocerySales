@@ -62,8 +62,9 @@ public class AdminSearchStores extends HttpServlet {
 		request.setAttribute("stores", stores);
 		request.setAttribute("searchPage", searchPage);
 
+		RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
+
         dispatcher.forward(request, response);
     }
 }

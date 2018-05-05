@@ -816,3 +816,62 @@
 [DEBUG] 2018-05-04 20:44:40.550 [main] GenericDao - Searching for entity with username = rbruinsma
 [DEBUG] 2018-05-04 20:44:40.613 [main] GenericDao - Searching for entity with username = bruin
 [DEBUG] 2018-05-04 20:44:40.675 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[INFO ] 2018-05-04 20:45:05.639 [http-nio-8080-exec-6] LandingPageSetup - I'm in the LandingPageSetup doGet
+[INFO ] 2018-05-04 20:45:05.639 [http-nio-8080-exec-6] LandingPageSetup - anchor name: top
+[INFO ] 2018-05-04 20:45:05.655 [http-nio-8080-exec-6] LandingPageSetup - username: null
+[INFO ] 2018-05-04 20:45:06.882 [http-nio-8080-exec-8] LandingPageSetup - I'm in the LandingPageSetup doGet
+[INFO ] 2018-05-04 20:45:06.882 [http-nio-8080-exec-8] LandingPageSetup - anchor name: top
+[INFO ] 2018-05-04 20:45:06.882 [http-nio-8080-exec-8] LandingPageSetup - username: null
+[INFO ] 2018-05-04 20:45:32.099 [http-nio-8080-exec-4] AdminSearchUsers - all
+[INFO ] 2018-05-04 20:45:32.099 [http-nio-8080-exec-4] AdminSearchUsers - null
+[INFO ] 2018-05-04 20:45:46.052 [http-nio-8080-exec-5] AdminSearchStores - all
+[INFO ] 2018-05-04 20:45:46.052 [http-nio-8080-exec-5] AdminSearchStores - null
+[INFO ] 2018-05-04 20:45:56.896 [http-nio-8080-exec-6] AdminSearchItems - all
+[INFO ] 2018-05-04 20:45:56.896 [http-nio-8080-exec-6] AdminSearchItems - null
+[INFO ] 2018-05-04 21:36:29.762 [http-nio-8080-exec-8] AdminSearchUsers - all
+[INFO ] 2018-05-04 21:36:29.762 [http-nio-8080-exec-8] AdminSearchUsers - null
+[INFO ] 2018-05-04 21:36:36.961 [http-nio-8080-exec-9] AdminSearchStores - all
+[INFO ] 2018-05-04 21:36:36.961 [http-nio-8080-exec-9] AdminSearchStores - null
+[INFO ] 2018-05-04 21:36:55.994 [http-nio-8080-exec-10] AdminSearchItems - all
+[INFO ] 2018-05-04 21:36:55.994 [http-nio-8080-exec-10] AdminSearchItems - null
+[INFO ] 2018-05-04 21:37:09.620 [http-nio-8080-exec-1] LogOut - null
+[DEBUG] 2018-05-05 00:17:01.907 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-05 00:17:02.299 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-05 00:17:02.393 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-05 00:17:02.424 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-05 00:17:02.975 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-05 00:17:03.521 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-05 00:17:03.584 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-05 00:17:04.077 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-05 00:17:04.467 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-05 00:17:04.514 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-05 00:17:04.829 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-05 00:17:04.893 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-05 00:17:04.957 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[INFO ] 2018-05-05 00:17:34.918 [http-nio-8080-exec-6] LandingPageSetup - I'm in the LandingPageSetup doGet
+[INFO ] 2018-05-05 00:17:34.918 [http-nio-8080-exec-6] LandingPageSetup - anchor name: top
+[INFO ] 2018-05-05 00:17:34.918 [http-nio-8080-exec-6] LandingPageSetup - username: null
+[INFO ] 2018-05-05 00:17:36.487 [http-nio-8080-exec-8] LandingPageSetup - I'm in the LandingPageSetup doGet
+[INFO ] 2018-05-05 00:17:36.487 [http-nio-8080-exec-8] LandingPageSetup - anchor name: top
+[INFO ] 2018-05-05 00:17:36.487 [http-nio-8080-exec-8] LandingPageSetup - username: null
+[DEBUG] 2018-05-05 00:20:24.310 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-05 00:20:24.742 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-05 00:20:24.815 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-05 00:20:24.846 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-05 00:20:25.408 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-05 00:20:25.915 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-05 00:20:25.966 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-05 00:20:26.451 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-05 00:20:26.838 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-05 00:20:26.885 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-05 00:20:27.231 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-05 00:20:27.293 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-05 00:20:27.356 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[INFO ] 2018-05-05 00:20:51.565 [http-nio-8080-exec-6] LandingPageSetup - I'm in the LandingPageSetup doGet
+[INFO ] 2018-05-05 00:20:51.565 [http-nio-8080-exec-6] LandingPageSetup - anchor name: top
+[INFO ] 2018-05-05 00:20:51.580 [http-nio-8080-exec-6] LandingPageSetup - username: null
+[INFO ] 2018-05-05 00:20:52.816 [http-nio-8080-exec-8] LandingPageSetup - I'm in the LandingPageSetup doGet
+[INFO ] 2018-05-05 00:20:52.816 [http-nio-8080-exec-8] LandingPageSetup - anchor name: top
+[INFO ] 2018-05-05 00:20:52.816 [http-nio-8080-exec-8] LandingPageSetup - username: null
+[INFO ] 2018-05-05 00:20:53.053 [http-nio-8080-exec-9] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-05 00:20:57.679 [http-nio-8080-exec-9] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}

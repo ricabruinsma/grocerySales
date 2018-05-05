@@ -2,7 +2,7 @@
 
 <ul class="nav navbar-nav">
     <li class="nav-item">
-        <a class="nav-link" href="#top">Home</a>
+        <a href="index.jsp" class="nav-link external">Home</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#tm-section-2">Find Deals</a>

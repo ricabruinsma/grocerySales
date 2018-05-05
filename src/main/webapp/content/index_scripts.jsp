@@ -15,6 +15,16 @@
 
     $(document).ready(function(){
 
+        // loads the store list into the grocery deal search
+        $.get("loadingStores", function(jsonOptions) {
+            var $select = $("#storeName");
+            $select.find("option").remove();
+            $.each(jsonOptions, function(key, value) {
+                $("<option>").val(key).text(value).appendTo($select);
+            });
+        });
+
+
         // grocery deal search - if select a keyword search, keyword input box displays
         $('#searchType').change(function() {
             if ($(this).val() === "keywordSearch") {
