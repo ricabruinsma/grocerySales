@@ -123,7 +123,7 @@
 - [X] check for new user sign-up --> username not already in use.
 - [X] Create Welcome/Landing JSP (includes deal search, login, sign-up a new user)
 - [X] Add category table, change to category_id in item table
-- [ ] CategoryDAO and unit tests +  update Item unit tests (and others...)
+- [X] CategoryDAO and unit tests +  update Item unit tests (and others...)
 - [ ] Create Admin JSP to CRUD users (including roles), stores, items
 - [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
 - [X] Implement API to populate deal search results
