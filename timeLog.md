@@ -52,6 +52,6 @@
 | 5/03/18| API call and catch - display results/janky | 3 | |
 | 5/03/18| Routing between pages, with focus to anchor tag | 3 | |
 | 5/04/18| Built search deal form, including AJAX call working for stores. View all for users, stores, items | 3.5 | |
-| 5/02/18|  |  | |
+| 5/05/18| Create Category entity | 1 | |
 | 5/02/18|  |  | |
 | 5/02/18|  |  | |

@@ -7,9 +7,13 @@ import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * The type Category.
+ */
 @EqualsAndHashCode(exclude = {"createDate", "updateDate"})
 @Entity(name = "Category")
 @Table(name = "category")
@@ -24,7 +28,20 @@ public class Category {
     @Getter @Setter private String createDate;
     @Getter @Setter private String updateDate;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @Getter @Setter private Set<Item> items = new HashSet<>();
+    /**
+     * Instantiates a new Category.
+     */
+    public Category() {
+    }
+
+    /**
+     * Instantiates a new Category.
+     *
+     * @param name the name
+     */
+    public Category(String name) {
+        this.name = name;
+    }
+
 
 }

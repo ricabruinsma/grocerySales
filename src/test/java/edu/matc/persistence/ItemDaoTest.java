@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Category;
 import edu.matc.entity.Item;
 import edu.matc.entity.Store;
 import edu.matc.entity.User;
@@ -52,10 +53,12 @@ class ItemDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        Store newStore = new Store("Festival Foods", "810 East Washington Ave", "Madison", "WI", "53703");
         GenericDao storeDao = new GenericDao(Store.class);
-        storeDao.insert(newStore);
-        Item newItem = new Item("Kellogs", "Corn Flakes", "16 oz", "$2.99", "$1.00", "2018-04-30", true, newStore);
+        Store existingStore = (Store)storeDao.getById(1);
+
+        GenericDao categoryDao = new GenericDao(Category.class);
+        Category existingCategory = (Category)categoryDao.getById(8);
+        Item newItem = new Item("Kellogs", existingCategory, "Corn Flakes", "16 oz", "$2.99", "$1.00", "2018-04-30", true, existingStore);
         int itemId = itemDao.insert(newItem);
         Item retrievedItem = (Item)itemDao.getById(itemId);
         assertNotNull(retrievedItem);
@@ -68,12 +71,15 @@ class ItemDaoTest {
     @Test
     void insertSuccess() {
 
-        Store newStore = new Store("Festival Foods", "810 East Washington Ave", "Madison", "WI", "53703");
         GenericDao storeDao = new GenericDao(Store.class);
-        int id = storeDao.insert(newStore);
-        Item newItem = new Item("Kellogs", "Corn Flakes", "16 oz", "$2.99", "$1.00", "2018-04-30", true, newStore);
+        Store existingStore = (Store)storeDao.getById(1);
+
+        GenericDao categoryDao = new GenericDao(Category.class);
+        Category existingCategory = (Category)categoryDao.getById(8);
+
+        Item newItem = new Item("Kellogs", existingCategory, "Corn Flakes", "16 oz", "$2.99", "$1.00", "2018-04-30", true, existingStore);
         int itemId = itemDao.insert(newItem);
-        assertNotEquals(0,id);
+        assertNotEquals(0,itemId);
         Item insertedItem = (Item)itemDao.getById(itemId);
         assertEquals(newItem, insertedItem);
     }

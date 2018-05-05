@@ -47,10 +47,12 @@ class ListLineDaoTest {
     @Test
     void getByIdSuccess() {
         // new Item object for bridging table
-        Store newStore = new Store("Festival Foods", "810 East Washington Ave", "Madison", "WI", "53703");
         GenericDao storeDao = new GenericDao(Store.class);
-        storeDao.insert(newStore);
-        Item newItem = new Item("Kellogs", "Corn Flakes", "16 oz", "$2.99", "$1.00", "2018-04-30", true, newStore);
+        Store existingStore = (Store)storeDao.getById(1);
+
+        GenericDao categoryDao = new GenericDao(Category.class);
+        Category existingCategory = (Category)categoryDao.getById(8);
+        Item newItem = new Item("Kellogs", existingCategory,"Corn Flakes", "16 oz", "$2.99", "$1.00", "2018-04-30", true, existingStore);
         GenericDao itemDao = new GenericDao(Item.class);
         itemDao.insert(newItem);
 
@@ -78,10 +80,13 @@ class ListLineDaoTest {
     void insertSuccess() {
 
         // new Item object for bridging table
-        Store newStore = new Store("Festival Foods", "810 East Washington Ave", "Madison", "WI", "53703");
         GenericDao storeDao = new GenericDao(Store.class);
-        storeDao.insert(newStore);
-        Item newItem = new Item("Kellogs", "Corn Flakes", "16 oz", "$2.99", "$1.00", "2018-04-30", true, newStore);
+        Store existingStore = (Store)storeDao.getById(1);
+
+        GenericDao categoryDao = new GenericDao(Category.class);
+        Category existingCategory = (Category)categoryDao.getById(8);
+
+        Item newItem = new Item("Kellogs", existingCategory, "Corn Flakes", "16 oz", "$2.99", "$1.00", "2018-04-30", true, existingStore);
         GenericDao itemDao = new GenericDao(Item.class);
         itemDao.insert(newItem);
 
