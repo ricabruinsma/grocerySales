@@ -26,7 +26,7 @@ CREATE TABLE `item` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `brand` varchar(120) NOT NULL,
-  `category` varchar(120) DEFAULT NULL,
+  `category_id` int(11) NOT NULL,
   `product` varchar(255) DEFAULT NULL,
   `size` varchar(120) DEFAULT NULL,
   `salePrice` varchar(255) NOT NULL,
@@ -37,6 +37,8 @@ CREATE TABLE `item` (
   `store_id` int(11) NOT NULL,
   `active` TINYINT(4) DEFAULT 1,
   PRIMARY KEY (`id`),
+  KEY `Item_Category` (`category_id`),
+  CONSTRAINT  `Item_Category` FOREIGN KEY  (`category_id`) REFERENCES `category` (`id`),
   KEY `Item_Store` (`store_id`),
   CONSTRAINT `Item_Store` FOREIGN KEY (`store_id`) REFERENCES `store` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

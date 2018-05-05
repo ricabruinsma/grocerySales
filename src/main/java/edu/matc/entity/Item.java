@@ -12,7 +12,7 @@ import java.util.Objects;
 import java.util.Set;
 
 /**
- * The type Deal.
+ * The type Item.
  */
 @EqualsAndHashCode(exclude = {"listLines", "createDate", "savingsAmount", "saleEndDate", "updateDate"})
 @ToString(exclude = {"listLines"})
@@ -22,7 +22,6 @@ public class Item implements Comparable {
 
     @Getter @Setter private String createDate;
     @Getter @Setter private String brand;
-    @Getter @Setter private String category;
     @Getter @Setter private String product;
     @Getter @Setter private String size;
     @Getter @Setter private String salePrice;
@@ -34,6 +33,12 @@ public class Item implements Comparable {
             foreignKey = @ForeignKey(name = "Item_Store")
     )
     @Getter @Setter Store store;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id",
+            foreignKey = @ForeignKey(name = "Item_Category")
+    )
+    @Getter @Setter Category category;
 
     @OneToMany(mappedBy = "item", cascade = CascadeType.PERSIST, orphanRemoval = true, fetch = FetchType.EAGER)
     @Getter @Setter private Set<ListLine> listLines = new HashSet<>();
@@ -57,6 +62,7 @@ public class Item implements Comparable {
      * Instantiates a new item.
      *
      * @param brand         the brand
+     * @param category      the category
      * @param product       the product
      * @param size          the size
      * @param salePrice     the sale price
@@ -65,8 +71,9 @@ public class Item implements Comparable {
      * @param active        the active
      * @param store         the store
      */
-    public Item(String brand, String product, String size, String salePrice, String savingsAmount, String saleEndDate, boolean active, Store store) {
+    public Item(String brand, Category category, String product, String size, String salePrice, String savingsAmount, String saleEndDate, boolean active, Store store) {
         this.brand = brand;
+        this.category = category;
         this.product = product;
         this.size = size;
         this.salePrice = salePrice;

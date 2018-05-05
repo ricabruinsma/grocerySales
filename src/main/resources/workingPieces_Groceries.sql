@@ -3,6 +3,7 @@ drop table shoppinglist;
 drop table role;
 drop table user;
 drop table item;
+drop table category;
 drop table store;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -58,13 +59,20 @@ CREATE TABLE `store` (
   `updateDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(120) NOT NULL,
+  `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updateDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 CREATE TABLE `item` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `brand` varchar(120) NOT NULL,
-  `category` varchar(120) DEFAULT NULL,
-  `product` varchar(255) NOT NULL,
-  `size` varchar(120) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  `product` varchar(255) DEFAULT NULL,
+  `size` varchar(120) DEFAULT NULL,
   `salePrice` varchar(255) NOT NULL,
   `savingsAmount` varchar(255) NOT NULL,
   `saleStartDate` varchar(255) DEFAULT NULL,
@@ -73,6 +81,8 @@ CREATE TABLE `item` (
   `store_id` int(11) NOT NULL,
   `active` TINYINT(4) DEFAULT 1,
   PRIMARY KEY (`id`),
+  KEY `Item_Category` (`category_id`),
+  CONSTRAINT  `Item_Category` FOREIGN KEY  (`category_id`) REFERENCES `category` (`id`),
   KEY `Item_Store` (`store_id`),
   CONSTRAINT `Item_Store` FOREIGN KEY (`store_id`) REFERENCES `store` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -93,5 +103,6 @@ INSERT INTO user (id, email, password, address1, city, state, postalCode, userna
 insert into role (id, name, username, user_id) values (1, 'admin', 'rbruinsma', 1), (2, 'shopper', 'rbruinsma', 1), (3, 'shopper', 'testUser', 2), (4, 'shopper', 'testUser2', 3);
 insert into shoppinglist (id, totalAmount, user_id) VALUES (1, 4.99, 1), (2, 7.98, 1);
 INSERT INTO store (id, name, address1, city, state, postalCode, lat, lon, updateDate) VALUES (1, 'Hy-Vee', '3801 East Washington Avenue', 'Madison', 'WI', '53704', 43.117807, -89.317387, '2018-03-20 07:25:03'), (2, 'Willy Street Co-op', '2817 North Sherman Ave', 'Madison', 'WI', '53704', 43.127639, -89.362807, '2018-03-20 07:25:03');
-INSERT INTO item (id, brand, product, size, salePrice, savingsAmount, saleEndDate, store_id) VALUES (1, 'Kellogs', 'Cream of Wheat', '10 oz', '$1.99', '$1.00', '2018-04-30', 2), (2, 'Organic Valley', 'butter', '1 lb', '$3.99', '$1.50', '2018-04-30', 2), (3, 'Organic Valley', 'milk', '1 gal', '$4.99', '$1.00', '2018-04-30', 2);
+INSERT INTO category (id, name) VALUES (1, 'beer & wine'), (2, 'body care'), (3, 'bread'), (4, 'frozen foods'), (5, 'bulk'), (6, 'cheese'), (7, 'meat'), (8, 'packaged grocery'), (9, 'refrigerated grocery'), (10, 'wellness');
+INSERT INTO item (id, brand, category_id, product, size, salePrice, savingsAmount, saleEndDate, store_id) VALUES (1, 'Kellogs', 8, 'Cream of Wheat', '10 oz', '$1.99', '$1.00', '2018-04-30', 2), (2, 'Organic Valley', 9,  'butter', '1 lb', '$3.99', '$1.50', '2018-04-30', 2), (3, 'Organic Valley', 9, 'milk', '1 gal', '$4.99', '$1.00', '2018-04-30', 2);
 insert into listline (id, quantity, shoppinglist_id, item_id) VALUES (1, 1, 1, 3), (3, 2, 2, 2);
