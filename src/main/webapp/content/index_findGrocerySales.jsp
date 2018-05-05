@@ -1,40 +1,51 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <div class="row gray-bg">
+    <div id="tm-section-4">
+        <h1 id="usersSection" class="text-xs-center blue-text tm-page-1-title">Find Local Grocery Deals</h1>
+    </div>
 
-    <section id="tm-section-4" class="tm-section">
-        <div class="tm-container">
+    <div class="tm-section">
+        <div class="tm-container text-xs-center">
+            <div class="tm-news-item">
 
-            <h2 class="blue-text tm-title text-xs-center">Find Local Grocery Sales</h2>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-item-img-container">
+                    <img src="img/items.jpeg" alt="groceryItems" class="img-fluid tm-news-item-img">
+                </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                <form action="index.jsp" method="post" class="tm-contact-form">
-                    <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-left">
-                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-form-group-right">
-                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Message" required></textarea>
-                    </div>
+                <div class="col-lg-6 tm-news-container" id="dealsSearchHiddenToggle">  <!-- form section RHS of image -->
+                    <div>
+                        <form action="/grocerySales/getDeals" method="GET" class="tm-contact-form"  id="getDealsForm">
+                            <div class="row">
 
-                    <button type="submit" class="btn tm-light-blue-bordered-btn pull-xs-right">Submit</button>
-                </form>
-            </div> <!-- col -->
+                                <h4 style="text-align:center">Pick a store:</h4>
+                                <select class="form-control" name="storeName" id="storeName" required>
+                                    <option value="">choose</option>
+                                </select><br />
 
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 margin-top-xs-50">
-                <h3 class="light-blue-text tm-subtitle">Etiam at rhoncus nisl</h3>
-                <p>Nunc rutrum ac ante euismod cursus. Suspendisse imperdiet feugiat massa nec iaculis</p>
-                <p>
-                    Tel: <a href="tel:0100200340">010-020-0340</a><br>
-                    Email: <a href="mailto:info@company.com">info@company.com</a>
-                </p>
+                                <h4>Pick a category:</h4>
+                                <select class="form-control" name="categoryName" id="categoryName" required>
+                                    <option value="">choose</option>
+                                </select><br />
+
+                                <h4>Type of search:</h4>
+                                <select class="form-control" name="searchType" id="searchType" required>
+                                    <option value="getAll">get all</option>
+                                    <option value="keywordSearch">search by keyword</option>
+                                </select><br />
+                                <div id="groceryKeywordSearch" style="display:none">
+                                    <h4>Enter Search Term:</h4>
+                                    <input type="text" id="keyword" name="keyword" class="form-control" /> <br />
+                                </div>
+
+                                <button type="submit" class="btn tm-light-blue-bordered-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div> <!-- col -->
+                </div>
             </div>
         </div>
-    </section>
+    </div> <!-- end section 2 -->
 
 </div> <!-- row -->

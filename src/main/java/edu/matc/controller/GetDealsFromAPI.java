@@ -49,6 +49,9 @@ public class GetDealsFromAPI extends HttpServlet {
         String uri = null;
 
         //from GET request
+        String storeName = request.getParameter("storeName");
+        String categoryName = request.getParameter("categoryName");
+
         String searchType = request.getParameter("searchType");
 
         if (searchType.equals("keywordSearch")) {

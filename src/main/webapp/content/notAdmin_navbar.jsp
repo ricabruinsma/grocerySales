@@ -5,7 +5,6 @@
 <div class="row">
 
     <div class="tm-navbar-container">
-
         <!-- navbar   -->
         <nav class="navbar navbar-full navbar-fixed-top">
 

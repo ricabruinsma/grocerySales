@@ -11,17 +11,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.security.Principal;
 
 /**
- * A servlet to logout the user
+ * A servlet to send admin to sign-up form on index page
+ * @author rbruinsma
  */
-@WebServlet (
-        name = "LogOut",
-        urlPatterns = {"/logout"}
+
+@WebServlet(
+		name = "addUserRouting",
+        urlPatterns = {"/addUser"}
 )
-public class LogOut extends HttpServlet {
+
+public class AddUserRouting extends HttpServlet {
+
     private final Logger logger = LogManager.getLogger(this.getClass());
+
     /**
      * @param request Http Servlet Request
      * @param response Http Servlet Response
@@ -29,20 +33,18 @@ public class LogOut extends HttpServlet {
      * @throws IOException
      */
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        HttpSession session = request.getSession();
-        String loggedInUser = request.getRemoteUser();
+		logger.info("I'm in the AddUserRouting doGet");
+    	boolean isLoggedIn = true;
+    	String anchorName = "signUpSection";
 
-        logger.info(loggedInUser);
+        logger.info("anchor name: " + anchorName);
 
-        session.invalidate();
+    	request.setAttribute("isLoggedIn", isLoggedIn);
+        request.setAttribute("anchorName", anchorName);
 
-        //String url = "index.jsp";
-
-        request.setAttribute("anchorName", "top");
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/index.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);
-
     }
 }

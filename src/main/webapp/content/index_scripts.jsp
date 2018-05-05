@@ -15,6 +15,15 @@
 
     $(document).ready(function(){
 
+        // grocery deal search - if select a keyword search, keyword input box displays
+        $('#searchType').change(function() {
+            if ($(this).val() === "keywordSearch") {
+                $("#groceryKeywordSearch").css("display", "inline");
+            } else if ($(this).val() === "getAll") {
+                $("#groceryKeywordSearch").css("display", "none");
+            }
+        });
+
         $("#newPasswordConfirm").on("focusout", function() {
             isPasswordMatch();
         });

@@ -50,7 +50,7 @@
 | 5/02/18| Fighting with AWS instance - both API (team project) and individual project | 3 | |
 | 5/02/18| Template for API call and catch | 1 | |
 | 5/03/18| API call and catch - display results/janky | 3 | |
-| 5/02/18|  |  | |
+| 5/03/18| Routing between pages, with focus to anchor tag | 3 | |
 | 5/02/18|  |  | |
 | 5/02/18|  |  | |
 | 5/02/18|  |  | |
