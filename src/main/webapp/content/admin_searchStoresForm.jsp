@@ -1,6 +1,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <div class="row">
+    <h1 id="storesSection" class="text-xs-center blue-text tm-page-2-title">Stores</h1>
+</div>
+
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-8">
+        <a href="searchStores?searchBy=all&searchPage=store" class="btn btn-default tm-normal-btn tm-blue-btn">View All</a>
+        <a href="addStore" class="btn btn-default tm-normal-btn tm-blue-btn">Add New</a>
+        <a href="#searchStoresForm" class="btn btn-default tm-normal-btn tm-blue-btn">Edit/Delete</a>
+    </div>
+</div>
+
+<div class="row">
     <section id="tm-section-3" class="tm-section">
         <div class="tm-container text-xs-center">
             <div class="tm-news-item">
@@ -23,7 +36,7 @@
                                 <br />
                                 <h4>Enter Search Term:</h4>
                                 <input type="text" id="searchStoresTerm" name="searchTerm" class="form-control" required/> <br />
-
+                                <input type="hidden" id="searchPage" name="searchPage" value="store">
                                 <button type="submit" class="btn tm-light-blue-bordered-btn">Submit</button>
                             </div>
                         </form>

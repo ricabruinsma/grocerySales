@@ -1,6 +1,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <div class="row">
+    <h1 id="itemsSection" class="text-xs-center blue-text tm-page-2-title">Items</h1>
+</div>
+
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-8">
+        <a href="searchItems?searchBy=all" class="btn btn-default tm-normal-btn tm-blue-btn">View All</a>
+        <a href="addItem" class="btn btn-default tm-normal-btn tm-blue-btn">Add New</a>
+        <a href="#searchItemsForm" class="btn btn-default tm-normal-btn tm-blue-btn">Edit/Delete</a>
+    </div>
+</div>
+
+<div class="row">
     <section id="tm-section-4" class="tm-section">
         <div class="tm-container text-xs-center">
             <div class="tm-news-item">

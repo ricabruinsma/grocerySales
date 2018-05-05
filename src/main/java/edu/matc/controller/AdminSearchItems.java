@@ -37,20 +37,20 @@ public class AdminSearchItems extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        //from GET request
-        //String searchTypeQuery = request.getParameter("searchType");
-		
-        //field to search by
-        String searchByQuery = request.getParameter("searchBy");
-        //term to look for in field above
-        String searchKeywordQuery = request.getParameter("searchTerm");
+		//from GET request
+		//String searchTypeQuery = request.getParameter("searchType");
 
-        //logger.info(searchTypeQuery);
-        logger.info(searchByQuery);
-        logger.info(searchKeywordQuery);
+		//field to search by
+		String searchByQuery = request.getParameter("searchBy");
+		//term to look for in field above
+		String searchKeywordQuery = request.getParameter("searchTerm");
+
+		//logger.info(searchTypeQuery);
+		logger.info(searchByQuery);
+		logger.info(searchKeywordQuery);
 
 		GenericDao itemDao = new GenericDao(Item.class);
-		
+
 		// store query needs to go through the store DB first...
 		if (searchByQuery.equals("store")) {
 			//search store entity by name entered
@@ -70,6 +70,9 @@ public class AdminSearchItems extends HttpServlet {
 
 			request.setAttribute("items", items);
 
+		} else if (searchByQuery.equals("all")) {
+			List<Item> itemAll = itemDao.getAll();
+			request.setAttribute("items", itemAll);
 		} else {
 			//logger.info("in the case/switch");
 			List<Item> itemList = itemDao.getByPropertyLike(searchByQuery, searchKeywordQuery);

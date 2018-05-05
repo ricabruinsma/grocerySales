@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 
 /**
@@ -37,6 +38,7 @@ public class AdminSearchStores extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        List<Store> stores;
         //from GET request
 
         //String searchTypeQuery = request.getParameter("searchType");
@@ -44,14 +46,21 @@ public class AdminSearchStores extends HttpServlet {
         String searchByQuery = request.getParameter("searchBy");
         //term to look for in field above
         String searchKeywordQuery = request.getParameter("searchTerm");
+        String searchPage = request.getParameter("searchPage");
 
         logger.info(searchByQuery);
         logger.info(searchKeywordQuery);
 
 
         GenericDao storeDao = new GenericDao(Store.class);
-		request.setAttribute("stores", storeDao.getByPropertyLike(searchByQuery, searchKeywordQuery));
-		request.setAttribute("searchPage", "store");
+
+        if (searchByQuery.equals("all")) {
+            stores = storeDao.getAll();
+        } else {
+            stores = storeDao.getByPropertyLike(searchByQuery, searchKeywordQuery);
+        }
+		request.setAttribute("stores", stores);
+		request.setAttribute("searchPage", searchPage);
 
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");

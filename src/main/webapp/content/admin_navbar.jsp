@@ -16,10 +16,10 @@
                     <a href="#usersSection" class="nav-link">Users</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#tm-section-3" class="nav-link">Stores</a>
+                    <a href="#storesSection" class="nav-link">Stores</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#tm-section-4" class="nav-link">Items</a>
+                    <a href="#itemsSection" class="nav-link">Items</a>
                 </li>
                 <li class="nav-item">
                     <a href="logout" class="nav-link external">Logout</a>
