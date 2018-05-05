@@ -109,15 +109,23 @@
 - [X] Create listline dao unit tests
 
 - [X] Create JSP templates using bootstrap
-- [ ] Create Welcome/Landing JSP (includes deal search, login, sign-up a new user)
-- [ ] Create Admin JSP to CRUD users (including roles), stores, items
 - [X] specific search form and controllers for admin (items, users, stores)
-- [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
 - [X] <%@include  when including a file within the include  --> OK to use
-- [ ] Implement API to populate deal search results
-- [ ] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
 - [X] Validate User-entered data (not empty)
 - [X] Logout function
+
+- [X] Code Reviews
+- [X] Journal
+
+
+### Week 15
+- [X] Error 403/500/etc not getting picked up  --> use correct address in web.xml
+- [X] check for new user sign-up --> username not already in use.
+- [X] Create Welcome/Landing JSP (includes deal search, login, sign-up a new user)
+- [ ] Create Admin JSP to CRUD users (including roles), stores, items
+- [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
+- [X] Implement API to populate deal search results
+- [ ] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
 
 - [ ] Test relationships
 - [ ] Carefully review code for standards and best practices
@@ -126,13 +134,8 @@
 - [ ] Code quality check
 
 - [ ] Ensure full application is functional
-- [X] Code Reviews
-- [ ] Create final presentation
-- [ ] Journal
-
-### Week 15
-
 - [ ] Final documentation
+- [ ] Create final presentation
 - [ ] Journal
 
 ### Week 16
@@ -143,14 +146,11 @@
 
 - [ ] update AWS DB for items - category
 - [ ] update ERD diagram
-- [ ] Error 403/500/etc not getting picked up
 - [ ] login doesn't route user to their page - only after bounced back from "no admittance"
-
+- [ ] comment back in error pages, create more if time!
 - [ ] Add category table, change to category_id in item table
 - [ ] CRUD category with admin
 - [ ] make c-tags dynamic for isLoggedIn
-- [ ] container-fixed vs container-fluid on results tables
-- [ ] check for new user sign-up --> username not already in use.
 
 - [ ] Update time log/journal
 
