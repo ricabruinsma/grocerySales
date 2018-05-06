@@ -1,6 +1,7 @@
 package edu.matc.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.matc.entity.Category;
 import edu.matc.entity.Store;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -46,15 +47,15 @@ public class LoadingCategoriesToDealSearch extends HttpServlet {
         //logger.info("anchor name: " + anchorName);
 
         //grab all the stores from DB
-        GenericDao storeDao = new GenericDao(Store.class);
-        List<Store> stores = storeDao.getAll();
+        GenericDao categoryDao = new GenericDao(Category.class);
+        List<Category> categories = categoryDao.getAll();
 
-        // create a Map of the stores
+        // create a Map of the categories
         Map<String, String> options = new LinkedHashMap<>();
         options.put("", "choose");
-        for (Store store : stores) {
-            String storeName = store.getName();
-            options.put(storeName, storeName);
+        for (Category category : categories) {
+            String categoryName = category.getName();
+            options.put(categoryName, categoryName);
         }
 
         // convert map to JSON

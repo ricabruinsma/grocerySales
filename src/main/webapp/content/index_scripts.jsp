@@ -15,6 +15,15 @@
 
     $(document).ready(function(){
 
+        // loads the category list into the grocery deal search
+        $.get("loadingCategories", function(jsonOptions) {
+            var $select = $("#categoryName");
+            $select.find("option").remove();
+            $.each(jsonOptions, function(key, value) {
+                $("<option>").val(key).text(value).appendTo($select);
+            });
+        });
+
         // loads the store list into the grocery deal search
         $.get("loadingStores", function(jsonOptions) {
             var $select = $("#storeName");
