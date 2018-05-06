@@ -5,7 +5,7 @@
         <a class="nav-link" href="#top">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#tm-section-2">Login</a>
+        <a class="nav-link login-link" href="#tm-section-2">Login</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#signUpSection">Sign-Up</a>

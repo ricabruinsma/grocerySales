@@ -11,7 +11,7 @@
             <div class="tm-news-item">
 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-news-item-img-container">
-                    <img src="img/items.jpeg" alt="groceryItems" class="img-fluid tm-news-item-img">
+                    <img src="img/findDeals.jpg" alt="groceryItems" class="img-fluid tm-news-item-img">
                 </div>
 
                 <div class="col-lg-6 tm-news-container" id="dealsSearchHiddenToggle">  <!-- form section RHS of image -->

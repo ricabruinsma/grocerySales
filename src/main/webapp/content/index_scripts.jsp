@@ -15,6 +15,11 @@
 
     $(document).ready(function(){
 
+        //when login link is clicked, move to login and focus in username input field
+        $(".login-link").click(function(){
+            $('#userName').focus();
+        });
+
         // loads the category list into the grocery deal search
         loadOptionsForDealSearch("loadingCategories", "#categoryName");
 

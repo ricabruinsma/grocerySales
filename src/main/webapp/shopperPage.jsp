@@ -1,11 +1,21 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="pageTitle" value="Shopper" />
-<c:set var="isLoggedIn" value="true" />
+
+<!DOCTYPE html>
+<html lang="en">
+
 <%@include file="templates/head.jsp"%>
 
-    <body id="top" class="page-2">
+<body id="top" class="home" onload="location.href='#${anchorName}'">
+<div class="container-fluid">
 
     <%@include file="content/notAdmin_navbar.jsp"%>
+
+
+
+
+
+
     
         <div class="container-fluid">
 
@@ -17,7 +27,7 @@
                         Etiam at rhoncus nisl. Nunc rutrum ac ante euismod cursus. <br>
                         Suspendisse imperdiet feugiat massa nec iaculis.
                     </p>-->
-                    <img src="img/notHomePage.jpg" class="img-fluid tm-banner-img" alt="Image">            
+                    <img src="img/front-ends.jpg" class="img-fluid tm-banner-img" alt="Image">
                 </div>
               </div>                
             </div>
