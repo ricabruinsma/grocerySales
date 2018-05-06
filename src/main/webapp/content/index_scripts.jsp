@@ -16,22 +16,10 @@
     $(document).ready(function(){
 
         // loads the category list into the grocery deal search
-        $.get("loadingCategories", function(jsonOptions) {
-            var $select = $("#categoryName");
-            $select.find("option").remove();
-            $.each(jsonOptions, function(key, value) {
-                $("<option>").val(key).text(value).appendTo($select);
-            });
-        });
+        loadOptionsForDealSearch("loadingCategories", "#categoryName");
 
-        // loads the store list into the grocery deal search
-        $.get("loadingStores", function(jsonOptions) {
-            var $select = $("#storeName");
-            $select.find("option").remove();
-            $.each(jsonOptions, function(key, value) {
-                $("<option>").val(key).text(value).appendTo($select);
-            });
-        });
+        // loads the category list into the grocery deal search
+        loadOptionsForDealSearch("loadingStores", "#storeName");
 
 
         // grocery deal search - if select a keyword search, keyword input box displays
@@ -142,5 +130,15 @@
             gallery: {enabled:true}
         });
     });
+
+    function loadOptionsForDealSearch(actionServlet, selectId) {
+        $.get(actionServlet, function(jsonOptions) {
+            var $select = $(selectId);
+            $select.find("option").remove();
+            $.each(jsonOptions, function(key, value) {
+                $("<option>").val(key).text(value).appendTo($select);
+            });
+        });
+    }
 
 </script>

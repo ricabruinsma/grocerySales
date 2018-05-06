@@ -64,6 +64,22 @@
 
   </security-constraint>
 
+  <!-- Protect routing to the shopper page. -->
+  <security-constraint>
+
+    <web-resource-collection>
+      <web-resource-name>routeToShopper</web-resource-name>
+      <url-pattern>/toShopperPage</url-pattern>
+    </web-resource-collection>
+
+    <auth-constraint>
+      <role-name>shopper</role-name>
+      <role-name>admin</role-name>
+    </auth-constraint>
+
+  </security-constraint>
+
+
   <!-- Protect everything within the shopper page. -->
   <security-constraint>
 

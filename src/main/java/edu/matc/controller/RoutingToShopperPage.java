@@ -1,0 +1,57 @@
+package edu.matc.controller;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+
+/**
+ * A servlet to grab logged in user,
+ * and forward to shopperPage
+ * @author rbruinsma
+ */
+
+@WebServlet(
+		name = "toShopperPage",
+        urlPatterns = {"/toShopperPage"}
+)
+
+public class RoutingToShopperPage extends HttpServlet {
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
+
+    /**
+     * @param request Http Servlet Request
+     * @param response Http Servlet Response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		logger.info("I'm being routed to ShopperPage doGet");
+    	boolean isLoggedIn = true;
+    	String anchorName = "top";
+
+    	// from GET request
+        String username = request.getRemoteUser();
+        logger.info("username is: " + username);
+
+        //set username into session variable
+        HttpSession session = request.getSession();
+        session.setAttribute("username", username);
+
+    	request.setAttribute("isLoggedIn", isLoggedIn);
+        request.setAttribute("anchorName", anchorName);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("shopperPage.jsp");
+        dispatcher.forward(request, response);
+    }
+}
