@@ -113,7 +113,7 @@
 - [X] <%@include  when including a file within the include  --> OK to use
 - [X] Validate User-entered data (not empty)
 - [X] Logout function
-
+- [X Validating user-entered data?
 - [X] Code Reviews
 - [X] Journal
 
@@ -124,7 +124,10 @@
 - [X] Create Welcome/Landing JSP (includes deal search, login, sign-up a new user)
 - [X] Add category table, change to category_id in item table
 - [X] CategoryDAO and unit tests +  update Item unit tests (and others...)
-- [ ] Create Admin JSP to CRUD users (including roles), stores, items
+- [X] Create Admin JSP to CRUD users (including roles)
+- [ ] Stores - add & delete
+- [ ] Items - delete
+- [ ] Category - add & delete
 - [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
 - [X] Implement API to populate deal search results
 - [ ] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
@@ -150,8 +153,6 @@
 - [ ] update ERD diagram
 - [ ] login doesn't route user to their page - only after bounced back from "no admittance"
 - [ ] comment back in error pages, create more if time!
-- [ ] CRUD category with admin
-- [ ] make c-tags dynamic for isLoggedIn
 
 - [ ] Update time log/journal
 
@@ -162,4 +163,3 @@
 - [ ] Address and close any open issues
 - [ ] Use properties rather than hard-coded values, like web service urls.
 - [ ] Update your web.xml with regard to restricted resources. Remember that both jsps and servlets should be restricted (not just the jsps as a savvy user/hacker will try to access the servlets too).
-- [ ] Validating user-entered data?
