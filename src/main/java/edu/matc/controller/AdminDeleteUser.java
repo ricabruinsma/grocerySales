@@ -47,6 +47,7 @@ public class AdminDeleteUser extends HttpServlet {
 			searchTerm = null;
 		} else {
 			searchTerm = request.getParameter("searchTerm");
+			request.setAttribute("searchTerm", searchTerm);
 		}
 		logger.info("searchTerm is: " + searchTerm);
 		
@@ -61,7 +62,6 @@ public class AdminDeleteUser extends HttpServlet {
 		//request.setAttribute("anchorName", "#deleteUsersResults");
 		//request.setAttribute("deleteMessage", "success");
 		request.setAttribute("searchBy", searchBy);
-		request.setAttribute("searchTerm", searchTerm);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("searchUsers");
         dispatcher.forward(request, response);

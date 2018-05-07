@@ -56,15 +56,11 @@ public class AdminSearchUsers extends HttpServlet {
 
         //from GET request
 
-		String searchKeywordQueryString = null;
         //field to search by
         String searchByQuery = request.getParameter("searchBy");
         //term to look for in field above
-		if (searchByQuery.equals("all")) {
-			searchKeywordQueryString = null;
-		} else {
-			searchKeywordQueryString = request.getParameter("searchTerm");
-		}
+
+		String searchKeywordQueryString = request.getParameter("searchTerm");
 
 		String searchPage = request.getParameter("searchPage");
 

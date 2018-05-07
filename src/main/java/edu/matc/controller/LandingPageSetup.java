@@ -47,7 +47,7 @@ public class LandingPageSetup extends HttpServlet {
         anchorName = request.getParameter("anchorName");
 
         if (!(anchorName != null && !anchorName.isEmpty())) {
-            anchorName = "top";
+            anchorName = "tm-section-2";
         }
         logger.info("anchor name: " + anchorName);
 

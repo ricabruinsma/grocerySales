@@ -9,7 +9,7 @@
     <div class="col-lg-8">
         <a href="searchStores?searchBy=all&searchPage=store" class="btn btn-default tm-normal-btn tm-blue-btn">View All</a>
         <a href="addStore" class="btn btn-default tm-normal-btn tm-blue-btn">Add New</a>
-        <a href="#searchStoresForm" class="btn btn-default tm-normal-btn tm-blue-btn">Edit/Delete</a>
+        <a href="#tm-section-3" class="btn btn-default tm-normal-btn tm-blue-btn">Delete</a>
     </div>
 </div>
 

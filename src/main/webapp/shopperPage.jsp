@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="pageTitle" value="Shopper" />
+<c:set var="pageTitle" value="GrocerySales - ${username}" />
 
 <!DOCTYPE html>
 <html lang="en">
