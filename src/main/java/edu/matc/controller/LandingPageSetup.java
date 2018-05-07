@@ -39,7 +39,7 @@ public class LandingPageSetup extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		logger.info("I'm in the LandingPageSetup doGet");
+		//logger.info("I'm in the LandingPageSetup doGet");
     	boolean isLoggedIn = false;
     	String anchorName = "";
 

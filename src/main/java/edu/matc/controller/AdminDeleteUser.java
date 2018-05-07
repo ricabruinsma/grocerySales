@@ -48,14 +48,6 @@ public class AdminDeleteUser extends HttpServlet {
 		GenericDao userDao = new GenericDao(User.class);
 		User userToDelete = (User)userDao.getById(userIdToDelete);
 
-		//find user's roles by username
-		GenericDao roleDao = new GenericDao(Role.class);
-		List<Role> rolesToDelete = roleDao.getByPropertyEqual("username", userToDelete.getUsername());
-
-		// delete roles first
-		for (Role role : rolesToDelete) {
-			roleDao.delete(role);
-		}
 
 		// then delete user
 		userDao.delete(userToDelete);

@@ -42,7 +42,7 @@
                                 <td>${user.city}</td>
                                 <td>${user.state}</td>
                                 <td>${user.postalCode}</td>
-                                <td><form action="/grocerySales/deleteUser" method="POST">
+                                <td><form action="deleteUser" method="POST">
                                         <input type="hidden" name="id" value="${user.id}" />
                                         <input type="hidden" name="searchBy" value="${searchBy}" />
                                         <input type="hidden" name="searchTerm" value="${searchTerm}" />

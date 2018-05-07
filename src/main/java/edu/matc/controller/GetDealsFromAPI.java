@@ -65,8 +65,16 @@ public class GetDealsFromAPI extends HttpServlet {
 
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target(uri);
-        String responseJSON = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        //logger.info(responseJSON);
+        String responseJSON = getAPIResponse(target);
+        logger.info("response1: " + responseJSON);
+        if (responseJSON.equals("[]")) {
+            responseJSON = getAPIResponse(target);
+            logger.info("response2: " + responseJSON);
+            if (responseJSON.equals("[]")) {
+                responseJSON = getAPIResponse(target);
+                logger.info("response3: " + responseJSON);
+            }
+        }
         String configResponseJSON = "{\"dealList\": " + responseJSON + "}";
         ObjectMapper mapper = new ObjectMapper();
         DealList results = mapper.readValue(configResponseJSON, DealList.class);
@@ -89,5 +97,9 @@ public class GetDealsFromAPI extends HttpServlet {
             dispatcher.forward(request, response);
         }
 
+    }
+
+    protected String getAPIResponse(WebTarget target) {
+        return target.request(MediaType.APPLICATION_JSON).get(String.class);
     }
 }

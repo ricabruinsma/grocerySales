@@ -11,12 +11,12 @@
 
     $(document).ready(function(){
 
-        $("#userSearchResults").on(click, $(".editUser"), function() {
+        $("#userSearchResults").on('click', $(".editUser"), function() {
             $("#usersSearchHiddenToggle").css("display", "none");
             $("#usersEditHiddenToggle").css("display", "inline");
         });
 
-        $(".showUsersSearch").on(click, function() {
+        $(".showUsersSearch").on('click', function() {
             $("#usersSearchHiddenToggle").css("display", "inline");
             $("#usersEditHiddenToggle").css("display", "none");
         });

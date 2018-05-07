@@ -36,7 +36,7 @@
                             <td>${deal.saleEndDate}</td>
                             <td>${deal.storeName}</td>
                             <c:if test="${pageTitle.equals('Shopper')}">
-                                <td><a href="addToShoppingList?id=${deal.id}"><img style="max-width: 2em;" src="img/add.png" alt="add"></a>
+                                <td><a href="addToShoppingList?brand=${deal.brand}&category=${deal.category}"><img style="max-width: 2em;" src="img/add.png" alt="add"></a>
                             </c:if>
                             </td>
                         </tr>
