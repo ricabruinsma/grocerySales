@@ -972,3 +972,46 @@
 [INFO ] 2018-05-07 16:05:34.018 [http-nio-8080-exec-7] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
 [INFO ] 2018-05-07 16:05:34.023 [http-nio-8080-exec-6] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
 [INFO ] 2018-05-07 16:05:34.051 [http-nio-8080-exec-7] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-07 16:06:51.725 [http-nio-8080-exec-1] AdminSearchItems - all
+[INFO ] 2018-05-07 16:06:51.725 [http-nio-8080-exec-1] AdminSearchItems - null
+[INFO ] 2018-05-07 16:06:51.870 [http-nio-8080-exec-2] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-07 16:06:51.874 [http-nio-8080-exec-3] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-07 16:06:51.875 [http-nio-8080-exec-2] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-07 16:06:51.910 [http-nio-8080-exec-3] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-07 16:07:00.551 [http-nio-8080-exec-9] AdminDeleteItem - itemId: 3
+[INFO ] 2018-05-07 16:07:00.590 [http-nio-8080-exec-9] AdminSearchItems - all
+[INFO ] 2018-05-07 16:07:00.590 [http-nio-8080-exec-9] AdminSearchItems - 
+[INFO ] 2018-05-07 16:07:00.675 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-07 16:07:00.680 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-07 16:07:00.682 [http-nio-8080-exec-4] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-07 16:07:00.704 [http-nio-8080-exec-4] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-07 16:07:48.734 [http-nio-8080-exec-5] AdminDeleteItem - itemId: 2
+[INFO ] 2018-05-07 16:07:48.776 [http-nio-8080-exec-5] AdminSearchItems - all
+[INFO ] 2018-05-07 16:07:48.776 [http-nio-8080-exec-5] AdminSearchItems - 
+[INFO ] 2018-05-07 16:07:48.849 [http-nio-8080-exec-8] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-07 16:07:48.850 [http-nio-8080-exec-1] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-07 16:07:48.862 [http-nio-8080-exec-8] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-07 16:07:48.883 [http-nio-8080-exec-1] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-07 16:08:09.229 [http-nio-8080-exec-9] AdminSearchUsers - all
+[INFO ] 2018-05-07 16:08:09.229 [http-nio-8080-exec-9] AdminSearchUsers - null
+[INFO ] 2018-05-07 16:08:09.345 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-07 16:08:09.345 [http-nio-8080-exec-4] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-07 16:08:09.362 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-07 16:08:09.371 [http-nio-8080-exec-4] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-07 16:08:14.688 [http-nio-8080-exec-6] AdminDeleteUser - userId: 3
+[INFO ] 2018-05-07 16:08:14.688 [http-nio-8080-exec-6] AdminDeleteUser - searchTerm is: null
+[INFO ] 2018-05-07 16:08:14.747 [http-nio-8080-exec-6] AdminSearchUsers - all
+[INFO ] 2018-05-07 16:08:14.747 [http-nio-8080-exec-6] AdminSearchUsers - null
+[INFO ] 2018-05-07 16:08:14.831 [http-nio-8080-exec-7] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-07 16:08:14.832 [http-nio-8080-exec-5] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-07 16:08:14.838 [http-nio-8080-exec-7] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-07 16:08:14.845 [http-nio-8080-exec-5] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-07 16:08:21.947 [http-nio-8080-exec-8] LogOut - rbruinsma
+[INFO ] 2018-05-07 16:08:22.056 [http-nio-8080-exec-1] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-07 16:08:22.060 [http-nio-8080-exec-2] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-07 16:08:22.065 [http-nio-8080-exec-1] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-07 16:08:22.071 [http-nio-8080-exec-2] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-07 16:08:24.452 [http-nio-8080-exec-9] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-07 16:08:24.455 [http-nio-8080-exec-10] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-07 16:08:24.457 [http-nio-8080-exec-9] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-07 16:08:24.474 [http-nio-8080-exec-10] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
