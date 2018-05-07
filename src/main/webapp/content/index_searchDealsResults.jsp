@@ -22,7 +22,7 @@
                         <th>savings amount</th>
                         <th>sale ends</th>
                         <th>store</th>
-                        <c:if test="${pageTitle.equals('Shopper')}">
+                        <c:if test="${pageTitle.equals('GrocerySales - Shopper')}">
                             <th>Add to Shopping List</th>
                         </c:if>
 
@@ -39,7 +39,7 @@
                             <td>${deal.savingsAmount}</td>
                             <td>${deal.saleEndDate}</td>
                             <td>${deal.storeName}</td>
-                            <c:if test="${pageTitle.equals('Shopper')}">
+                            <c:if test="${pageTitle.equals('GrocerySales - Shopper')}">
                                 <td><a href="addToShoppingList?brand=${deal.brand}&category=${deal.category}"><img style="max-width: 2em;" src="img/add.png" alt="add"></a>
                             </c:if>
                             </td>

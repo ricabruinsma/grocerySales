@@ -48,7 +48,7 @@ public class RoutingToShopperPage extends HttpServlet {
         logger.info("username is: " + username);
         List<Deal> deals = (List)request.getAttribute("deals");
         String searchPage = (String)request.getAttribute("searchPage");
-
+        logger.info("what's in the deals object? " + deals);
         //set username into session variable
         HttpSession session = request.getSession();
         session.setAttribute("username", username);
