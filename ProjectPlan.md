@@ -126,7 +126,7 @@
 - [X] CategoryDAO and unit tests +  update Item unit tests (and others...)
 - [X] Create Admin JSP to CRUD users (including roles)
 - [ ] Stores - add & delete
-- [ ] Items - delete
+- [X] Items - delete
 - [ ] Category - add & delete
 - [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
 - [X] Implement API to populate deal search results

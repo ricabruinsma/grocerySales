@@ -55,5 +55,5 @@
 | 5/05/18| Create Category entity, CategoryDaoTests, update all other tests | 2 | |
 | 5/06/18| API keyword search is broken, still | 4 | |
 | 5/06/18| User delete and user role & password update | 3 | |
-| 5/07/18|  |  | |
+| 5/07/18| Fix user delete with doPost, jQuery datatable for Shopper Deal search, delete item | 3 | |
 | 5/07/18|  |  | |
