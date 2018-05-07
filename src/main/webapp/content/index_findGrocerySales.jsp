@@ -38,7 +38,12 @@
                                     <h4>Enter Search Term:</h4>
                                     <input type="text" id="keyword" name="keyword" class="form-control" /> <br />
                                 </div>
-
+                                    <c:if test="${pageTitle.equals('Shopper')}">
+                                        <input type="hidden" name="routeDealsTo" value="Shopper" />
+                                    </c:if>
+                                <c:if test="${pageTitle.equals('Home')}">
+                                    <input type="hidden" name="routeDealsTo" value="Home" />
+                                </c:if>
                                 <button type="submit" class="btn tm-light-blue-bordered-btn">Submit</button>
                             </div>
                         </form>

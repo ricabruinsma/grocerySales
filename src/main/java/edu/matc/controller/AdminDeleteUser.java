@@ -5,8 +5,6 @@ import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import sun.net.www.content.text.Generic;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,9 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+
 
 /**
  * A servlet to delete a User from the database.
@@ -39,11 +36,13 @@ public class AdminDeleteUser extends HttpServlet {
      * @throws IOException
      */
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        //from GET request
+        //from POST request
 		int userIdToDelete = Integer.parseInt(request.getParameter("id"));
 		logger.info("userId: " + userIdToDelete);
+		String searchBy = request.getParameter("searchBy");
+		String searchTerm = request.getParameter("searchTerm");
 		
         //grab user to delete
 		GenericDao userDao = new GenericDao(User.class);
@@ -64,8 +63,10 @@ public class AdminDeleteUser extends HttpServlet {
 		request.setAttribute("deletePage", "user");
 		request.setAttribute("anchorName", "#deleteUsersResults");
 		request.setAttribute("deleteMessage", "success");
+		request.setAttribute("searchBy", searchBy);
+		request.setAttribute("searchTerm", searchTerm);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("searchUsers");
         dispatcher.forward(request, response);
     }
 }

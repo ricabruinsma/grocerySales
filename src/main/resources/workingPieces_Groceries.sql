@@ -19,7 +19,7 @@ CREATE TABLE `user` (
   `lat` decimal(9,6) DEFAULT NULL,
   `lon` decimal(9,6) DEFAULT NULL,
   `updateDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP  ON UPDATE CURRENT_TIMESTAMP,
-  `username` varchar(255) DEFAULT NULL,
+  `username` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
@@ -99,10 +99,10 @@ CREATE TABLE `listline` (
   CONSTRAINT `ListLine_Item` FOREIGN KEY (`item_id`) REFERENCES `item` (`id`),
   CONSTRAINT `ListLine_ShoppingList` FOREIGN KEY (`shoppinglist_id`) REFERENCES `shoppinglist` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-INSERT INTO user (id, email, password, address1, city, state, postalCode, username) VALUES (1, 'rbruinsma@madisoncollege.edu', 'supersecret1', '1701 Wright St.', 'Madison', 'WI', '53704', 'rbruinsma'), (2, 'testUser@madisoncollege.edu', 'supersecret2', '1701 Wright St.', 'Madison', 'WI', '53704', 'testUser'), (3, 'testUser2@madisoncollege.edu',  'supersecret3', '211 N. Carroll St.', 'Madison', 'WI', '53703', 'testUser2');
-insert into role (id, name, username, user_id) values (1, 'admin', 'rbruinsma', 1), (2, 'shopper', 'rbruinsma', 1), (3, 'shopper', 'testUser', 2), (4, 'shopper', 'testUser2', 3);
-insert into shoppinglist (id, totalAmount, user_id) VALUES (1, 4.99, 1), (2, 7.98, 1);
-INSERT INTO store (id, name, address1, city, state, postalCode, lat, lon, updateDate) VALUES (1, 'Hy-Vee', '3801 East Washington Avenue', 'Madison', 'WI', '53704', 43.117807, -89.317387, '2018-03-20 07:25:03'), (2, 'Willy Street Co-op', '2817 North Sherman Ave', 'Madison', 'WI', '53704', 43.127639, -89.362807, '2018-03-20 07:25:03');
+INSERT INTO user (id, email, password, address1, city, state, postalCode, lat, lon, username) VALUES (1, 'rbruinsma@madisoncollege.edu', 'supersecret1', '1701 Wright St.', 'Madison', 'WI', '53704', 43.121716, -89.328584,  'rbruinsma'), (2, 'testUser@madisoncollege.edu', 'supersecret2', '1701 Wright St.', 'Madison', 'WI', '53704', 43.121716, -89.328584,  'testUser'), (3, 'testUser2@madisoncollege.edu',  'supersecret3', '211 N. Carroll St.', 'Madison', 'WI', '53703', 43.121716, -89.328584,  'testUser2');
+insert into role (id, name, username, user_id) values (1, 'admin', 'rbruinsma', 1), (2, 'shopper', 'testUser', 2), (3, 'shopper', 'testUser2', 3);
+insert into shoppinglist (id, totalAmount, user_id) VALUES (1, 4.99, 1), (2, 7.98, 1), (3, 4.99, 1);
+INSERT INTO store (id, name, address1, city, state, postalCode, lat, lon) VALUES (1, 'Hy-Vee', '3801 East Washington Avenue', 'Madison', 'WI', '53704', 43.117807, -89.317387), (2, 'Willy Street Co-op', '2817 North Sherman Ave', 'Madison', 'WI', '53704', 43.127639, -89.362807);
 INSERT INTO category (id, name) VALUES (1, 'beer & wine'), (2, 'body care'), (3, 'bread'), (4, 'frozen foods'), (5, 'bulk'), (6, 'cheese'), (7, 'meat'), (8, 'packaged grocery'), (9, 'refrigerated grocery'), (10, 'wellness');
 INSERT INTO item (id, brand, category_id, product, size, salePrice, savingsAmount, saleEndDate, store_id) VALUES (1, 'Kellogs', 8, 'Cream of Wheat', '10 oz', '$1.99', '$1.00', '2018-04-30', 2), (2, 'Organic Valley', 9,  'butter', '1 lb', '$3.99', '$1.50', '2018-04-30', 2), (3, 'Organic Valley', 9, 'milk', '1 gal', '$4.99', '$1.00', '2018-04-30', 2);
-insert into listline (id, quantity, shoppinglist_id, item_id) VALUES (1, 1, 1, 3), (3, 2, 2, 2);
+insert into listline (id, quantity, shoppinglist_id, item_id) VALUES (1, 2, 2, 2), (2, 1, 3, 3);

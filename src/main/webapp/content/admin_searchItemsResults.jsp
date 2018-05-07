@@ -36,7 +36,6 @@
                             <td>${item.store.name}</td>
                             <td><a href="deleteItem?id=${item.id}"><img style="max-width: 2em;" src="img/trashCan.png" alt="delete"></a>
                                 <a href="editItem?id=${item.id}"><img style="max-width: 2em;" src="img/edit.png" alt="edit"></a>
-                                <a href="addItem?id=${item.id}"><img style="max-width: 2em;" src="img/add.png" alt="add"></a>
                             </td>
                         </tr>
                     </c:forEach>

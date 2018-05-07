@@ -1,5 +1,6 @@
 package edu.matc.controller;
 
+import grocery.api.deals.Deal;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * A servlet to grab logged in user,
@@ -39,10 +41,13 @@ public class RoutingToShopperPage extends HttpServlet {
 		logger.info("I'm being routed to ShopperPage doGet");
     	boolean isLoggedIn = true;
     	String anchorName = "top";
+    	String role = "shopper";
 
     	// from GET request
         String username = request.getRemoteUser();
         logger.info("username is: " + username);
+        List<Deal> deals = (List)request.getAttribute("deals");
+        String searchPage = (String)request.getAttribute("searchPage");
 
         //set username into session variable
         HttpSession session = request.getSession();
@@ -50,6 +55,9 @@ public class RoutingToShopperPage extends HttpServlet {
 
     	request.setAttribute("isLoggedIn", isLoggedIn);
         request.setAttribute("anchorName", anchorName);
+        request.setAttribute("role", role);
+        request.setAttribute("deals", deals);
+        request.setAttribute("searchPage", searchPage);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("shopperPage.jsp");
         dispatcher.forward(request, response);

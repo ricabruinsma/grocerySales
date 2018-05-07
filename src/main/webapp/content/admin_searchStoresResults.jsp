@@ -32,7 +32,6 @@
                             <td>${store.postalCode}</td>
                             <td><a href="deleteStore?id=${store.id}"><img style="max-width: 2em;" src="img/trashCan.png" alt="delete"></a>
                                 <a href="editStore?id=${store.id}"><img style="max-width: 2em;" src="img/edit.png" alt="edit"></a>
-                                <a href="addStore?id=${store.id}"><img style="max-width: 2em;" src="img/add.png" alt="add"></a>
                             </td>
                         </tr>
                     </c:forEach>

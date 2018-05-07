@@ -3,7 +3,7 @@
 <c:set var="pageTitle" value="Failed Login" />
 <c:set var="isLoggedIn" value="false" />
 
-<%@include file="templates/head.jsp"%>
+<%@include file="content/index_head.jsp"%>
 
 <body id="top" class="home">
     <div class="container-fluid">

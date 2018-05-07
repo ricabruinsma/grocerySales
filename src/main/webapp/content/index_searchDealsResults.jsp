@@ -11,7 +11,7 @@
             </c:if>
 
             <c:if test="${deals.size() > 0}">
-                <table class="table table-striped tm-full-width-large-table" id="dealSearchResults">
+                <table class="table table-striped tm-full-width-large-table dealSearchResults">
                     <thead>
                     <tr>
                         <th>brand</th>
@@ -35,7 +35,9 @@
                             <td>${deal.savingsAmount}</td>
                             <td>${deal.saleEndDate}</td>
                             <td>${deal.storeName}</td>
-                            <td><a href="addToShoppingList?id=${deal.id}"><img style="max-width: 2em;" src="img/add.png" alt="add"></a>
+                            <c:if test="${pageTitle.equals('Shopper')}">
+                                <td><a href="addToShoppingList?id=${deal.id}"><img style="max-width: 2em;" src="img/add.png" alt="add"></a>
+                            </c:if>
                             </td>
                         </tr>
                     </c:forEach>

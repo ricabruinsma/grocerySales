@@ -1,21 +1,22 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="pageTitle" value="Admin" />
-<c:set var="isLoggedIn" value="true" />
 
 <!DOCTYPE html>
 <html lang="en">
 
-<%@include file="templates/head.jsp"%>
+<%@include file="content/admin_head.jsp"%>
 
 <body id="top" class="page-2">
 
-    <%@include file="content/admin_navbar.jsp"%>
+    <%@include file="content/loggedIn_navbar.jsp"%>
 
     <div class="container-fluid">
 
         <%@include file="content/admin_banner.jsp"%>
 
         <%@include file="content/admin_UsersSection.jsp"%>
+
+        <%@include file="content/admin_usersEditForm.jsp"%>
 
         <%@include file="content/admin_searchUsersResults.jsp"%>
 

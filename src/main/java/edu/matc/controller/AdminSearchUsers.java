@@ -48,6 +48,7 @@ public class AdminSearchUsers extends HttpServlet {
         String searchByQuery = request.getParameter("searchBy");
         //term to look for in field above
 		String searchKeywordQueryString = request.getParameter("searchTerm");
+		String searchPage = request.getParameter("searchPage");
 
         logger.info(searchByQuery);
         logger.info(searchKeywordQueryString);
@@ -82,8 +83,11 @@ public class AdminSearchUsers extends HttpServlet {
 
 		}
 
-		request.setAttribute("searchPage", "user");
+
+		request.setAttribute("searchPage", searchPage);
 		request.setAttribute("anchorName", "#searchUsersResults");
+		request.setAttribute("searchBy", searchByQuery);
+		request.setAttribute("searchTerm", searchKeywordQueryString);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
         dispatcher.forward(request, response);

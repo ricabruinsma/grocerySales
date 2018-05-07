@@ -51,6 +51,7 @@ public class GetDealsFromAPI extends HttpServlet {
         //from GET request
         String storeName = request.getParameter("storeName");
         String categoryName = request.getParameter("categoryName");
+        String pageToRouteTo = request.getParameter("routeDealsTo");
 
         String searchType = request.getParameter("searchType");
 
@@ -80,7 +81,13 @@ public class GetDealsFromAPI extends HttpServlet {
         request.setAttribute("searchPage", "index");
         request.setAttribute("anchorName", "dealSearch");
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
-        dispatcher.forward(request, response);
+        if (pageToRouteTo.equals("Shopper")) {
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/toShopperPage");
+            dispatcher.forward(request, response);
+        } else {
+            RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+            dispatcher.forward(request, response);
+        }
+
     }
 }

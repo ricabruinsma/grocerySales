@@ -9,18 +9,15 @@
                 <c:if test="${users.isEmpty()}">
                     <h3 class="userResultAlert" style="color: red;">No Results were found for your search.</h3>
                 </c:if>
-                <c:if test="${deleteMessage.isEmpty()}">
-                    <h3 class="userResultAlert" style="color: red;">Error!  User was not deleted.</h3>
+                <c:if test="${deleteMessage.equals('success')}">
+                    <h3 class="blue-text">User Successfully deleted.</h3>
                 </c:if>
-                <c:if test="${!deleteMessage.isEmpty()}">
-                    <h3 class="userResultAlert" style="color: green;">User was successfully deleted.</h3>
-                </c:if>
-
                 <c:if test="${users.size() > 0}">
                     <table class="table table-striped tm-full-width-large-table userResultAlert" id="userSearchResults">
                         <thead>
                         <tr>
                             <th>id</th>
+                            <th>roles</th>
                             <th>user name</th>
                             <th>password</th>
                             <th>email</th>
@@ -35,6 +32,9 @@
                         <c:forEach var="user" items="${users}">
                             <tr>
                                 <td>${user.id}</td>
+                                <td><c:forEach var="role" items="${user.roles}">
+                                    ${role.name} <br/>
+                                </c:forEach></td>
                                 <td>${user.username}</td>
                                 <td>${user.password}</td>
                                 <td>${user.email}</td>
@@ -42,9 +42,14 @@
                                 <td>${user.city}</td>
                                 <td>${user.state}</td>
                                 <td>${user.postalCode}</td>
-                                <td><a href="deleteUser?id=${user.id}"><img style="max-width: 2em;" src="img/trashCan.png" alt="delete"></a>
-                                    <a href="editUser?id=${user.id}"><img style="max-width: 2em;" src="img/edit.png" alt="edit"></a>
-                                    <a href="addUser?id=${user.id}"><img style="max-width: 2em;" src="img/add.png" alt="add"></a>
+                                <td><form action="/grocerySales/deleteUser" method="POST">
+                                        <input type="hidden" name="id" value="${user.id}" />
+                                        <input type="hidden" name="searchBy" value="${searchBy}" />
+                                        <input type="hidden" name="searchTerm" value="${searchTerm}" />
+                                        <button class="deleteUser" type="submit"><img style="max-width: 2em;" src="img/trashCan.png" alt="delete"></button>
+                                    </form>
+                                    <a href="searchUsers?searchBy=id&searchTerm=${user.id}&searchPage=userEdit"><img style="max-width: 2em;" src="img/edit.png" alt="edit"></a>
+
                                 </td>
                             </tr>
                         </c:forEach>

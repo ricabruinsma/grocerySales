@@ -8,9 +8,9 @@
     <div class="row">
         <div class="col-lg-3"></div>
         <div class="col-lg-8">
-            <a href="searchUsers?searchBy=all" class="btn btn-default tm-normal-btn tm-blue-btn">View All</a>
+            <a href="searchUsers?searchBy=all&searchPage=user" class="btn btn-default tm-normal-btn tm-blue-btn">View All</a>
             <a href="addUser" class="btn btn-default tm-normal-btn tm-blue-btn">Add New</a>
-            <a href="#searchUsersForm" class="btn btn-default tm-normal-btn tm-blue-btn">Edit/Delete</a>
+            <a href="#searchUsersForm" class="btn btn-default tm-normal-btn tm-blue-btn showUsersSearch">Edit/Delete</a>
         </div>
     </div>
 
@@ -42,12 +42,13 @@
                                     <br />
                                     <h4>Enter Search Term:</h4>
                                     <input type="text" id="userSearchTerm" name="searchTerm" class="form-control" required/> <br />
-
+                                    <input type="hidden" name="searchPage" value="user" />
                                     <button type="submit" class="btn tm-light-blue-bordered-btn">Submit</button>
                                 </div>
                             </form>
                         </div> <!-- col -->
                     </div>
+
                 </div>
 
                 <div class="row"></div>

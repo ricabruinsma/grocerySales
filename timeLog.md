@@ -53,5 +53,5 @@
 | 5/03/18| Routing between pages, with focus to anchor tag | 3 | |
 | 5/04/18| Built search deal form, including AJAX call working for stores. View all for users, stores, items | 3.5 | |
 | 5/05/18| Create Category entity, CategoryDaoTests, update all other tests | 2 | |
-| 5/02/18|  |  | |
+| 5/06/18| API keyword search is broken, still | 4 | |
 | 5/02/18|  |  | |

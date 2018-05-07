@@ -3,7 +3,7 @@
 <c:set var="pageTitle" value="Error 403" />
 <c:set var="isLoggedIn" value="false" />
 
-<%@include file="templates/head.jsp"%>
+<%@include file="content/index_head.jsp"%>
 
 <body>
 <div class="row">

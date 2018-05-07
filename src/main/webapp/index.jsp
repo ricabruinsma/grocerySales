@@ -4,12 +4,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%@include file="templates/head.jsp"%>
+<%@include file="content/index_head.jsp"%>
 
 <body id="top" class="home" onload="location.href='#${anchorName}'">
     <div class="container-fluid">
 
-        <%@include file="content/notAdmin_navbar.jsp"%>
+        <%@include file="content/index_navbar.jsp"%>
 
         <%@include file="content/index_banner.jsp"%>
 

@@ -41,7 +41,7 @@
         });
 
         /* data table plugin */
-        $('#dealSearchResults').DataTable();
+        $('.dealSearchResults').DataTable();
 
 
         var mobileTopOffset = 54;

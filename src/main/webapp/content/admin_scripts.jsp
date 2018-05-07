@@ -11,10 +11,38 @@
 
     $(document).ready(function(){
 
+        $("#userSearchResults").on(click, $(".editUser"), function() {
+            $("#usersSearchHiddenToggle").css("display", "none");
+            $("#usersEditHiddenToggle").css("display", "inline");
+        });
+
+        $(".showUsersSearch").on(click, function() {
+            $("#usersSearchHiddenToggle").css("display", "inline");
+            $("#usersEditHiddenToggle").css("display", "none");
+        });
+
+        // loads the category list into the grocery deal search
+        loadOptionsForDealSearch("loadingCategories", "#categoryName");
+
+        // loads the category list into the grocery deal search
+        loadOptionsForDealSearch("loadingStores", "#storeName");
+
+
+        // grocery deal search - if select a keyword search, keyword input box displays
+        $('#searchType').change(function() {
+            if ($(this).val() === "keywordSearch") {
+                $("#groceryKeywordSearch").css("display", "inline");
+            } else if ($(this).val() === "getAll") {
+                $("#groceryKeywordSearch").css("display", "none");
+            }
+        });
+
         /* data table plugin */
         $('#itemSearchResults').DataTable();
         $('#userSearchResults').DataTable();
         $('#storeSearchResults').DataTable();
+        $('.dealSearchResults').DataTable();
+
 
         var mobileTopOffset = 54;
         var tabletTopOffset = 74;
@@ -80,5 +108,16 @@
         });
 
     });
+
+    function loadOptionsForDealSearch(actionServlet, selectId) {
+        $.get(actionServlet, function(jsonOptions) {
+            var $select = $(selectId);
+            $select.find("option").remove();
+            $.each(jsonOptions, function(key, value) {
+                $("<option>").val(key).text(value).appendTo($select);
+            });
+        });
+    }
+
 
 </script>
