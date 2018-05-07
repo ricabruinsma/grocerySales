@@ -28,6 +28,19 @@ public class AdminSearchItems extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+	/**
+	 * When re-loading the page after an item is deleted, shuttle from doPost to doGet
+	 *
+	 * @param request Http Servlet Request
+	 * @param response Http Servlet Response
+	 * @throws ServletException
+	 * @throws IOException
+	 */
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
     /**
      * @param request Http Servlet Request
      * @param response Http Servlet Response
@@ -80,6 +93,8 @@ public class AdminSearchItems extends HttpServlet {
 			request.setAttribute("items", itemList);
 		}
 		request.setAttribute("searchPage", "item");
+		request.setAttribute("searchBy", searchByQuery);
+		request.setAttribute("searchTerm", searchKeywordQuery);
 
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");

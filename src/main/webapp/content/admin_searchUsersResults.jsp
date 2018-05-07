@@ -25,7 +25,7 @@
                             <th>city</th>
                             <th>state</th>
                             <th>postal code</th>
-                            <th>Admin Functions</th>
+                            <th>Delete/Edit User</th>
                         </tr>
                         </thead>
                         <tbody>

@@ -21,7 +21,7 @@
                         <th>sale price</th>
                         <th>sale end date</th>
                         <th>store</th>
-                        <th>Admin Functions</th>
+                        <th>Delete Item</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -34,8 +34,12 @@
                             <td>${item.salePrice}</td>
                             <td>${item.saleEndDate}</td>
                             <td>${item.store.name}</td>
-                            <td><a href="deleteItem?id=${item.id}"><img style="max-width: 2em;" src="img/trashCan.png" alt="delete"></a>
-                                <a href="editItem?id=${item.id}"><img style="max-width: 2em;" src="img/edit.png" alt="edit"></a>
+                            <td><form action="deleteItem" method="POST">
+                                    <input type="hidden" name="itemToDeleteId" value="${item.id}" />
+                                    <input type="hidden" name="searchBy" value="${searchBy}" />
+                                    <input type="hidden" name="searchTerm" value="${searchTerm}" />
+                                    <button class="deleteItem" type="submit"><img style="max-width: 2em;" src="img/trashCan.png" alt="delete"></button>
+                                </form>
                             </td>
                         </tr>
                     </c:forEach>
