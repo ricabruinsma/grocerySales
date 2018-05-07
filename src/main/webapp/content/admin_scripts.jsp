@@ -38,11 +38,12 @@
         });
 
         /* data table plugin */
-        $('#itemSearchResults').DataTable();
+        $('#itemSearchResults, #userSearchResults, #storeSearchResults, .dealSearchResults').DataTable();
+        /*
         $('#userSearchResults').DataTable();
         $('#storeSearchResults').DataTable();
         $('.dealSearchResults').DataTable();
-
+        */
 
         var mobileTopOffset = 54;
         var tabletTopOffset = 74;

@@ -22,6 +22,10 @@
                         <th>savings amount</th>
                         <th>sale ends</th>
                         <th>store</th>
+                        <c:if test="${pageTitle.equals('Shopper')}">
+                            <th>Add to Shopping List</th>
+                        </c:if>
+
                     </tr>
                     </thead>
                     <tbody>
