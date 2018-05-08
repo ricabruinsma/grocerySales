@@ -32,14 +32,16 @@
                                 <input type="hidden" name="searchPage" value="user" />
                                 <div style="text-align:center;">
                                     <button type="submit" class="btn tm-light-blue-bordered-btn" style="text-align: center;">Update</button>
+                                    <br/><br />
+                                    <a href="toShopperPage" class="btn btn-default tm-normal-btn tm-blue-btn">Go Back</a>
                                 </div>
                             </div>
                         </form>
                     </c:forEach>
                 </c:if>
                 <div class="row">
-                    <div class= text-xs-center">
-                        <a href="toShopperPage" class="btn btn-default tm-normal-btn tm-blue-btn">Go Back</a>
+                    <div class="text-xs-center">
+
                     </div>
                 </div>
 

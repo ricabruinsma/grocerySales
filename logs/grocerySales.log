@@ -189,3 +189,161 @@
 [INFO ] 2018-05-08 13:15:26.317 [http-nio-8080-exec-7] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
 [INFO ] 2018-05-08 13:15:26.325 [http-nio-8080-exec-6] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
 [INFO ] 2018-05-08 13:15:26.396 [http-nio-8080-exec-7] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[DEBUG] 2018-05-08 13:16:09.721 [main] GenericDao - Searching for entity with name = bread
+[DEBUG] 2018-05-08 13:16:10.028 [main] GenericDao - Searching for entity with name = brea
+[DEBUG] 2018-05-08 13:16:10.625 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-08 13:16:10.767 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-08 13:16:10.842 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-08 13:16:10.869 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-08 13:16:11.322 [main] GenericDao - Searching for entity with item = Item(createDate=2018-05-08 13:16:11.0, brand=Organic Valley, product=butter, size=1 lb, salePrice=$3.99, savingsAmount=$1.50, saleEndDate=5/30/2018, store=Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2), category=edu.matc.entity.Category@424488b5, active=true, updateDate=2018-05-08 13:16:11.0, id=2)
+[DEBUG] 2018-05-08 13:16:11.742 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-08 13:16:11.884 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-08 13:16:11.931 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-08 13:16:12.380 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-08 13:16:12.781 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-08 13:16:12.834 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-08 13:16:13.212 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-08 13:16:13.301 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-08 13:16:13.360 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[INFO ] 2018-05-08 13:16:40.392 [http-nio-8080-exec-6] LandingPageSetup - anchor name: tm-section-2
+[INFO ] 2018-05-08 13:16:40.410 [http-nio-8080-exec-6] LandingPageSetup - username: null
+[INFO ] 2018-05-08 13:16:42.035 [http-nio-8080-exec-9] LandingPageSetup - anchor name: tm-section-2
+[INFO ] 2018-05-08 13:16:42.036 [http-nio-8080-exec-9] LandingPageSetup - username: null
+[INFO ] 2018-05-08 13:16:42.263 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:16:42.351 [http-nio-8080-exec-1] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:16:47.378 [http-nio-8080-exec-1] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:16:47.378 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:16:47.925 [http-nio-8080-exec-4] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:16:47.928 [http-nio-8080-exec-5] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:16:47.945 [http-nio-8080-exec-4] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:16:48.058 [http-nio-8080-exec-5] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:16:49.389 [http-nio-8080-exec-6] RoutingToShopperPage - I'm being routed to ShopperPage doGet
+[INFO ] 2018-05-08 13:16:49.389 [http-nio-8080-exec-6] RoutingToShopperPage - username is: rbruinsma
+[INFO ] 2018-05-08 13:16:49.389 [http-nio-8080-exec-6] RoutingToShopperPage - what's in the deals object? null
+[INFO ] 2018-05-08 13:16:49.963 [http-nio-8080-exec-7] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:16:49.980 [http-nio-8080-exec-8] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:16:49.982 [http-nio-8080-exec-7] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:16:50.050 [http-nio-8080-exec-8] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:16:52.414 [http-nio-8080-exec-10] AdminSearchUsers - username
+[INFO ] 2018-05-08 13:16:52.414 [http-nio-8080-exec-10] AdminSearchUsers - rbruinsma
+[DEBUG] 2018-05-08 13:16:52.418 [http-nio-8080-exec-10] GenericDao - Searching for entity with username = rbruinsma
+[INFO ] 2018-05-08 13:16:52.546 [http-nio-8080-exec-5] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:16:52.547 [http-nio-8080-exec-6] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:16:52.556 [http-nio-8080-exec-5] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:16:52.597 [http-nio-8080-exec-6] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[DEBUG] 2018-05-08 13:17:43.545 [main] GenericDao - Searching for entity with name = bread
+[DEBUG] 2018-05-08 13:17:43.793 [main] GenericDao - Searching for entity with name = brea
+[DEBUG] 2018-05-08 13:17:44.427 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-08 13:17:44.607 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-08 13:17:44.684 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-08 13:17:44.715 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-08 13:17:45.178 [main] GenericDao - Searching for entity with item = Item(createDate=2018-05-08 13:17:45.0, brand=Organic Valley, product=butter, size=1 lb, salePrice=$3.99, savingsAmount=$1.50, saleEndDate=5/30/2018, store=Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2), category=edu.matc.entity.Category@424488b5, active=true, updateDate=2018-05-08 13:17:45.0, id=2)
+[DEBUG] 2018-05-08 13:17:45.639 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-08 13:17:45.769 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-08 13:17:45.818 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-08 13:17:46.317 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-08 13:17:46.710 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-08 13:17:46.759 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-08 13:17:47.233 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-08 13:17:47.288 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-08 13:17:47.399 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[INFO ] 2018-05-08 13:18:12.022 [http-nio-8080-exec-6] LandingPageSetup - anchor name: tm-section-2
+[INFO ] 2018-05-08 13:18:12.035 [http-nio-8080-exec-6] LandingPageSetup - username: null
+[INFO ] 2018-05-08 13:18:13.259 [http-nio-8080-exec-9] LandingPageSetup - anchor name: tm-section-2
+[INFO ] 2018-05-08 13:18:13.259 [http-nio-8080-exec-9] LandingPageSetup - username: null
+[INFO ] 2018-05-08 13:18:13.522 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:18:13.523 [http-nio-8080-exec-1] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:18:18.661 [http-nio-8080-exec-1] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:18:18.661 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:18:40.799 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:18:40.801 [http-nio-8080-exec-2] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:18:40.841 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:18:40.853 [http-nio-8080-exec-2] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:18:42.159 [http-nio-8080-exec-3] RoutingToShopperPage - I'm being routed to ShopperPage doGet
+[INFO ] 2018-05-08 13:18:42.159 [http-nio-8080-exec-3] RoutingToShopperPage - username is: rbruinsma
+[INFO ] 2018-05-08 13:18:42.159 [http-nio-8080-exec-3] RoutingToShopperPage - what's in the deals object? null
+[INFO ] 2018-05-08 13:18:42.731 [http-nio-8080-exec-4] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:18:42.733 [http-nio-8080-exec-5] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:18:42.743 [http-nio-8080-exec-4] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:18:42.807 [http-nio-8080-exec-5] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:18:46.863 [http-nio-8080-exec-6] AdminSearchUsers - username
+[INFO ] 2018-05-08 13:18:46.863 [http-nio-8080-exec-6] AdminSearchUsers - rbruinsma
+[DEBUG] 2018-05-08 13:18:46.872 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = rbruinsma
+[INFO ] 2018-05-08 13:18:46.999 [http-nio-8080-exec-7] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:18:46.999 [http-nio-8080-exec-8] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:18:47.017 [http-nio-8080-exec-7] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:18:47.037 [http-nio-8080-exec-8] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[DEBUG] 2018-05-08 13:20:04.637 [main] GenericDao - Searching for entity with name = bread
+[DEBUG] 2018-05-08 13:20:04.874 [main] GenericDao - Searching for entity with name = brea
+[DEBUG] 2018-05-08 13:20:05.510 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-08 13:20:05.679 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-08 13:20:05.749 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-08 13:20:05.776 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-08 13:20:06.194 [main] GenericDao - Searching for entity with item = Item(createDate=2018-05-08 13:20:06.0, brand=Organic Valley, product=butter, size=1 lb, salePrice=$3.99, savingsAmount=$1.50, saleEndDate=5/30/2018, store=Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2), category=edu.matc.entity.Category@424488b5, active=true, updateDate=2018-05-08 13:20:06.0, id=2)
+[DEBUG] 2018-05-08 13:20:06.696 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-08 13:20:06.836 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-08 13:20:06.886 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-08 13:20:07.361 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-08 13:20:07.763 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-08 13:20:07.814 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-08 13:20:08.184 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-08 13:20:08.268 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-08 13:20:08.319 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)
+[INFO ] 2018-05-08 13:20:32.429 [http-nio-8080-exec-6] LandingPageSetup - anchor name: tm-section-2
+[INFO ] 2018-05-08 13:20:32.442 [http-nio-8080-exec-6] LandingPageSetup - username: null
+[INFO ] 2018-05-08 13:20:33.634 [http-nio-8080-exec-9] LandingPageSetup - anchor name: tm-section-2
+[INFO ] 2018-05-08 13:20:33.635 [http-nio-8080-exec-9] LandingPageSetup - username: null
+[INFO ] 2018-05-08 13:20:33.907 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:20:33.907 [http-nio-8080-exec-1] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:20:39.121 [http-nio-8080-exec-1] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:20:39.121 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:20:39.600 [http-nio-8080-exec-6] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:20:39.601 [http-nio-8080-exec-7] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:20:39.610 [http-nio-8080-exec-6] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:20:39.668 [http-nio-8080-exec-7] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:20:41.183 [http-nio-8080-exec-8] RoutingToShopperPage - I'm being routed to ShopperPage doGet
+[INFO ] 2018-05-08 13:20:41.187 [http-nio-8080-exec-8] RoutingToShopperPage - username is: rbruinsma
+[INFO ] 2018-05-08 13:20:41.187 [http-nio-8080-exec-8] RoutingToShopperPage - what's in the deals object? null
+[INFO ] 2018-05-08 13:20:41.912 [http-nio-8080-exec-9] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:20:41.921 [http-nio-8080-exec-2] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:20:41.924 [http-nio-8080-exec-9] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:20:42.002 [http-nio-8080-exec-2] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:20:46.079 [http-nio-8080-exec-3] AdminSearchUsers - username
+[INFO ] 2018-05-08 13:20:46.079 [http-nio-8080-exec-3] AdminSearchUsers - rbruinsma
+[DEBUG] 2018-05-08 13:20:46.086 [http-nio-8080-exec-3] GenericDao - Searching for entity with username = rbruinsma
+[INFO ] 2018-05-08 13:20:46.201 [http-nio-8080-exec-6] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:20:46.204 [http-nio-8080-exec-7] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:20:46.209 [http-nio-8080-exec-6] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:20:46.246 [http-nio-8080-exec-7] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:20:51.095 [http-nio-8080-exec-8] RoutingToShopperPage - I'm being routed to ShopperPage doGet
+[INFO ] 2018-05-08 13:20:51.095 [http-nio-8080-exec-8] RoutingToShopperPage - username is: rbruinsma
+[INFO ] 2018-05-08 13:20:51.095 [http-nio-8080-exec-8] RoutingToShopperPage - what's in the deals object? null
+[INFO ] 2018-05-08 13:20:51.167 [http-nio-8080-exec-2] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:20:51.167 [http-nio-8080-exec-9] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:20:51.189 [http-nio-8080-exec-9] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:20:51.208 [http-nio-8080-exec-2] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:21:04.041 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:21:04.042 [http-nio-8080-exec-4] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:21:04.048 [http-nio-8080-exec-10] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:21:04.085 [http-nio-8080-exec-4] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[INFO ] 2018-05-08 13:21:12.446 [http-nio-8080-exec-5] GetDealsFromAPI - This is the uri: http://18.222.154.101:8080/groceryDeals/api/deals/willystreet
+[INFO ] 2018-05-08 13:21:19.414 [http-nio-8080-exec-3] LoadingCategoriesToDealSearch - I'm in the LoadingCategories doGet
+[INFO ] 2018-05-08 13:21:19.414 [http-nio-8080-exec-6] LoadingStoresToDealSearch - I'm in the LoadingStores doGet
+[INFO ] 2018-05-08 13:21:19.420 [http-nio-8080-exec-3] LoadingCategoriesToDealSearch - {"":"choose","beer & wine":"beer & wine","body care":"body care","bread":"bread","frozen foods":"frozen foods","bulk":"bulk","cheese":"cheese","meat":"meat","packaged grocery":"packaged grocery","refrigerated grocery":"refrigerated grocery","wellness":"wellness"}
+[INFO ] 2018-05-08 13:21:19.451 [http-nio-8080-exec-6] LoadingStoresToDealSearch - {"":"choose","Hy-Vee":"Hy-Vee","Willy Street Co-op":"Willy Street Co-op"}
+[DEBUG] 2018-05-08 13:26:38.909 [main] GenericDao - Searching for entity with name = bread
+[DEBUG] 2018-05-08 13:26:39.147 [main] GenericDao - Searching for entity with name = brea
+[DEBUG] 2018-05-08 13:26:39.647 [main] GenericDao - Searching for entity with store = Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-08 13:26:39.820 [main] GenericDao - Searching for entity with product = butter
+[DEBUG] 2018-05-08 13:26:39.902 [main] GenericDao - Searching for entity with brand = Kell
+[INFO ] 2018-05-08 13:26:39.925 [main] ItemDaoTest - Store object: Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2)
+[DEBUG] 2018-05-08 13:26:40.356 [main] GenericDao - Searching for entity with item = Item(createDate=2018-05-08 13:26:40.0, brand=Organic Valley, product=butter, size=1 lb, salePrice=$3.99, savingsAmount=$1.50, saleEndDate=5/30/2018, store=Store(name=Willy Street Co-op, address1=2817 North Sherman Ave, address2=null, city=Madison, state=WI, postalCode=53704, id=2), category=edu.matc.entity.Category@424488b5, active=true, updateDate=2018-05-08 13:26:40.0, id=2)
+[DEBUG] 2018-05-08 13:26:40.853 [main] GenericDao - Searching for entity with quantity = 2
+[DEBUG] 2018-05-08 13:26:41.032 [main] GenericDao - Searching for entity with name = admin
+[DEBUG] 2018-05-08 13:26:41.078 [main] GenericDao - Searching for entity with name = adm
+[DEBUG] 2018-05-08 13:26:41.494 [main] GenericDao - Searching for entity with totalAmount = 7.98
+[DEBUG] 2018-05-08 13:26:41.914 [main] GenericDao - Searching for entity with name = Hy-Vee
+[DEBUG] 2018-05-08 13:26:41.965 [main] GenericDao - Searching for entity with name = Hy
+[DEBUG] 2018-05-08 13:26:42.377 [main] GenericDao - Searching for entity with username = rbruinsma
+[DEBUG] 2018-05-08 13:26:42.424 [main] GenericDao - Searching for entity with username = bruin
+[DEBUG] 2018-05-08 13:26:42.473 [main] GenericDao - Searching for entity with user = User(email=rbruinsma@madisoncollege.edu, firstName=null, password=supersecret1, username=rbruinsma, id=1, address1=1701 Wright St., address2=null, city=Madison, state=WI, postalCode=53704)

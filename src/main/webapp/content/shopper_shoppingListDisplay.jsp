@@ -43,7 +43,7 @@
                                         <button class="deleteItem" type="submit"><img style="max-width: 2em;" src="img/add.png" alt="add another"></button>
                                     </form>
 
-                                    <form action="deleteItemFromList" method="POST">
+                                    <form action="deleteShoppingListItem" method="POST">
                                         <input type="hidden" name="listLineIdToDelete" value="${listLine.id}" />
                                         <button class="deleteItem" type="submit"><img style="max-width: 2em;" src="img/trashCan.png" alt="delete"></button>
                                     </form>

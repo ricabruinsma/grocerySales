@@ -33,6 +33,20 @@ public class ShopperShowShoppingList extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
+     * Route to doGet, after deleting a shopping list item.  Re-load remaining shopping list
+     *
+     * @param request Http Servlet Request
+     * @param response Http Servlet Response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
+
+
+    /**
      * @param request Http Servlet Request
      * @param response Http Servlet Response
      * @throws ServletException
