@@ -86,6 +86,7 @@ public class ShopperAddItem extends HttpServlet {
         //request.setAttribute("searchType", searchType);
         //request.setAttribute("username", username);
         request.setAttribute("itemToAddId", itemId);
+        request.setAttribute("shoppingListProcess", true);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("retrieveShoppingList");
         dispatcher.forward(request, response);

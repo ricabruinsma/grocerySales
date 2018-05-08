@@ -17,6 +17,10 @@
     <%@include file="content/index_findGrocerySales.jsp"%>
 
     <%@include file="content/index_searchDealsResults.jsp"%>
+    
+    <%@include file="content/shopper_showShoppingListToggle.jsp"%>
+
+    <%@include file="content/shopper_shoppingListDisplay.jsp"%>
 
     <%@include file="templates/footer.jsp"%>
 

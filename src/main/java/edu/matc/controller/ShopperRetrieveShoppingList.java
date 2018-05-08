@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -48,8 +49,11 @@ public class ShopperRetrieveShoppingList extends HttpServlet {
         // from the POST
         //String routeDealsTo = request.getParameter("routeDealsTo");
         //String searchType = request.getParameter("searchType");
-        String username = request.getParameter("username");
+        //String username = request.getParameter("username");
         //int itemToAddId = (Integer)request.getAttribute("itemToAddId");
+        HttpSession session = request.getSession();
+        String username = (String)session.getAttribute("username");
+
 
 
         // get the user by username

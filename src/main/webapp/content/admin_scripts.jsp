@@ -38,7 +38,7 @@
         });
 
         /* data table plugin */
-        $('#itemSearchResults, #userSearchResults, #storeSearchResults, .dealSearchResults').DataTable();
+        $('#itemSearchResults, #userSearchResults, #storeSearchResults, .dealSearchResults, #shoppingListItems').DataTable();
         /*
         $('#userSearchResults').DataTable();
         $('#storeSearchResults').DataTable();
