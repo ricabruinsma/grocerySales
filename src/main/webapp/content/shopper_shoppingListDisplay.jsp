@@ -32,7 +32,7 @@
                                 <td>${listLine.quantity}</td>
                                 <td>${listLine.item.brand}</td>
                                 <td>${listLine.item.product}</td>
-                                <td>${listLine.item.category}</td>
+                                <td>${listLine.item.category.name}</td>
                                 <td>${listLine.item.size}</td>
                                 <td>${listLine.item.salePrice}</td>
                                 <td>${listLine.item.saleEndDate}</td>
@@ -40,7 +40,7 @@
                                 <td><form action="updateItemFromList" method="POST">
                                         <input type="hidden" name="listLineIdToUpdate" value="${listLine.id}" />
                                         <input type="hidden" name="currentQuantity" value="${listLine.quantity}" />
-                                        <button class="deleteItem" type="submit"><img style="max-width: 2em;" src="img/trashCan.png" alt="delete"></button>
+                                        <button class="deleteItem" type="submit"><img style="max-width: 2em;" src="img/add.png" alt="add another"></button>
                                     </form>
 
                                     <form action="deleteItemFromList" method="POST">

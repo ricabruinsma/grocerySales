@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="pageTitle" value="GrocerySales - Shopper" />
+<c:set var="role" value="shopper" />
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +22,10 @@
     <%@include file="content/shopper_showShoppingListToggle.jsp"%>
 
     <%@include file="content/shopper_shoppingListDisplay.jsp"%>
+
+    <%@include file="content/shopper_editUserInfoToggle.jsp"%>
+
+
 
     <%@include file="templates/footer.jsp"%>
 

@@ -11,7 +11,7 @@
         <a class="nav-link" href="#shoppingListAnchor">Shopping Lists</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#tm-section-2">My Account</a>
+        <a class="nav-link" href="#editShopperAnchor">My Account</a>
     </li>
     <li class="nav-item">
         <a class="nav-link external" href="logout">Logout</a>
