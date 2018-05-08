@@ -1,9 +1,6 @@
 package edu.matc.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.matc.entity.Role;
-import edu.matc.entity.User;
-import edu.matc.persistence.GenericDao;
 import grocery.api.deals.Deal;
 import grocery.api.deals.DealList;
 import org.apache.logging.log4j.LogManager;

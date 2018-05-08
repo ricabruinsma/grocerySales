@@ -40,9 +40,23 @@
                             <td>${deal.saleEndDate}</td>
                             <td>${deal.storeName}</td>
                             <c:if test="${pageTitle.equals('GrocerySales - Shopper')}">
-                                <td><a href="addToShoppingList?brand=${deal.brand}&category=${deal.category}"><img style="max-width: 2em;" src="img/add.png" alt="add"></a>
+                                <td><form action="addItem" method="POST">
+                                        <input type="hidden" name="routeDealsTo" value="Shopper" />
+                                        <input type="hidden" name="searchType" value="getAll" />
+                                        <input type="hidden" name="brand" value="${deal.brand}" />
+                                        <input type="hidden" name="category" value="${deal.category}" />
+                                        <input type="hidden" name="product" value="${deal.product}" />
+                                        <input type="hidden" name="size" value="${deal.size}" />
+                                        <input type="hidden" name="salePrice" value="${deal.salePrice}" />
+                                        <input type="hidden" name="savingsAmount" value="${deal.savingsAmount}" />
+                                        <input type="hidden" name="saleEndDate" value="${deal.saleEndDate}" />
+                                        <input type="hidden" name="storeName" value="${deal.storeName}" />
+                                        <input type="hidden" name="username" value="${username}" />
+
+                                        <button class="addItem" type="submit"><img style="max-width: 2em;" src="img/add.png" alt="add"></button>
+                                    </form>
+                                </td>
                             </c:if>
-                            </td>
                         </tr>
                     </c:forEach>
                     </tbody>

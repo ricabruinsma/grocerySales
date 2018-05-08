@@ -2,7 +2,6 @@ package edu.matc.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.entity.Category;
-import edu.matc.entity.Store;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

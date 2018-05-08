@@ -1,6 +1,6 @@
 package edu.matc.controller;
 
-import edu.matc.entity.Role;
+
 import edu.matc.entity.User;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
+
 
 
 /**

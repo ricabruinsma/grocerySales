@@ -14,7 +14,7 @@ import java.util.Set;
 /**
  * The type Item.
  */
-@EqualsAndHashCode(exclude = {"listLines", "createDate", "savingsAmount", "saleEndDate", "updateDate"})
+@EqualsAndHashCode(exclude = {"listLines", "createDate", "id", "updateDate"})
 @ToString(exclude = {"listLines"})
 @Entity(name = "Item")
 @Table(name = "item")

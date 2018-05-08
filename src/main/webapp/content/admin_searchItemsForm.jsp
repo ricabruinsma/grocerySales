@@ -5,8 +5,8 @@
 </div>
 
 <div class="row">
-    <div class="col-lg-3"></div>
-    <div class="col-lg-8">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-6">
         <a href="searchItems?searchBy=all" class="btn btn-default tm-normal-btn tm-blue-btn">View All</a>
         <a href="#searchItemsForm" class="btn btn-default tm-normal-btn tm-blue-btn">Delete</a>
     </div>
