@@ -46,10 +46,10 @@ public class ShopperRetrieveShoppingList extends HttpServlet {
         int shoppingListId = 0;
 
         // from the POST
-        String routeDealsTo = request.getParameter("routeDealsTo");
-        String searchType = request.getParameter("searchType");
+        //String routeDealsTo = request.getParameter("routeDealsTo");
+        //String searchType = request.getParameter("searchType");
         String username = request.getParameter("username");
-        int itemId = (Integer)request.getAttribute("itemToAddId");
+        //int itemToAddId = (Integer)request.getAttribute("itemToAddId");
 
 
         // get the user by username
@@ -69,13 +69,13 @@ public class ShopperRetrieveShoppingList extends HttpServlet {
             shoppingListId = userList.getId();
         }
 
-        request.setAttribute("routeDealsTo", routeDealsTo);
-        request.setAttribute("searchType", searchType);
-        request.setAttribute("username", username);
-        request.setAttribute("itemId", itemId);
+        //request.setAttribute("routeDealsTo", routeDealsTo);
+        //request.setAttribute("searchType", searchType);
+        //request.setAttribute("username", username);
+        //request.setAttribute("itemId", itemToAddId);
         request.setAttribute("shoppingListId", shoppingListId);
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("addToList");
 
         dispatcher.forward(request, response);
     }

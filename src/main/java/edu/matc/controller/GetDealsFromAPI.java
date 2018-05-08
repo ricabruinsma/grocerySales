@@ -34,6 +34,20 @@ public class GetDealsFromAPI extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
+     * Reloading the page after adding an item to shopping list
+     *
+     * @param request Http Servlet Request
+     * @param response Http Servlet Response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
+
+
+    /**
      * @param request Http Servlet Request
      * @param response Http Servlet Response
      * @throws ServletException
@@ -63,18 +77,18 @@ public class GetDealsFromAPI extends HttpServlet {
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target(uri);
         String responseJSON = getAPIResponse(target);
-        logger.info("response1: " + responseJSON);
+       // logger.info("response1: " + responseJSON);
 
         //API sometimes needs to be hit several times, to give a non-empty list
         if (responseJSON.equals("[]")) {
             responseJSON = getAPIResponse(target);
-            logger.info("response2: " + responseJSON);
+           // logger.info("response2: " + responseJSON);
             if (responseJSON.equals("[]")) {
                 responseJSON = getAPIResponse(target);
-                logger.info("response3: " + responseJSON);
+               // logger.info("response3: " + responseJSON);
                 if (responseJSON.equals("[]")) {
                     responseJSON = getAPIResponse(target);
-                    logger.info("response4: " + responseJSON);
+                   // logger.info("response4: " + responseJSON);
                 }
             }
         }

@@ -30,6 +30,19 @@ public class RoutingToShopperPage extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
+     * Routes to doGet, to reload list of deals
+     *
+     * @param request Http Servlet Request
+     * @param response Http Servlet Response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
+
+    /**
      * @param request Http Servlet Request
      * @param response Http Servlet Response
      * @throws ServletException

@@ -70,7 +70,7 @@ public class ShopperAddItem extends HttpServlet {
 
         Set<Item> storeItems = itemStore.getItems();
         for (Item item: storeItems) {
-            if (item == newItem) {
+            if (newItem.equals(item)) {
                 alreadyInDb = true;
                 itemId = item.getId();
             }
