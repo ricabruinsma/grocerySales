@@ -102,7 +102,12 @@ public class AdminSearchUsers extends HttpServlet {
 		request.setAttribute("searchBy", searchByQuery);
 		request.setAttribute("searchTerm", searchKeywordQueryString);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
-        dispatcher.forward(request, response);
+		if (searchPage.equals("shopperEdit")) {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("shopperPage.jsp");
+			dispatcher.forward(request, response);
+		} else {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
+			dispatcher.forward(request, response);
+		}
     }
 }

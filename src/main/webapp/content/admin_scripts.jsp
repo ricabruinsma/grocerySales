@@ -4,6 +4,7 @@
 <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
 <script src="js/bootstrap.min.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
 <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+<script src="js/index.js"></script>							<!-- grocerySales specific js -->
 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>  <!-- datatables -->
 
 <!-- Templatemo scripts -->
@@ -27,6 +28,9 @@
         // loads the category list into the grocery deal search
         loadOptionsForDealSearch("loadingStores", "#storeName");
 
+        $("#newPasswordConfirm").on("focusout", function() {
+            isPasswordMatch();
+        });
 
         // grocery deal search - if select a keyword search, keyword input box displays
         $('#searchType').change(function() {

@@ -25,7 +25,7 @@
 
     <%@include file="content/shopper_editUserInfoToggle.jsp"%>
 
-
+    <%@include file="content/shopper_editUserForm.jsp"%>
 
     <%@include file="templates/footer.jsp"%>
 
