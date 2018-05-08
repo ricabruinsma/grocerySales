@@ -37,7 +37,7 @@
                                 <td>${listLine.item.salePrice}</td>
                                 <td>${listLine.item.saleEndDate}</td>
                                 <td>${listLine.item.store.name}</td>
-                                <td><form action="updateItemFromList" method="POST">
+                                <td><form action="addAgainToList" method="POST">
                                         <input type="hidden" name="listLineIdToUpdate" value="${listLine.id}" />
                                         <input type="hidden" name="currentQuantity" value="${listLine.quantity}" />
                                         <button class="deleteItem" type="submit"><img style="max-width: 2em;" src="img/add.png" alt="add another"></button>

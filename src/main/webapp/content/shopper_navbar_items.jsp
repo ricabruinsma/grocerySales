@@ -8,7 +8,7 @@
         <a class="nav-link" href="#tm-section-4">Find Deals</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#shoppingListAnchor">Shopping Lists</a>
+        <a class="nav-link" href="#shoppingListAnchor">Shopping List</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#editShopperAnchor">My Account</a>
