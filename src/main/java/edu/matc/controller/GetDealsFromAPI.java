@@ -67,12 +67,18 @@ public class GetDealsFromAPI extends HttpServlet {
         WebTarget target = client.target(uri);
         String responseJSON = getAPIResponse(target);
         logger.info("response1: " + responseJSON);
+
+        //API sometimes needs to be hit several times, to give a non-empty list
         if (responseJSON.equals("[]")) {
             responseJSON = getAPIResponse(target);
             logger.info("response2: " + responseJSON);
             if (responseJSON.equals("[]")) {
                 responseJSON = getAPIResponse(target);
                 logger.info("response3: " + responseJSON);
+                if (responseJSON.equals("[]")) {
+                    responseJSON = getAPIResponse(target);
+                    logger.info("response4: " + responseJSON);
+                }
             }
         }
         String configResponseJSON = "{\"dealList\": " + responseJSON + "}";

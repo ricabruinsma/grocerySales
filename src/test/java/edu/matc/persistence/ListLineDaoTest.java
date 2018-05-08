@@ -133,8 +133,20 @@ class ListLineDaoTest {
      * Verify successful get by property (equal match)
      */
     @Test
-    void getByPropertyEqualSuccess() {
+    void getByPropertyEqualSuccessQuantity() {
         List<ListLine> listLines = listLineDao.getByPropertyEqual("quantity", 2);
+        assertEquals(1, listLines.size());
+        assertEquals(1, listLines.get(0).getId());
+    }
+
+    /**
+     * Verify successful get by property (equal match)
+     */
+    @Test
+    void getByPropertyEqualSuccessItem() {
+        GenericDao itemDao = new GenericDao(Item.class);
+        Item userItem = (Item)itemDao.getById(2);
+        List<ListLine> listLines = listLineDao.getByPropertyEqual("item", userItem);
         assertEquals(1, listLines.size());
         assertEquals(1, listLines.get(0).getId());
     }

@@ -19,7 +19,7 @@
                         <th>city</th>
                         <th>state</th>
                         <th>postal code</th>
-                        <th>Admin Functions</th>
+                        <th>Delete Store</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -30,8 +30,12 @@
                             <td>${store.city}</td>
                             <td>${store.state}</td>
                             <td>${store.postalCode}</td>
-                            <td><a href="deleteStore?id=${store.id}"><img style="max-width: 2em;" src="img/trashCan.png" alt="delete"></a>
-                                <a href="editStore?id=${store.id}"><img style="max-width: 2em;" src="img/edit.png" alt="edit"></a>
+                            <td><form action="deleteStore" method="POST">
+                                    <input type="hidden" name="id" value="${store.id}" />
+                                    <input type="hidden" name="searchBy" value="${searchBy}" />
+                                    <input type="hidden" name="searchTerm" value="${searchTerm}" />
+                                    <button class="deleteStore" type="submit"><img style="max-width: 2em;" src="img/trashCan.png" alt="delete"></button>
+                                </form>
                             </td>
                         </tr>
                     </c:forEach>

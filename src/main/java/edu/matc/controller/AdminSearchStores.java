@@ -30,6 +30,19 @@ public class AdminSearchStores extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
+     * To forward the request from the delete stores servlet to refresh the page with the list of stores
+     * minus the deleted one
+     *
+     * @param request Http Servlet Request
+     * @param response Http Servlet Response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
+    /**
      * @param request Http Servlet Request
      * @param response Http Servlet Response
      * @throws ServletException
@@ -61,6 +74,8 @@ public class AdminSearchStores extends HttpServlet {
         }
 		request.setAttribute("stores", stores);
 		request.setAttribute("searchPage", searchPage);
+        request.setAttribute("searchBy", searchByQuery);
+        request.setAttribute("searchTerm", searchKeywordQuery);
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
 
