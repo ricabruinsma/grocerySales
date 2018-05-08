@@ -55,6 +55,7 @@ public class UserSignUp extends HttpServlet {
         List<User> users = userDao.getByPropertyEqual("username", username);
         //logger.info("how many users are there???" + users.size());
         if (users.size() == 0) {
+
             String genericUserRole = "shopper";
             Role newRole = new Role(newUser, genericUserRole, username);
             newUser.addRole(newRole);

@@ -124,16 +124,17 @@
 - [X] Create Welcome/Landing JSP (includes deal search, login, sign-up a new user)
 - [X] Add category table, change to category_id in item table
 - [X] CategoryDAO and unit tests +  update Item unit tests (and others...)
+- [X] update AWS DB for items - category
 - [X] Create Admin JSP to CRUD users (including roles)
 - [ ] Stores - add & delete
 - [X] Items - delete
 - [ ] Category - read, add & delete
-- [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
+- [X] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
 - [X] Implement API to populate deal search results
 - [X] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
 
 - [ ] Test relationships
-- [ ] Carefully review code for standards and best practices
+- [X] Carefully review code for standards and best practices
 - [ ] Unit test all relationships
 - [ ] Go through all feedback from previous checkpoints & peer reviews
 - [ ] Code quality check
@@ -141,7 +142,7 @@
 - [ ] Ensure full application is functional
 - [ ] Final documentation
 - [ ] Create final presentation
-- [ ] Journal
+- [X] Journal
 
 ### Week 16
 - [ ] Present to class
@@ -149,7 +150,7 @@
 - [ ] Final touches before code complete
 - [ ] Journal
 
-- [ ] update AWS DB for items - category
+
 - [ ] update ERD diagram
 - [ ] login doesn't route user to their page - only after bounced back from "no admittance"
 - [ ] comment back in error pages, create more if time!

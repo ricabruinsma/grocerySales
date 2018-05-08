@@ -9,37 +9,36 @@
   </welcome-file-list>
 
   <!-- Error Pages -->
-  <!--
   <error-page>
     <error-code>400</error-code>
-    <location>/Error403.jsp</location>
+    <location>/Error400.jsp</location>
   </error-page>
 
   <error-page>
     <error-code>401</error-code>
-    <location>/Error403.jsp</location>
+    <location>/Error401.jsp</location>
   </error-page>
--->
+
   <error-page>
     <error-code>403</error-code>
     <location>/Error403.jsp</location>
   </error-page>
-<!--
+
   <error-page>
     <error-code>404</error-code>
-    <location>/Error403.jsp</location>
+    <location>/Error404.jsp</location>
   </error-page>
 
   <error-page>
     <error-code>500</error-code>
-    <location>/Error403.jsp</location>
+    <location>/Error500.jsp</location>
   </error-page>
 
   <error-page>
     <error-code>503</error-code>
-    <location>/Error403.jsp</location>
+    <location>/Error503.jsp</location>
   </error-page>
--->
+
   <!-- Tell the server to use form-based authentication. -->
   <login-config>
     <auth-method>FORM</auth-method>

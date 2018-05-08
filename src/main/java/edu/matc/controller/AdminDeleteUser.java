@@ -63,7 +63,7 @@ public class AdminDeleteUser extends HttpServlet {
 		//request.setAttribute("deleteMessage", "success");
 		request.setAttribute("searchBy", searchBy);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("searchUsers");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
         dispatcher.forward(request, response);
     }
 }

@@ -61,7 +61,7 @@
 
                         <div class="row">
                             <div class="form-group">
-                                <input type="text" id="userState" name="userState" class="form-control" placeholder="state"  required/>
+                                <input type="text" id="userState" name="userState" class="form-control" placeholder="state" pattern=".{2}" required/>
                             </div>
                         </div>
 

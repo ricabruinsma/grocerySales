@@ -41,6 +41,7 @@ public class AdminSearchUsers extends HttpServlet {
 	 */
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 		doGet(request, response);
 	}
 
@@ -53,6 +54,7 @@ public class AdminSearchUsers extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		String routeTo = "adminPage.jsp";
         //from GET request
 
         //field to search by
@@ -60,8 +62,8 @@ public class AdminSearchUsers extends HttpServlet {
         //term to look for in field above
 
 		String searchKeywordQueryString = request.getParameter("searchTerm");
-
 		String searchPage = request.getParameter("searchPage");
+
 
         logger.info(searchByQuery);
         logger.info(searchKeywordQueryString);
@@ -96,18 +98,18 @@ public class AdminSearchUsers extends HttpServlet {
 
 		}
 
+		if (searchPage.equals("shopperEdit")) {
+			routeTo = "shopperPage.jsp";
+		}
 
 		request.setAttribute("searchPage", searchPage);
 		request.setAttribute("anchorName", "#searchUsersResults");
 		request.setAttribute("searchBy", searchByQuery);
 		request.setAttribute("searchTerm", searchKeywordQueryString);
+		logger.info("searchPage is: " + searchPage);
 
-		if (searchPage.equals("shopperEdit")) {
-			RequestDispatcher dispatcher = request.getRequestDispatcher("shopperPage.jsp");
-			dispatcher.forward(request, response);
-		} else {
-			RequestDispatcher dispatcher = request.getRequestDispatcher("adminPage.jsp");
-			dispatcher.forward(request, response);
-		}
+		RequestDispatcher dispatcher = request.getRequestDispatcher(routeTo);
+		dispatcher.forward(request, response);
+
     }
 }
