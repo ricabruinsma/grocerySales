@@ -127,10 +127,10 @@
 - [X] Create Admin JSP to CRUD users (including roles)
 - [ ] Stores - add & delete
 - [X] Items - delete
-- [ ] Category - add & delete
+- [ ] Category - read, add & delete
 - [ ] Create Logged-in user JSP to view/edit user info, edit/delete shoppingList info, deal search
 - [X] Implement API to populate deal search results
-- [ ] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
+- [X] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
 
 - [ ] Test relationships
 - [ ] Carefully review code for standards and best practices
