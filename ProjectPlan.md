@@ -113,7 +113,7 @@
 - [X] <%@include  when including a file within the include  --> OK to use
 - [X] Validate User-entered data (not empty)
 - [X] Logout function
-- [X Validating user-entered data?
+- [X] Validating user-entered data?
 - [X] Code Reviews
 - [X] Journal
 
@@ -133,10 +133,10 @@
 - [X] Implement API to populate deal search results
 - [X] Create Deal Search Results JSP, including ability to add to ShoppingList, if logged in.
 
-- [ ] Test relationships
+- [X] Test relationships
 - [X] Carefully review code for standards and best practices
 - [ ] Unit test all relationships
-- [ ] Go through all feedback from previous checkpoints & peer reviews
+- [X] Go through all feedback from previous checkpoints & peer reviews
 - [ ] Code quality check
 
 - [ ] Ensure full application is functional
@@ -145,22 +145,20 @@
 - [X] Journal
 
 ### Week 16
-- [ ] Present to class
-- [ ] Create video recording - walking through application
-- [ ] Final touches before code complete
-- [ ] Journal
+- [X] Present to class
+- [X] Create video recording - walking through application
+- [X] Final touches before code complete
+- [X] Journal
 
 
 - [ ] update ERD diagram
 - [ ] login doesn't route user to their page - only after bounced back from "no admittance"
-- [ ] comment back in error pages, create more if time!
+- [X] comment back in error pages, create more if time!
 
-- [ ] Update time log/journal
-
-- [ ] When unit testing your entities, test the relationships too.
-- [ ] Add custom error pages and a login page that reflects the look and feel of your site. The error page should hide any stack trace information which can reveal information about your site and db that should not be shared.
+- [X] When unit testing your entities, test the relationships too.
+- [X] Add custom error pages and a login page that reflects the look and feel of your site. The error page should hide any stack trace information which can reveal information about your site and db that should not be shared.
 - [ ] Javadoc - remember there's a plugin for this
-- [ ] Be sure to remove any duplicate code - this means using the generic dao, for example.
-- [ ] Address and close any open issues
+- [X] Be sure to remove any duplicate code - this means using the generic dao, for example.
+- [X] Address and close any open issues
 - [ ] Use properties rather than hard-coded values, like web service urls.
 - [ ] Update your web.xml with regard to restricted resources. Remember that both jsps and servlets should be restricted (not just the jsps as a savvy user/hacker will try to access the servlets too).

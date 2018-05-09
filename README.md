@@ -27,17 +27,16 @@ I would like to create a site to demonstrate this for one local grocery store, w
 * Web Services consumed using Java
   * Maybe Google Maps for mileage calculations???
 * CSS 
-  * Bootstrap or Materialize
+  * Bootstrap
 * Data Validation
   * Bootstrap Validator for front end
-  * Explore Hibernate's validation
+  * Custom JavaScript code for password verification
+  * Servlet function to check database
 * Logging
   * Configurable logging using Log4J2. In production, only errors will normally be logged, but logging at a debug level can be turned on to facilitate trouble-shooting. 
 * Hosting
   * AWS
 * Independent Research Topic/s
-  * CI tools in AWS
-  * Materialize
   * Google Maps API
   * JSoup - screen scrape
   * Project Lombok to eliminate boilerplate code like getters/setters/equals
@@ -45,4 +44,21 @@ I would like to create a site to demonstrate this for one local grocery store, w
   * JUnit tests to achieve 80%+ code coverage 
 * IDE: IntelliJ IDEA
 
+### Demo Videos of App
+[Admin Functions - Search and Delete Items](https://youtu.be/_Ob_h7-vUiM)
 
+[Admin Functions - Search and Delete Stores](https://youtu.be/pt13b98uubI)
+
+[Admin Functions - Search, Edit, and Delete Users](https://youtu.be/OKu3DlIwv9Y)
+
+[Guest Functions - Search Deals and Sign-Up](https://youtu.be/-RGZ2duqkMk)
+
+[Shopper Functions - Search Deals, Shopping List view/edit, password change](https://youtu.be/kWuEFQdcJFU)
+
+[Code Coverage](https://youtu.be/DMHM1LV-3Ug)
+
+[Custom Error Pages](https://youtu.be/poAeakF1m5Q)
+
+[Restricted Access to Shopper and Admin pages](https://youtu.be/N7vx9uZRI9E)
+
+[Validation of Sign-Up form fields](https://youtu.be/NIVTKGRgosA)

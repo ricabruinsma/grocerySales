@@ -58,4 +58,4 @@
 | 5/07/18| Fix user delete with doPost, jQuery datatable for Shopper Deal search, delete item | 3 | |
 | 5/07/18| Add item to shoppingList | 4 | |
 | 5/08/18| Display shopping list | 2 | |
-| 5/08/18|  |  | |
+| 5/08/18| Last-minute breaks, fixes, etc | 4 | |
