@@ -29,7 +29,7 @@
                             <tr>
                                 <td>${item.brand}</td>
                                 <td>${item.product}</td>
-                                <td>${item.category}</td>
+                                <td>${item.category.name}</td>
                                 <td>${item.size}</td>
                                 <td>${item.salePrice}</td>
                                 <td>${item.saleEndDate}</td>
